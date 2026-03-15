@@ -9,6 +9,15 @@ const CLASS_COLORS = {
   Skill: '#ef4444',
 }
 
+const CLASS_ICONS = {
+  Cosmic: '\u2728',
+  Tech: '\u2699\uFE0F',
+  Mutant: '\u2622\uFE0F',
+  Science: '\u2697\uFE0F',
+  Mystic: '\uD83D\uDD2E',
+  Skill: '\uD83D\uDDE1\uFE0F',
+}
+
 function compareValue(guessVal, targetVal) {
   if (guessVal === targetVal) return 'correct'
   return 'wrong'
@@ -17,28 +26,17 @@ function compareValue(guessVal, targetVal) {
 function compareArrays(guessArr, targetArr) {
   if (!guessArr?.length && !targetArr?.length) return 'correct'
   if (!guessArr?.length || !targetArr?.length) return 'wrong'
-
   const guessSet = new Set(guessArr.map(s => s.toLowerCase()))
   const targetSet = new Set(targetArr.map(s => s.toLowerCase()))
-
-  // Check exact match
-  if (guessSet.size === targetSet.size && [...guessSet].every(v => targetSet.has(v))) {
-    return 'correct'
-  }
-  // Check partial overlap
-  if ([...guessSet].some(v => targetSet.has(v))) {
-    return 'partial'
-  }
+  if (guessSet.size === targetSet.size && [...guessSet].every(v => targetSet.has(v))) return 'correct'
+  if ([...guessSet].some(v => targetSet.has(v))) return 'partial'
   return 'wrong'
 }
 
 function compareYear(guessYear, targetYear) {
   if (guessYear === targetYear) return { status: 'correct', arrow: null }
   if (!guessYear || !targetYear) return { status: 'wrong', arrow: null }
-  return {
-    status: 'wrong',
-    arrow: guessYear > targetYear ? 'down' : 'up',
-  }
+  return { status: 'wrong', arrow: guessYear > targetYear ? 'down' : 'up' }
 }
 
 function compareSize(guessSize, targetSize) {
@@ -46,10 +44,7 @@ function compareSize(guessSize, targetSize) {
   const gi = order.indexOf(guessSize)
   const ti = order.indexOf(targetSize)
   if (gi === ti) return { status: 'correct', arrow: null }
-  return {
-    status: 'wrong',
-    arrow: gi > ti ? 'down' : 'up',
-  }
+  return { status: 'wrong', arrow: gi > ti ? 'down' : 'up' }
 }
 
 export default function GuessRow({ guess, target, index }) {
@@ -64,8 +59,19 @@ export default function GuessRow({ guess, target, index }) {
     const yearResult = compareYear(guess.release_year, target.release_year)
 
     return [
-      { value: guess.name, status: nameStatus },
-      { value: guess.class, status: classStatus, classColor: CLASS_COLORS[guess.class] },
+      {
+        type: 'champion',
+        value: guess.name,
+        status: nameStatus,
+        portrait: guess.portrait,
+        champClass: guess.class,
+      },
+      {
+        value: guess.class,
+        status: classStatus,
+        icon: CLASS_ICONS[guess.class],
+        accentColor: CLASS_COLORS[guess.class],
+      },
       { value: guess.gender, status: genderStatus },
       { value: guess.size, status: sizeResult.status, arrow: sizeResult.arrow },
       { value: guess.alignment, status: alignStatus },
@@ -76,19 +82,39 @@ export default function GuessRow({ guess, target, index }) {
   }, [guess, target])
 
   return (
-    <div className="guess-row" style={{ animationDelay: `${index * 0.05}s` }}>
-      {cells.map((cell, i) => (
-        <div
-          key={i}
-          className={`cell cell-${cell.status}`}
-          style={i === 1 && cell.classColor ? { '--class-accent': cell.classColor } : undefined}
-        >
-          <span className="cell-text">{cell.value}</span>
-          {cell.arrow && (
-            <span className="arrow">{cell.arrow === 'up' ? '▲' : '▼'}</span>
-          )}
-        </div>
-      ))}
+    <div className="guess-row" style={{ animationDelay: `${index * 0.06}s` }}>
+      {cells.map((cell, i) => {
+        if (cell.type === 'champion') {
+          return (
+            <div key={i} className={`cell cell-champion cell-${cell.status}`}>
+              <div className="champ-portrait-wrap">
+                {cell.portrait ? (
+                  <img src={cell.portrait} alt="" className="champ-portrait" />
+                ) : (
+                  <div className={`champ-portrait-placeholder ${cell.champClass?.toLowerCase()}`} />
+                )}
+              </div>
+              <span className="cell-text champ-name">{cell.value}</span>
+            </div>
+          )
+        }
+
+        return (
+          <div
+            key={i}
+            className={`cell cell-${cell.status}`}
+            style={cell.accentColor ? { '--cell-accent': cell.accentColor } : undefined}
+          >
+            {cell.icon && <span className="cell-icon">{cell.icon}</span>}
+            <span className="cell-text">{cell.value}</span>
+            {cell.arrow && (
+              <span className={`arrow arrow-${cell.arrow}`}>
+                {cell.arrow === 'up' ? '\u25B2' : '\u25BC'}
+              </span>
+            )}
+          </div>
+        )
+      })}
     </div>
   )
 }

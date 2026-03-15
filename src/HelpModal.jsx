@@ -4,35 +4,39 @@ export default function HelpModal({ onClose }) {
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
         <h2>How to Play</h2>
-        <p>Guess the daily MCOC champion! Each guess reveals clues about the mystery champion.</p>
+        <p>Guess the daily MCOC champion! Each guess reveals how your pick compares to the mystery champion.</p>
 
         <div className="help-colors">
           <div className="help-item">
-            <span className="help-swatch correct" /> Exact match
+            <span className="help-swatch correct" />
+            <span>Exact match</span>
           </div>
           <div className="help-item">
-            <span className="help-swatch partial" /> Partial match (some overlap)
+            <span className="help-swatch partial" />
+            <span>Partial match</span>
           </div>
           <div className="help-item">
-            <span className="help-swatch wrong" /> No match
+            <span className="help-swatch wrong" />
+            <span>No match</span>
           </div>
           <div className="help-item">
-            <span className="help-arrow">▲▼</span> Target value is higher/lower
+            <span className="help-arrow">&uarr;&darr;</span>
+            <span>Higher / Lower</span>
           </div>
         </div>
 
-        <h3>Columns</h3>
+        <h3>Attributes</h3>
         <ul>
           <li><strong>Class</strong> &mdash; Cosmic, Tech, Mutant, Science, Mystic, Skill</li>
           <li><strong>Gender</strong> &mdash; Male, Female, Other</li>
-          <li><strong>Size</strong> &mdash; S, M, L, XL (arrows show direction)</li>
+          <li><strong>Size</strong> &mdash; S, M, L, XL (with direction arrows)</li>
           <li><strong>Alignment</strong> &mdash; Hero or Villain</li>
-          <li><strong>Affiliation</strong> &mdash; Team tags (Avengers, X-Men, etc.)</li>
+          <li><strong>Affiliation</strong> &mdash; Team tags (orange = partial overlap)</li>
           <li><strong>Fighting Style</strong> &mdash; Offensive, Defensive, or Control</li>
-          <li><strong>Release Year</strong> &mdash; When added to MCOC (arrows show direction)</li>
+          <li><strong>Release Year</strong> &mdash; When added to MCOC (with direction arrows)</li>
         </ul>
 
-        <p className="help-footer">A new champion every day!</p>
+        <p className="help-footer">A new champion every day. Be the first to solve it!</p>
       </div>
     </div>
   )

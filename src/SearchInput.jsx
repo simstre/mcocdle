@@ -43,7 +43,6 @@ export default function SearchInput({ champions, guesses, onGuess }) {
     }
   }
 
-  // Scroll selected item into view
   useEffect(() => {
     if (selectedIdx >= 0 && listRef.current) {
       const items = listRef.current.children
@@ -55,17 +54,23 @@ export default function SearchInput({ champions, guesses, onGuess }) {
 
   return (
     <div className="search-container">
-      <input
-        ref={inputRef}
-        type="text"
-        className="search-input"
-        placeholder="Type a champion name..."
-        value={query}
-        onChange={e => setQuery(e.target.value)}
-        onKeyDown={handleKeyDown}
-        autoComplete="off"
-        autoFocus
-      />
+      <div className="search-wrapper">
+        <svg className="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <input
+          ref={inputRef}
+          type="text"
+          className="search-input"
+          placeholder="Search for a champion..."
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          onKeyDown={handleKeyDown}
+          autoComplete="off"
+          autoFocus
+        />
+      </div>
       {suggestions.length > 0 && (
         <div className="suggestions" ref={listRef}>
           {suggestions.map((champ, i) => (
@@ -75,8 +80,15 @@ export default function SearchInput({ champions, guesses, onGuess }) {
               onClick={() => selectChampion(champ)}
               onMouseEnter={() => setSelectedIdx(i)}
             >
-              <span className={`class-dot ${champ.class.toLowerCase()}`} />
-              {champ.name}
+              <div className="suggestion-portrait-wrap">
+                {champ.portrait ? (
+                  <img src={champ.portrait} alt="" className="suggestion-portrait" />
+                ) : (
+                  <div className={`suggestion-portrait-placeholder ${champ.class.toLowerCase()}`} />
+                )}
+              </div>
+              <span className="suggestion-name">{champ.name}</span>
+              <span className={`suggestion-class ${champ.class.toLowerCase()}`}>{champ.class}</span>
             </div>
           ))}
         </div>

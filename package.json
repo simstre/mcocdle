@@ -9,6 +9,7 @@
     "preview": "vite preview --port 8500"
   },
   "dependencies": {
+    "@vercel/kv": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

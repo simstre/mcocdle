@@ -9,7 +9,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/ce33b11090.png"
   },
   {
     "name": "Abomination (Immortal)",
@@ -19,7 +20,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/132a3c38af.png"
   },
   {
     "name": "Absorbing Man",
@@ -29,7 +31,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/01d06d47b2.png"
   },
   {
     "name": "Air-Walker",
@@ -39,7 +42,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/09b00c18a1.png"
   },
   {
     "name": "America Chavez",
@@ -53,7 +57,8 @@
       "Young Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/0859f2f37a.png"
   },
   {
     "name": "Angela",
@@ -63,7 +68,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/c54e140a2d.png"
   },
   {
     "name": "Annihilus",
@@ -73,7 +79,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/22f7fb7179.png"
   },
   {
     "name": "Ant-Man",
@@ -85,7 +92,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/2e9c93fbb6.png"
   },
   {
     "name": "Ant-Man (Future)",
@@ -95,7 +103,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/7ed3c7096d.png"
   },
   {
     "name": "Apocalypse",
@@ -105,7 +114,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/abf95deab7.png"
   },
   {
     "name": "Arcade",
@@ -115,7 +125,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/ee1dde1e71.png"
   },
   {
     "name": "Archangel",
@@ -128,7 +139,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/f896e96f5a.png"
   },
   {
     "name": "Arnim Zola",
@@ -141,7 +153,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/07ab7b3ec3.png"
   },
   {
     "name": "Attuma",
@@ -153,7 +166,8 @@
       "Cabal"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/6b45ebad25.png"
   },
   {
     "name": "Baron Zemo",
@@ -166,7 +180,8 @@
       "Hydra"
     ],
     "fighting_style": "Control",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/90ba40f7ba.png"
   },
   {
     "name": "Bastion",
@@ -176,7 +191,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/8811d3ba40.png"
   },
   {
     "name": "Beast",
@@ -189,7 +205,8 @@
       "Illuminati"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/8023727f8b.png"
   },
   {
     "name": "Beta Ray Bill",
@@ -201,7 +218,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/38e5f30260.png"
   },
   {
     "name": "Bishop",
@@ -213,7 +231,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/3aa4584e54.png"
   },
   {
     "name": "Black Bolt",
@@ -225,7 +244,8 @@
       "Illuminati"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/30f47864ea.png"
   },
   {
     "name": "Black Cat",
@@ -235,7 +255,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/0cbb8bb561.png"
   },
   {
     "name": "Black Panther",
@@ -248,7 +269,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/d75079ab54.png"
   },
   {
     "name": "Black Panther (Civil War)",
@@ -260,7 +282,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/00d65303d5.png"
   },
   {
     "name": "Black Widow",
@@ -274,7 +297,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/365eb91181.png"
   },
   {
     "name": "Black Widow (Claire Voyant)",
@@ -284,7 +308,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/01cf04da24.png"
   },
   {
     "name": "Black Widow (Deadly Origin)",
@@ -298,7 +323,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/7e3eddcf6b.png"
   },
   {
     "name": "Blade",
@@ -311,7 +337,8 @@
       "Mighty Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/1ea52f26e7.png"
   },
   {
     "name": "Blue Marvel",
@@ -325,7 +352,8 @@
       "Defenders"
     ],
     "fighting_style": "Control",
-    "release_year": 2026
+    "release_year": 2026,
+    "portrait": null
   },
   {
     "name": "Bullseye",
@@ -337,7 +365,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/c34631f489.png"
   },
   {
     "name": "Cable",
@@ -350,7 +379,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/09d6acc298.png"
   },
   {
     "name": "Captain America",
@@ -363,7 +393,8 @@
       "S.H.I.E.L.D."
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/26d1386d5f.png"
   },
   {
     "name": "Captain America (Infinity War)",
@@ -375,7 +406,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/2103dbbb03.png"
   },
   {
     "name": "Captain America (Sam Wilson)",
@@ -388,7 +420,8 @@
       "Mighty Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/2fc2dd81f0.png"
   },
   {
     "name": "Captain America (WWII)",
@@ -400,7 +433,8 @@
       "S.H.I.E.L.D."
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/7e5b4e77be.png"
   },
   {
     "name": "Captain Britain",
@@ -412,7 +446,8 @@
       "X-Men"
     ],
     "fighting_style": "Control",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/54f26a791b.png"
   },
   {
     "name": "Captain Marvel",
@@ -424,7 +459,8 @@
       "Kree"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/cd62e0c7aa.png"
   },
   {
     "name": "Captain Marvel (Classic)",
@@ -436,7 +472,8 @@
       "Kree"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/6373e625dd.png"
   },
   {
     "name": "Carnage",
@@ -448,7 +485,8 @@
       "Symbiote"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/bc43063e3a.png"
   },
   {
     "name": "Cassandra Nova",
@@ -458,7 +496,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Unknown",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/c940a70a76.png"
   },
   {
     "name": "Cassie Lang",
@@ -471,7 +510,8 @@
       "Young Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/add433c679.png"
   },
   {
     "name": "Chee'ilth",
@@ -481,7 +521,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/f6a19cf730.png"
   },
   {
     "name": "Civil Warrior",
@@ -491,7 +532,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/f8f6347686.png"
   },
   {
     "name": "Colossus",
@@ -504,7 +546,8 @@
       "X-Force"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/29a3615ef4.png"
   },
   {
     "name": "Corvus Glaive",
@@ -516,7 +559,8 @@
       "Cabal"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/9a9705c13d.png"
   },
   {
     "name": "Cosmic Ghost Rider",
@@ -526,7 +570,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/145d084dd5.png"
   },
   {
     "name": "Count Nefaria",
@@ -536,7 +581,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/bd52d0b786.png"
   },
   {
     "name": "Crossbones",
@@ -549,7 +595,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/56b0d7cda4.png"
   },
   {
     "name": "Cull Obsidian",
@@ -559,7 +606,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Unknown",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/9b4d094612.png"
   },
   {
     "name": "Cyclops (Blue Team)",
@@ -571,7 +619,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/14c7c019d7.png"
   },
   {
     "name": "Cyclops (New Xavier School)",
@@ -583,7 +632,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/0b53bc054e.png"
   },
   {
     "name": "Dani Moonstar",
@@ -596,7 +646,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/636fcdae30.png"
   },
   {
     "name": "Daredevil (Classic)",
@@ -608,7 +659,8 @@
       "Defenders"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/f98f5f10d6.png"
   },
   {
     "name": "Daredevil (Hell's Kitchen)",
@@ -620,7 +672,8 @@
       "Defenders"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/11a32b4b3c.png"
   },
   {
     "name": "Dark Phoenix",
@@ -630,7 +683,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/735634f703.png"
   },
   {
     "name": "Darkhawk",
@@ -640,7 +694,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/26b0f752c3.png"
   },
   {
     "name": "Dazzler",
@@ -652,7 +707,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/b0bf9c1c77.png"
   },
   {
     "name": "Deadpool",
@@ -665,7 +721,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/72ed55d0c2.png"
   },
   {
     "name": "Deadpool (X-Force)",
@@ -677,7 +734,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/31608a3fdc.png"
   },
   {
     "name": "Diablo",
@@ -687,7 +745,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/689cfedf4d.png"
   },
   {
     "name": "Doctor Doom",
@@ -699,7 +758,8 @@
       "Cabal"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/96ac6a77f5.png"
   },
   {
     "name": "Doctor Octopus",
@@ -712,7 +772,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/406bc55050.png"
   },
   {
     "name": "Doctor Strange",
@@ -725,7 +786,8 @@
       "Defenders"
     ],
     "fighting_style": "Control",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/1d54ed8ab7.png"
   },
   {
     "name": "Doctor Voodoo",
@@ -737,7 +799,8 @@
       "S.H.I.E.L.D."
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/2e81b40fa2.png"
   },
   {
     "name": "Domino",
@@ -750,7 +813,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/97fae39bfd.png"
   },
   {
     "name": "Dormammu",
@@ -760,7 +824,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/ccf04b1b5b.png"
   },
   {
     "name": "Dragon Man",
@@ -770,7 +835,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/f050f7798c.png"
   },
   {
     "name": "Drax",
@@ -782,7 +848,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/312b978beb.png"
   },
   {
     "name": "Dust",
@@ -795,7 +862,8 @@
       "Champions"
     ],
     "fighting_style": "Control",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/de3493ea6e.png"
   },
   {
     "name": "Ebony Maw",
@@ -805,7 +873,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/68d872d8fc.png"
   },
   {
     "name": "Electro",
@@ -818,7 +887,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/281d7cd6a2.png"
   },
   {
     "name": "Elektra",
@@ -831,7 +901,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/9e2d12e626.png"
   },
   {
     "name": "Elsa Bloodstone",
@@ -841,7 +912,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/3f3fe2a45c.png"
   },
   {
     "name": "Emma Frost",
@@ -854,7 +926,8 @@
       "Cabal"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/4cc0c7a271.png"
   },
   {
     "name": "Enchantress",
@@ -866,7 +939,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/009dd2fda1.png"
   },
   {
     "name": "Falcon",
@@ -878,7 +952,8 @@
       "Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": null
   },
   {
     "name": "Falcon (Joaqu\u00edn Torres)",
@@ -888,7 +963,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/4618c6c259.png"
   },
   {
     "name": "Galan",
@@ -898,7 +974,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/03abe02d04.png"
   },
   {
     "name": "Gambit",
@@ -910,7 +987,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/88acb35713.png"
   },
   {
     "name": "Gamora",
@@ -922,7 +1000,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/b3ce51e489.png"
   },
   {
     "name": "Gentle",
@@ -934,7 +1013,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/e4396ac193.png"
   },
   {
     "name": "Ghost",
@@ -946,7 +1026,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Control",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/401357e57c.png"
   },
   {
     "name": "Ghost Rider",
@@ -960,7 +1041,8 @@
       "Champions"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/68d8012802.png"
   },
   {
     "name": "Gladiator",
@@ -970,7 +1052,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/f92b36491a.png"
   },
   {
     "name": "Goldpool",
@@ -980,7 +1063,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/f7f84e5b1c.png"
   },
   {
     "name": "Gorr",
@@ -990,7 +1074,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/6be7702306.png"
   },
   {
     "name": "Grandmaster",
@@ -1000,7 +1085,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Unknown",
-    "release_year": null
+    "release_year": null,
+    "portrait": null
   },
   {
     "name": "Green Goblin",
@@ -1013,7 +1099,8 @@
       "Cabal"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/6cea9312d0.png"
   },
   {
     "name": "Groot",
@@ -1025,7 +1112,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/2965cd13b3.png"
   },
   {
     "name": "Guillotine",
@@ -1035,7 +1123,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/0e41504f12.png"
   },
   {
     "name": "Guillotine (Deathless)",
@@ -1045,7 +1134,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/1dddb61045.png"
   },
   {
     "name": "Guillotine 2099",
@@ -1055,7 +1145,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/4b12e7728d.png"
   },
   {
     "name": "Gwenpool",
@@ -1065,7 +1156,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/6a02c8be31.png"
   },
   {
     "name": "Havok",
@@ -1077,7 +1169,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/5cd1c3c856.png"
   },
   {
     "name": "Hawkeye",
@@ -1091,7 +1184,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/618f709d7f.png"
   },
   {
     "name": "Heimdall",
@@ -1101,7 +1195,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/8ce2163101.png"
   },
   {
     "name": "Hela",
@@ -1111,7 +1206,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/59a852012a.png"
   },
   {
     "name": "Hercules",
@@ -1121,7 +1217,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/c7e440f726.png"
   },
   {
     "name": "High Evolutionary",
@@ -1131,7 +1228,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/6a4213891e.png"
   },
   {
     "name": "Hit-Monkey",
@@ -1141,7 +1239,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/f4dfabb168.png"
   },
   {
     "name": "Howard the Duck",
@@ -1153,7 +1252,8 @@
       "Defenders"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/0233e1085a.png"
   },
   {
     "name": "Hulk",
@@ -1167,7 +1267,8 @@
       "Defenders"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/0b271155bb.png"
   },
   {
     "name": "Hulk (Immortal)",
@@ -1177,7 +1278,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/4fe5a8826f.png"
   },
   {
     "name": "Hulk (Ragnarok)",
@@ -1189,7 +1291,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/b4d1290717.png"
   },
   {
     "name": "Hulkbuster",
@@ -1201,7 +1304,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/7dc0d180e5.png"
   },
   {
     "name": "Hulkling",
@@ -1215,7 +1319,8 @@
       "Young Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/d91df8abbf.png"
   },
   {
     "name": "Human Torch",
@@ -1227,7 +1332,8 @@
       "Fantastic Four"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/7783f1096f.png"
   },
   {
     "name": "Iceman",
@@ -1239,7 +1345,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/aa93f77e0f.png"
   },
   {
     "name": "Ikaris",
@@ -1249,7 +1356,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/e9c8b0b381.png"
   },
   {
     "name": "Imperiosa",
@@ -1259,7 +1367,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/642ce6aef0.png"
   },
   {
     "name": "Invisible Woman",
@@ -1271,7 +1380,8 @@
       "Fantastic Four"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/aa6ec66ffd.png"
   },
   {
     "name": "Iron Fist",
@@ -1283,7 +1393,8 @@
       "Defenders"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/5a6f2fa40e.png"
   },
   {
     "name": "Iron Fist (Immortal)",
@@ -1296,7 +1407,8 @@
       "New Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/9cb8796034.png"
   },
   {
     "name": "Iron Man",
@@ -1308,7 +1420,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/9b5d347f5f.png"
   },
   {
     "name": "Iron Man (Infamous)",
@@ -1318,7 +1431,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/6c19f5c557.png"
   },
   {
     "name": "Iron Man (Infinity War)",
@@ -1330,7 +1444,8 @@
       "Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/9f64b91337.png"
   },
   {
     "name": "Ironheart",
@@ -1342,7 +1457,8 @@
       "Champions"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/6290e109b2.png"
   },
   {
     "name": "Isophyne",
@@ -1352,7 +1468,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Unknown",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/36cf859fa2.png"
   },
   {
     "name": "Jabari Panther",
@@ -1362,7 +1479,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/89cc327f74.png"
   },
   {
     "name": "Jack O'Lantern",
@@ -1372,7 +1490,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/5376c4c9bf.png"
   },
   {
     "name": "Jean Grey",
@@ -1385,7 +1504,8 @@
       "X-Force"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/3f5e95ac4a.png"
   },
   {
     "name": "Jessica Jones",
@@ -1397,7 +1517,8 @@
       "Defenders"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/79eb984ab7.png"
   },
   {
     "name": "Joe Fixit",
@@ -1407,7 +1528,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/6d07c6af9b.png"
   },
   {
     "name": "Jubilee",
@@ -1419,7 +1541,8 @@
       "X-Men"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/288c7f9228.png"
   },
   {
     "name": "Juggernaut",
@@ -1432,7 +1555,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/024fc70d51.png"
   },
   {
     "name": "Kang the Conqueror",
@@ -1444,7 +1568,8 @@
       "Cabal"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": null
   },
   {
     "name": "Karnak",
@@ -1454,7 +1579,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/6559a818e1.png"
   },
   {
     "name": "Karolina Dean",
@@ -1464,7 +1590,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/b0857f7ecf.png"
   },
   {
     "name": "Kate Bishop",
@@ -1477,7 +1604,8 @@
       "Young Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/8e46bbf898.png"
   },
   {
     "name": "Kindred",
@@ -1487,7 +1615,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/cb9b1d6881.png"
   },
   {
     "name": "King Groot",
@@ -1497,7 +1626,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/852f591f9f.png"
   },
   {
     "name": "King Groot (Deathless)",
@@ -1507,7 +1637,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/fc06d8df01.png"
   },
   {
     "name": "Kingpin",
@@ -1519,7 +1650,8 @@
       "Cabal"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/f26b22fc7d.png"
   },
   {
     "name": "Kitty Pryde",
@@ -1531,7 +1663,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/596a07088c.png"
   },
   {
     "name": "Knull",
@@ -1543,7 +1676,8 @@
       "Symbiote"
     ],
     "fighting_style": "Control",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/629b31f481.png"
   },
   {
     "name": "Korg",
@@ -1553,7 +1687,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/72d098a0ae.png"
   },
   {
     "name": "Kraven",
@@ -1566,7 +1701,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/1bb342ea88.png"
   },
   {
     "name": "Kushala",
@@ -1576,7 +1712,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/29a6036d4c.png"
   },
   {
     "name": "Lady Deathstrike",
@@ -1588,7 +1725,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/9a9e9db638.png"
   },
   {
     "name": "Lizard",
@@ -1600,7 +1738,8 @@
       "Sinister Six"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/2f7569e00c.png"
   },
   {
     "name": "Loki",
@@ -1614,7 +1753,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/65f608ef8d.png"
   },
   {
     "name": "Longshot",
@@ -1626,7 +1766,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/d435d4a4a2.png"
   },
   {
     "name": "Luke Cage",
@@ -1641,7 +1782,8 @@
       "Mighty Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/698060fac9.png"
   },
   {
     "name": "Lumatrix",
@@ -1651,7 +1793,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/01d675be51.png"
   },
   {
     "name": "M'Baku",
@@ -1661,7 +1804,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2026
+    "release_year": 2026,
+    "portrait": null
   },
   {
     "name": "Madelyne Pryor",
@@ -1671,7 +1815,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2026
+    "release_year": 2026,
+    "portrait": null
   },
   {
     "name": "Maestro (Cosmic)",
@@ -1681,7 +1826,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/2aaa3e8ae5.png"
   },
   {
     "name": "Magik",
@@ -1694,7 +1840,8 @@
       "S.H.I.E.L.D."
     ],
     "fighting_style": "Control",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/34a00e3c6a.png"
   },
   {
     "name": "Magneto",
@@ -1709,7 +1856,8 @@
       "Cabal"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/7ee438b32b.png"
   },
   {
     "name": "Magneto (House of X)",
@@ -1722,7 +1870,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/8398ac0ea5.png"
   },
   {
     "name": "Man-Thing",
@@ -1734,7 +1883,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/28f17deb1e.png"
   },
   {
     "name": "Mangog",
@@ -1744,7 +1894,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/4953dda69e.png"
   },
   {
     "name": "Mantis",
@@ -1757,7 +1908,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/05b86bc18b.png"
   },
   {
     "name": "Masacre",
@@ -1767,7 +1919,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/e8323b29e6.png"
   },
   {
     "name": "Medusa",
@@ -1777,7 +1930,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/68e064a1e7.png"
   },
   {
     "name": "Mephisto",
@@ -1787,7 +1941,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/e644a03032.png"
   },
   {
     "name": "Mister Fantastic",
@@ -1800,7 +1955,8 @@
       "Illuminati"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/bb526e9c66.png"
   },
   {
     "name": "Mister Negative",
@@ -1810,7 +1966,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/09be9ece94.png"
   },
   {
     "name": "Mister Sinister",
@@ -1820,7 +1977,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/3100c8d486.png"
   },
   {
     "name": "Misty Knight",
@@ -1830,7 +1988,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/a94df89e24.png"
   },
   {
     "name": "Mojo",
@@ -1840,7 +1999,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/c4a5b9a13a.png"
   },
   {
     "name": "Mole Man",
@@ -1850,7 +2010,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/ee6f28bfaf.png"
   },
   {
     "name": "Moon Knight",
@@ -1862,7 +2023,8 @@
       "Defenders"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/6e9ddc60cc.png"
   },
   {
     "name": "Moondragon",
@@ -1874,7 +2036,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/9b64177159.png"
   },
   {
     "name": "Morbius",
@@ -1884,7 +2047,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/f017279cbc.png"
   },
   {
     "name": "Mordo",
@@ -1894,7 +2058,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/41ef02d80e.png"
   },
   {
     "name": "Morningstar",
@@ -1904,7 +2069,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/064b1dd628.png"
   },
   {
     "name": "Ms. Marvel",
@@ -1916,7 +2082,8 @@
       "Kree"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/9f4b5f8417.png"
   },
   {
     "name": "Ms. Marvel (Kamala Khan)",
@@ -1928,7 +2095,8 @@
       "Champions"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/86c6eb85d0.png"
   },
   {
     "name": "Mysterio",
@@ -1940,7 +2108,8 @@
       "Sinister Six"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/2d7100dab1.png"
   },
   {
     "name": "Namor",
@@ -1956,7 +2125,8 @@
       "Cabal"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/34bb099c05.png"
   },
   {
     "name": "Nebula",
@@ -1966,7 +2136,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/9de3deb185.png"
   },
   {
     "name": "Negasonic Teenage Warhead",
@@ -1978,7 +2149,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/bbfe533276.png"
   },
   {
     "name": "Nick Fury",
@@ -1990,7 +2162,8 @@
       "S.H.I.E.L.D."
     ],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/34e2a6b08a.png"
   },
   {
     "name": "Nico Minoru",
@@ -2000,7 +2173,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/aa689ae429.png"
   },
   {
     "name": "Night Thrasher",
@@ -2010,7 +2184,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/d137ceb400.png"
   },
   {
     "name": "Nightcrawler",
@@ -2022,7 +2197,8 @@
       "X-Men"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/ea3d7012fd.png"
   },
   {
     "name": "Nimrod",
@@ -2032,7 +2208,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/d4355b7d5a.png"
   },
   {
     "name": "Northstar",
@@ -2045,7 +2222,8 @@
       "Alpha Flight"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/c440d25fd9.png"
   },
   {
     "name": "Nova",
@@ -2055,7 +2233,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/6e747c4965.png"
   },
   {
     "name": "Odin",
@@ -2065,7 +2244,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/644311b63b.png"
   },
   {
     "name": "Okoye",
@@ -2075,7 +2255,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/4d5e56ca8b.png"
   },
   {
     "name": "Old Man Logan",
@@ -2087,7 +2268,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/f8d4fb740e.png"
   },
   {
     "name": "Omega Red",
@@ -2099,7 +2281,8 @@
       "Brotherhood of Mutants"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/6c46e8f0ad.png"
   },
   {
     "name": "Omega Sentinel",
@@ -2109,7 +2292,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/5c82ceac3a.png"
   },
   {
     "name": "Onslaught",
@@ -2119,7 +2303,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/c58de8415b.png"
   },
   {
     "name": "Patriot",
@@ -2132,7 +2317,8 @@
       "Young Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/fac0490b44.png"
   },
   {
     "name": "Peni Parker",
@@ -2144,7 +2330,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/a5410b56dc.png"
   },
   {
     "name": "Photon",
@@ -2158,7 +2345,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/fd22b656b2.png"
   },
   {
     "name": "Pixie",
@@ -2170,7 +2358,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2026
+    "release_year": 2026,
+    "portrait": null
   },
   {
     "name": "Platinumpool",
@@ -2180,7 +2369,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/39cce16c26.png"
   },
   {
     "name": "Professor X",
@@ -2193,7 +2383,8 @@
       "X-Men"
     ],
     "fighting_style": "Control",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/e22d6f6f46.png"
   },
   {
     "name": "Proxima Midnight",
@@ -2205,7 +2396,8 @@
       "Cabal"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/ea1d9af682.png"
   },
   {
     "name": "Psycho-Man",
@@ -2215,7 +2407,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/6b9888bdca.png"
   },
   {
     "name": "Psylocke",
@@ -2228,7 +2421,8 @@
       "X-Force"
     ],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/c1f0c39476.png"
   },
   {
     "name": "Punisher",
@@ -2241,7 +2435,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/75f45d8971.png"
   },
   {
     "name": "Punisher 2099",
@@ -2254,7 +2449,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/ec426e2006.png"
   },
   {
     "name": "Purgatory",
@@ -2264,7 +2460,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/6ff4735b0f.png"
   },
   {
     "name": "Quake",
@@ -2276,7 +2473,8 @@
       "S.H.I.E.L.D."
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/c64c84c88b.png"
   },
   {
     "name": "Quicksilver",
@@ -2288,7 +2486,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/d387fb173c.png"
   },
   {
     "name": "Red Goblin",
@@ -2300,7 +2499,8 @@
       "Symbiote"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/7a6e410e51.png"
   },
   {
     "name": "Red Guardian",
@@ -2312,7 +2512,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/975cf26172.png"
   },
   {
     "name": "Red Hulk",
@@ -2324,7 +2525,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/e27c2a6bfc.png"
   },
   {
     "name": "Red Skull",
@@ -2337,7 +2539,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/e281d0f744.png"
   },
   {
     "name": "Rintrah",
@@ -2347,7 +2550,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/1dc25f73d2.png"
   },
   {
     "name": "Rocket Raccoon",
@@ -2359,7 +2563,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/9f32fb38aa.png"
   },
   {
     "name": "Rogue",
@@ -2372,7 +2577,8 @@
       "X-Men"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/ae412534db.png"
   },
   {
     "name": "Ronan",
@@ -2384,7 +2590,8 @@
       "Kree"
     ],
     "fighting_style": "Control",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/51a6c83496.png"
   },
   {
     "name": "Ronin",
@@ -2396,7 +2603,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/490aef7029.png"
   },
   {
     "name": "Sabretooth",
@@ -2408,7 +2616,8 @@
       "Brotherhood of Mutants"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/da7d78ce5c.png"
   },
   {
     "name": "Sandman",
@@ -2420,7 +2629,8 @@
       "Sinister Six"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/f40ffcf8a0.png"
   },
   {
     "name": "Sasquatch",
@@ -2432,7 +2642,8 @@
       "Alpha Flight"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/283477b8fb.png"
   },
   {
     "name": "Sauron",
@@ -2444,7 +2655,8 @@
       "Brotherhood of Mutants"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/11f502311e.png"
   },
   {
     "name": "Scarlet Witch",
@@ -2456,7 +2668,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/615739e2b0.png"
   },
   {
     "name": "Scarlet Witch (Classic)",
@@ -2469,7 +2682,8 @@
       "Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/9b7ed41053.png"
   },
   {
     "name": "Scream",
@@ -2481,7 +2695,8 @@
       "Symbiote"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/a8ae3ea8d3.png"
   },
   {
     "name": "Sentinel",
@@ -2491,7 +2706,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/7b71dfec5c.png"
   },
   {
     "name": "Sentry",
@@ -2501,7 +2717,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/abd09f48f7.png"
   },
   {
     "name": "Sersi",
@@ -2511,7 +2728,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/6cf90521a7.png"
   },
   {
     "name": "Shang-Chi",
@@ -2521,7 +2739,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/7daa92b137.png"
   },
   {
     "name": "Shathra",
@@ -2531,7 +2750,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/dcbdaa27a3.png"
   },
   {
     "name": "She-Hulk",
@@ -2544,7 +2764,8 @@
       "Mighty Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/caadd5eb29.png"
   },
   {
     "name": "She-Hulk (Deathless)",
@@ -2554,7 +2775,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/dabfbc6654.png"
   },
   {
     "name": "Shocker",
@@ -2566,7 +2788,8 @@
       "Sinister Six"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/23bd6360fa.png"
   },
   {
     "name": "Shuri",
@@ -2576,7 +2799,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/0b8099a97c.png"
   },
   {
     "name": "Silk",
@@ -2588,7 +2812,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/a2a3a0347f.png"
   },
   {
     "name": "Silver Centurion",
@@ -2598,7 +2823,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/2d86edf41d.png"
   },
   {
     "name": "Silver Samurai",
@@ -2608,7 +2834,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/37640a3f97.png"
   },
   {
     "name": "Silver Surfer",
@@ -2620,7 +2847,8 @@
       "Defenders"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/95b47240c4.png"
   },
   {
     "name": "Solvarch",
@@ -2630,7 +2858,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/c418a4bce3.png"
   },
   {
     "name": "Sorcerer Supreme",
@@ -2640,7 +2869,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/0e6664c7c2.png"
   },
   {
     "name": "Spider-Gwen",
@@ -2652,7 +2882,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/d5bf292340.png"
   },
   {
     "name": "Spider-Ham",
@@ -2664,7 +2895,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/eef5715bc6.png"
   },
   {
     "name": "Spider-Man (Classic)",
@@ -2678,7 +2910,8 @@
       "New Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": null
   },
   {
     "name": "Spider-Man (Miles Morales)",
@@ -2693,7 +2926,8 @@
       "Champions"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/07d4170cb6.png"
   },
   {
     "name": "Spider-Man (Pavitr Prabhakar)",
@@ -2705,7 +2939,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/6a652ed9ed.png"
   },
   {
     "name": "Spider-Man (Stark Enhanced)",
@@ -2717,7 +2952,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/0e8de9c89a.png"
   },
   {
     "name": "Spider-Man (Stealth Suit)",
@@ -2729,7 +2965,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/2da21cdfe3.png"
   },
   {
     "name": "Spider-Man (Supreme)",
@@ -2741,7 +2978,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/050b88b6e6.png"
   },
   {
     "name": "Spider-Man (Symbiote)",
@@ -2754,7 +2992,8 @@
       "Symbiote"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/0199b488cb.png"
   },
   {
     "name": "Spider-Man 2099",
@@ -2766,7 +3005,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/fa7743b048.png"
   },
   {
     "name": "Spider-Punk",
@@ -2778,7 +3018,8 @@
       "Spider-Verse"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/8a17a898be.png"
   },
   {
     "name": "Spider-Slayer (J. Jonah Jameson)",
@@ -2788,7 +3029,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2026
+    "release_year": 2026,
+    "portrait": null
   },
   {
     "name": "Spider-Woman (Jessica Drew)",
@@ -2802,7 +3044,8 @@
       "New Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/359ba9e3e6.png"
   },
   {
     "name": "Spiral",
@@ -2812,7 +3055,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/c978545ade.png"
   },
   {
     "name": "Spot",
@@ -2822,7 +3066,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/6c9d6b8aea.png"
   },
   {
     "name": "Squirrel Girl",
@@ -2835,7 +3080,8 @@
       "New Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/1058236dab.png"
   },
   {
     "name": "Star-Lord",
@@ -2847,7 +3093,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/4d31a8a218.png"
   },
   {
     "name": "Star-Lord (Stellar-Forged)",
@@ -2859,7 +3106,8 @@
       "Guardians of the Galaxy"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2026
+    "release_year": 2026,
+    "portrait": null
   },
   {
     "name": "Storm",
@@ -2872,7 +3120,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/6483b56f2d.png"
   },
   {
     "name": "Storm (Pyramid X)",
@@ -2884,7 +3133,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/0c9d651c1c.png"
   },
   {
     "name": "Stryfe",
@@ -2894,7 +3144,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/fa08b75f4b.png"
   },
   {
     "name": "Sunspot",
@@ -2909,7 +3160,8 @@
       "X-Force"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/8f7ab17764.png"
   },
   {
     "name": "Super-Skrull",
@@ -2921,7 +3173,8 @@
       "Fantastic Four"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/0e31c4ec40.png"
   },
   {
     "name": "Superior Iron Man",
@@ -2933,7 +3186,8 @@
       "Illuminati"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/158da55c32.png"
   },
   {
     "name": "Symbiote Supreme",
@@ -2945,7 +3199,8 @@
       "Symbiote"
     ],
     "fighting_style": "Control",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/4a7286e929.png"
   },
   {
     "name": "Taskmaster",
@@ -2959,7 +3214,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/39cb2d7b1c.png"
   },
   {
     "name": "Terrax",
@@ -2971,7 +3227,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/f30646aada.png"
   },
   {
     "name": "Thanos",
@@ -2983,7 +3240,8 @@
       "Cabal"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/e00bb10306.png"
   },
   {
     "name": "Thanos (Deathless)",
@@ -2993,7 +3251,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/bf499a5fbd.png"
   },
   {
     "name": "The Champion",
@@ -3003,7 +3262,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/63a1526323.png"
   },
   {
     "name": "The Destroyer",
@@ -3013,7 +3273,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/7071ff69e5.png"
   },
   {
     "name": "The Hood",
@@ -3025,7 +3286,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/a25a90f386.png"
   },
   {
     "name": "The Leader",
@@ -3037,7 +3299,8 @@
       "Cabal"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/7ad3dfe45d.png"
   },
   {
     "name": "The Maker",
@@ -3050,7 +3313,8 @@
       "Cabal"
     ],
     "fighting_style": "Control",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": "/portraits/765d242ba5.png"
   },
   {
     "name": "The Overseer",
@@ -3060,7 +3324,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Unknown",
-    "release_year": 2021
+    "release_year": 2021,
+    "portrait": "/portraits/97653b14ce.png"
   },
   {
     "name": "The Serpent",
@@ -3070,7 +3335,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/201ff2b380.png"
   },
   {
     "name": "Thing",
@@ -3080,7 +3346,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/dfca0e7187.png"
   },
   {
     "name": "Thor",
@@ -3092,7 +3359,8 @@
       "Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/a92da8d9eb.png"
   },
   {
     "name": "Thor (Jane Foster)",
@@ -3105,7 +3373,8 @@
       "New Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/a91c108d17.png"
   },
   {
     "name": "Thor (Ragnarok)",
@@ -3117,7 +3386,8 @@
       "Avengers"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/d93ffb0b59.png"
   },
   {
     "name": "Tigra",
@@ -3127,7 +3397,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/f0acae4480.png"
   },
   {
     "name": "Titania",
@@ -3137,7 +3408,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/533aa41bee.png"
   },
   {
     "name": "Toad",
@@ -3149,7 +3421,8 @@
       "Brotherhood of Mutants"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/c7ccfc1618.png"
   },
   {
     "name": "Ultron",
@@ -3159,7 +3432,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/548e90a992.png"
   },
   {
     "name": "Ultron (Classic)",
@@ -3169,7 +3443,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/cc0f7f6627.png"
   },
   {
     "name": "Unstoppable Colossus",
@@ -3181,7 +3456,8 @@
       "X-Men"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/ef3887ea2d.png"
   },
   {
     "name": "Valkyrie",
@@ -3193,7 +3469,8 @@
       "Defenders"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/0af3f80a54.png"
   },
   {
     "name": "Venom",
@@ -3205,7 +3482,8 @@
       "Symbiote"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/071dbd4165.png"
   },
   {
     "name": "Venom the Duck",
@@ -3217,7 +3495,8 @@
       "Symbiote"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/892d55ff3a.png"
   },
   {
     "name": "Venompool",
@@ -3229,7 +3508,8 @@
       "Symbiote"
     ],
     "fighting_style": "Control",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/9ed4e2fe14.png"
   },
   {
     "name": "Vision",
@@ -3241,7 +3521,8 @@
       "Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/3897c35e2e.png"
   },
   {
     "name": "Vision (Aarkus)",
@@ -3251,7 +3532,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/5cd19885fd.png"
   },
   {
     "name": "Vision (Age of Ultron)",
@@ -3263,7 +3545,8 @@
       "Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/0f93aea925.png"
   },
   {
     "name": "Vision (Deathless)",
@@ -3273,7 +3556,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/32a8cb6405.png"
   },
   {
     "name": "Void",
@@ -3283,7 +3567,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/81ceb48a97.png"
   },
   {
     "name": "Vox",
@@ -3295,7 +3580,8 @@
       "Kree"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/baf069ea8c.png"
   },
   {
     "name": "Vulture",
@@ -3307,7 +3593,8 @@
       "Sinister Six"
     ],
     "fighting_style": "Control",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/d1909449b5.png"
   },
   {
     "name": "War Machine",
@@ -3317,7 +3604,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2015
+    "release_year": 2015,
+    "portrait": "/portraits/afd7681b6a.png"
   },
   {
     "name": "Warlock",
@@ -3327,7 +3615,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2019
+    "release_year": 2019,
+    "portrait": "/portraits/21305b754e.png"
   },
   {
     "name": "Wasp",
@@ -3337,7 +3626,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2018
+    "release_year": 2018,
+    "portrait": "/portraits/5a2121f354.png"
   },
   {
     "name": "Werewolf By Night",
@@ -3347,7 +3637,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2023
+    "release_year": 2023,
+    "portrait": "/portraits/0e47210708.png"
   },
   {
     "name": "White Tiger",
@@ -3361,7 +3652,8 @@
       "New Avengers"
     ],
     "fighting_style": "Control",
-    "release_year": 2024
+    "release_year": 2024,
+    "portrait": "/portraits/86e859045a.png"
   },
   {
     "name": "Wiccan",
@@ -3375,7 +3667,8 @@
       "Young Avengers"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/7390611743.png"
   },
   {
     "name": "Winter Soldier",
@@ -3387,7 +3680,8 @@
       "Thunderbolts"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/ce21822b59.png"
   },
   {
     "name": "Wolverine",
@@ -3402,7 +3696,8 @@
       "X-Force"
     ],
     "fighting_style": "Defensive",
-    "release_year": 2014
+    "release_year": 2014,
+    "portrait": "/portraits/d251befceb.png"
   },
   {
     "name": "Wolverine (Weapon X)",
@@ -3412,7 +3707,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Offensive",
-    "release_year": 2020
+    "release_year": 2020,
+    "portrait": "/portraits/788b1b9bcc.png"
   },
   {
     "name": "Wolverine (X-23)",
@@ -3425,7 +3721,8 @@
       "X-Men"
     ],
     "fighting_style": "Offensive",
-    "release_year": 2016
+    "release_year": 2016,
+    "portrait": "/portraits/f3ecb05811.png"
   },
   {
     "name": "Wong",
@@ -3435,7 +3732,8 @@
     "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": 2022
+    "release_year": 2022,
+    "portrait": "/portraits/e61848e696.png"
   },
   {
     "name": "Yelena Belova",
@@ -3445,7 +3743,8 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2025
+    "release_year": 2025,
+    "portrait": null
   },
   {
     "name": "Yellowjacket",
@@ -3455,7 +3754,8 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": null
+    "release_year": null,
+    "portrait": "/portraits/a359006ce8.png"
   },
   {
     "name": "Yondu",
@@ -3465,6 +3765,7 @@
     "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
-    "release_year": 2017
+    "release_year": 2017,
+    "portrait": "/portraits/2507f266e6.png"
   }
 ]
