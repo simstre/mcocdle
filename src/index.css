@@ -334,7 +334,7 @@ header {
 
 .grid-header {
   display: grid;
-  grid-template-columns: 1.8fr repeat(7, 1fr);
+  grid-template-columns: 70px repeat(7, 1fr);
   gap: 6px;
   margin-bottom: 6px;
   min-width: 780px;
@@ -368,7 +368,7 @@ header {
 /* ===== Guess Row ===== */
 .guess-row {
   display: grid;
-  grid-template-columns: 1.8fr repeat(7, 1fr);
+  grid-template-columns: 70px repeat(7, 1fr);
   gap: 6px;
   perspective: 600px;
 }
@@ -1094,8 +1094,8 @@ header {
   .cell-icon { font-size: 0.85rem; }
   .champ-portrait-wrap { width: 40px; height: 40px; }
   .champ-portrait-wrap > img, .champ-portrait-wrap > div:first-child { width: 40px; height: 40px; }
-  .grid-header { grid-template-columns: 1.5fr repeat(7, 1fr); gap: 4px; min-width: 680px; }
-  .guess-row { grid-template-columns: 1.5fr repeat(7, 1fr); gap: 4px; }
+  .grid-header { grid-template-columns: 60px repeat(7, 1fr); gap: 4px; min-width: 680px; }
+  .guess-row { grid-template-columns: 60px repeat(7, 1fr); gap: 4px; }
   .guesses-list { gap: 4px; min-width: 680px; }
   .daily-champion-bar { font-size: 0.78rem; padding: 8px 14px; }
   .win-banner { padding: 12px 16px; }
