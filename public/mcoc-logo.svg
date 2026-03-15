@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#DAA520"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="redBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CC0000"/>
+      <stop offset="100%" stop-color="#FF0000"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- MARVEL badge -->
+  <rect x="225" y="8" width="150" height="32" rx="3" fill="url(#redBg)" filter="url(#shadow)"/>
+  <text x="300" y="31" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-size="22" font-weight="900" fill="white" letter-spacing="4">MARVEL</text>
+
+  <!-- CONTEST OF -->
+  <text x="300" y="90" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-size="52" font-weight="900" fill="url(#gold)" letter-spacing="3" filter="url(#shadow)">CONTEST OF</text>
+
+  <!-- CHAMPIONS -->
+  <text x="300" y="160" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-size="72" font-weight="900" fill="url(#gold)" letter-spacing="4" filter="url(#shadow)">CHAMPIONS</text>
+
+  <!-- Subtle outline on CHAMPIONS -->
+  <text x="300" y="160" text-anchor="middle" font-family="'Arial Black', 'Impact', sans-serif" font-size="72" font-weight="900" fill="none" stroke="#8B6914" stroke-width="0.5" letter-spacing="4">CHAMPIONS</text>
+</svg>

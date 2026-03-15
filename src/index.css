@@ -70,44 +70,108 @@ html, body, #root {
 /* ===== Header ===== */
 header {
   width: 100%;
-  padding: 12px 0 16px;
+  padding: 12px 0 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   position: relative;
 }
 
 .header-logo {
-  height: 60px;
+  height: 70px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 20px rgba(160, 80, 255, 0.3));
-}
-
-.header-subtitle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 4px;
+  filter: drop-shadow(0 0 16px rgba(240, 192, 64, 0.25));
 }
 
 .dle-badge {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 4px;
+  font-size: 1.8rem;
+  letter-spacing: 6px;
   background: linear-gradient(135deg, var(--marvel-gold), #ff8c00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-transform: uppercase;
+  margin-top: 2px;
 }
 
-.header-tagline {
-  font-size: 0.65rem;
-  color: var(--text-muted);
-  letter-spacing: 3px;
+/* ===== Guess Prompt ===== */
+.guess-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 440px;
+  margin-bottom: 8px;
+  padding: 0 2px;
+}
+
+.prompt-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.guess-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.guess-count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--marvel-gold);
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.guess-count.low {
+  color: var(--marvel-red);
+  animation: countPulse 0.8s ease-in-out infinite;
+}
+
+@keyframes countPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.guess-total {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+/* ===== Lose Banner ===== */
+.lose-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(230, 36, 41, 0.12), rgba(230, 36, 41, 0.04));
+  border: 1px solid rgba(230, 36, 41, 0.25);
+  border-radius: 16px;
+  padding: 16px 24px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+  max-width: 440px;
+  width: 100%;
+}
+
+.lose-label {
+  font-size: 0.75rem;
+  color: var(--marvel-red);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.lose-detail {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
 }
 
 .help-btn {
@@ -812,7 +876,7 @@ header {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .header-logo { height: 44px; }
+  .header-logo { height: 50px; }
   .dle-badge { font-size: 1.2rem; }
   .header-cell { font-size: 0.55rem; padding: 8px 3px; letter-spacing: 1px; }
   .cell-text { font-size: 0.7rem; }
@@ -831,7 +895,7 @@ header {
 
 @media (max-width: 480px) {
   .app { padding: 0 8px 40px; }
-  .header-logo { height: 36px; }
+  .header-logo { height: 40px; }
   .dle-badge { font-size: 1rem; letter-spacing: 2px; }
   .header-tagline { font-size: 0.55rem; letter-spacing: 2px; }
 }

@@ -5,7 +5,7 @@ import HelpModal from './HelpModal'
 import WinModal from './WinModal'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
-const COLUMN_ICONS = ['', '', '', '', '', '', '', '']
+const MAX_GUESSES = 10
 
 function getDailyChampion(champions) {
   const today = new Date()
@@ -40,12 +40,15 @@ export default function App() {
   const [target, setTarget] = useState(null)
   const [guesses, setGuesses] = useState([])
   const [won, setWon] = useState(false)
+  const [lost, setLost] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
   const [showWin, setShowWin] = useState(false)
   const [dailyInfo, setDailyInfo] = useState(null)
   const [playerName, setPlayerName] = useState(getDisplayName)
 
-  // Fetch daily info from API
+  const guessesLeft = MAX_GUESSES - guesses.length
+  const gameOver = won || lost
+
   useEffect(() => {
     fetch('/api/daily')
       .then(r => r.json())
@@ -70,6 +73,8 @@ export default function App() {
           setGuesses(restored)
           if (restored.some(c => c.name === daily.name)) {
             setWon(true)
+          } else if (restored.length >= MAX_GUESSES) {
+            setLost(true)
           }
         }
 
@@ -103,7 +108,7 @@ export default function App() {
   }, [])
 
   const handleGuess = useCallback((champion) => {
-    if (won || guesses.some(g => g.name === champion.name)) return
+    if (gameOver || guesses.some(g => g.name === champion.name)) return
 
     const newGuesses = [champion, ...guesses]
     setGuesses(newGuesses)
@@ -113,8 +118,10 @@ export default function App() {
       setWon(true)
       setShowWin(true)
       submitSolve(newGuesses.length)
+    } else if (newGuesses.length >= MAX_GUESSES) {
+      setLost(true)
     }
-  }, [won, guesses, target, submitSolve])
+  }, [gameOver, guesses, target, submitSolve])
 
   const handleSetName = useCallback((name) => {
     setPlayerName(name)
@@ -124,7 +131,7 @@ export default function App() {
   if (!target) {
     return (
       <div className="loading-screen">
-        <img src="/mcoc-logo.png" alt="MCOC" className="loading-logo" />
+        <img src="/mcoc-logo.svg" alt="MCOC" className="loading-logo" />
         <div className="loading-text">Loading champions...</div>
       </div>
     )
@@ -135,11 +142,8 @@ export default function App() {
       <div className="bg-overlay" />
 
       <header>
-        <img src="/mcoc-logo.png" alt="Marvel Contest of Champions" className="header-logo" />
-        <div className="header-subtitle">
-          <span className="dle-badge">dle</span>
-          <span className="header-tagline">Guess Today's Champion</span>
-        </div>
+        <img src="/mcoc-logo.svg" alt="Marvel Contest of Champions" className="header-logo" />
+        <span className="dle-badge">MCOCdle</span>
         <button className="help-btn" onClick={() => setShowHelp(true)} title="How to play">?</button>
       </header>
 
@@ -156,6 +160,7 @@ export default function App() {
         </div>
       )}
 
+      {/* Game area */}
       {won ? (
         <div className="win-banner">
           <div className="win-portrait-wrap">
@@ -164,15 +169,35 @@ export default function App() {
           <div className="win-info">
             <div className="win-label">You found it!</div>
             <div className="win-champion">{target.name}</div>
-            <div className="win-stats">{guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}</div>
+            <div className="win-stats">{guesses.length} / {MAX_GUESSES} guesses</div>
+          </div>
+        </div>
+      ) : lost ? (
+        <div className="lose-banner">
+          <div className="win-portrait-wrap">
+            {target.portrait && <img src={target.portrait} alt={target.name} className="win-portrait" />}
+          </div>
+          <div className="win-info">
+            <div className="lose-label">Out of guesses!</div>
+            <div className="win-champion">{target.name}</div>
+            <div className="lose-detail">Come back tomorrow for a new champion</div>
           </div>
         </div>
       ) : (
-        <SearchInput
-          champions={champions}
-          guesses={guesses}
-          onGuess={handleGuess}
-        />
+        <>
+          <div className="guess-prompt">
+            <span className="prompt-text">Guess today's champion</span>
+            <span className="guess-counter">
+              <span className={`guess-count ${guessesLeft <= 3 ? 'low' : ''}`}>{guessesLeft}</span>
+              <span className="guess-total">/ {MAX_GUESSES} remaining</span>
+            </span>
+          </div>
+          <SearchInput
+            champions={champions}
+            guesses={guesses}
+            onGuess={handleGuess}
+          />
+        </>
       )}
 
       <div className="grid-container">
@@ -190,11 +215,12 @@ export default function App() {
         </div>
       </div>
 
-      {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
+      {showHelp && <HelpModal maxGuesses={MAX_GUESSES} onClose={() => setShowHelp(false)} />}
       {showWin && (
         <WinModal
           target={target}
           guesses={guesses.length}
+          maxGuesses={MAX_GUESSES}
           dailyInfo={dailyInfo}
           playerName={playerName}
           onSetName={handleSetName}

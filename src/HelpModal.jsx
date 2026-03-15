@@ -1,10 +1,10 @@
-export default function HelpModal({ onClose }) {
+export default function HelpModal({ maxGuesses, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
         <h2>How to Play</h2>
-        <p>Guess the daily MCOC champion! Each guess reveals how your pick compares to the mystery champion.</p>
+        <p>Guess the daily MCOC champion! You have <strong>{maxGuesses} tries</strong> each day. Each guess reveals how your pick compares to the mystery champion.</p>
 
         <div className="help-colors">
           <div className="help-item">
