@@ -44,6 +44,7 @@ export default function App() {
   const [showWin, setShowWin] = useState(false)
   const [dailyInfo, setDailyInfo] = useState(null)
   const [playerName, setPlayerName] = useState(getDisplayName)
+  const [revealing, setRevealing] = useState(false)
   const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
 
   useEffect(() => {
@@ -109,18 +110,27 @@ export default function App() {
   }, [])
 
   const handleGuess = useCallback((champion) => {
-    if (won || guesses.some(g => g.name === champion.name)) return
+    if (won || revealing || guesses.some(g => g.name === champion.name)) return
 
     const newGuesses = [champion, ...guesses]
     setGuesses(newGuesses)
+    setRevealing(true)
     localStorage.setItem(getStorageKey(), JSON.stringify(newGuesses.map(g => g.name)))
 
     if (champion.name === target.name) {
+      // Win is shown after reveal animation finishes (via onRevealDone)
+    }
+  }, [won, revealing, guesses, target])
+
+  const handleRevealDone = useCallback(() => {
+    setRevealing(false)
+    // Check if the latest guess was correct
+    if (guesses.length > 0 && guesses[0].name === target?.name) {
       setWon(true)
       setShowWin(true)
-      submitSolve(newGuesses.length)
+      submitSolve(guesses.length)
     }
-  }, [won, guesses, target, submitSolve])
+  }, [guesses, target, submitSolve])
 
   const handleSetName = useCallback((name) => {
     setPlayerName(name)
@@ -216,6 +226,7 @@ export default function App() {
             champions={champions}
             guesses={guesses}
             onGuess={handleGuess}
+            disabled={revealing}
           />
         </>
       )}
@@ -230,7 +241,13 @@ export default function App() {
         </div>
         <div className="guesses-list">
           {guesses.map((guess, i) => (
-            <GuessRow key={guess.name} guess={guess} target={target} isNew={i === 0} />
+            <GuessRow
+              key={guess.name}
+              guess={guess}
+              target={target}
+              isNew={i === 0 && revealing}
+              onRevealDone={i === 0 ? handleRevealDone : undefined}
+            />
           ))}
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 
 const CLASS_COLORS = {
   Cosmic: '#3b82f6',
@@ -47,7 +47,27 @@ function compareSize(guessSize, targetSize) {
   return { status: 'wrong', arrow: gi > ti ? 'down' : 'up' }
 }
 
-export default function GuessRow({ guess, target, isNew }) {
+export default function GuessRow({ guess, target, isNew, onRevealDone }) {
+  const [phase, setPhase] = useState(isNew ? 'loading' : 'done')
+  // 'loading' -> show shimmer bar (anticipation)
+  // 'revealing' -> cells flip in one by one
+  // 'done' -> static display
+
+  const isCorrect = guess.name === target.name
+
+  useEffect(() => {
+    if (!isNew) return
+    // Phase 1: shimmer bar for anticipation
+    const t1 = setTimeout(() => setPhase('revealing'), 800)
+    // Phase 2: after all cells revealed, mark done
+    const totalRevealTime = 800 + 8 * 120 + 450 // shimmer + stagger + last animation
+    const t2 = setTimeout(() => {
+      setPhase('done')
+      onRevealDone?.()
+    }, totalRevealTime)
+    return () => { clearTimeout(t1); clearTimeout(t2) }
+  }, [isNew, onRevealDone])
+
   const cells = useMemo(() => {
     const nameStatus = compareValue(guess.name, target.name)
     const classStatus = compareValue(guess.class, target.class)
@@ -81,26 +101,40 @@ export default function GuessRow({ guess, target, isNew }) {
     ]
   }, [guess, target])
 
+  // Phase: loading shimmer
+  if (phase === 'loading') {
+    return (
+      <div className={`guess-row-shimmer ${isCorrect ? 'shimmer-correct' : 'shimmer-wrong'}`}>
+        <div className="shimmer-bar" />
+      </div>
+    )
+  }
+
+  const animate = phase === 'revealing'
+
   return (
-    <div className={`guess-row ${isNew ? 'guess-row-new' : ''}`}>
+    <div className={`guess-row ${isCorrect && animate ? 'guess-row-correct' : ''}`}>
       {cells.map((cell, i) => {
-        const cellDelay = isNew ? `${i * 0.08}s` : '0s'
+        const cellDelay = animate ? `${i * 0.12}s` : '0s'
+        const animClass = animate
+          ? (isCorrect ? 'cell-anim-correct' : 'cell-anim-wrong')
+          : ''
 
         if (cell.type === 'champion') {
           return (
             <div
               key={i}
-              className={`cell cell-champion cell-${cell.status} ${isNew ? 'cell-animate' : ''}`}
+              className={`cell cell-champion cell-neutral ${animClass}`}
               style={{ animationDelay: cellDelay }}
             >
               <div className="champ-portrait-wrap">
                 {cell.portrait ? (
-                  <img src={cell.portrait} alt="" className="champ-portrait" />
+                  <img src={cell.portrait} alt={cell.value} className="champ-portrait" />
                 ) : (
                   <div className={`champ-portrait-placeholder ${cell.champClass?.toLowerCase()}`} />
                 )}
+                <span className="champ-tooltip">{cell.value}</span>
               </div>
-              <span className="cell-text champ-name">{cell.value}</span>
             </div>
           )
         }
@@ -108,7 +142,7 @@ export default function GuessRow({ guess, target, isNew }) {
         return (
           <div
             key={i}
-            className={`cell cell-${cell.status} ${isNew ? 'cell-animate' : ''}`}
+            className={`cell cell-${cell.status} ${animClass}`}
             style={{
               animationDelay: cellDelay,
               ...(cell.accentColor ? { '--cell-accent': cell.accentColor } : {}),

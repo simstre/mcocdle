@@ -373,24 +373,119 @@ header {
   perspective: 600px;
 }
 
-/* Cell-by-cell staggered animation for new guesses */
-.cell-animate {
-  animation: cellFlipIn 0.45s ease-out backwards;
+/* ===== Shimmer loading bar (anticipation before reveal) ===== */
+.guess-row-shimmer {
+  min-height: 58px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(30, 30, 60, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-@keyframes cellFlipIn {
+.shimmer-bar {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(160, 100, 255, 0.15) 40%,
+    rgba(160, 100, 255, 0.3) 50%,
+    rgba(160, 100, 255, 0.15) 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 0.8s ease-in-out infinite;
+}
+
+.shimmer-correct .shimmer-bar {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(22, 163, 74, 0.2) 40%,
+    rgba(22, 163, 74, 0.45) 50%,
+    rgba(22, 163, 74, 0.2) 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 0.6s ease-in-out infinite;
+}
+
+.shimmer-wrong .shimmer-bar {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(230, 36, 41, 0.15) 40%,
+    rgba(230, 36, 41, 0.35) 50%,
+    rgba(230, 36, 41, 0.15) 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ===== Cell reveal animations ===== */
+/* Wrong guess: sharp drop-in with a subtle shake */
+.cell-anim-wrong {
+  animation: cellDropWrong 0.4s ease-out backwards;
+}
+
+@keyframes cellDropWrong {
   0% {
     opacity: 0;
     transform: rotateX(90deg) scale(0.8);
   }
-  60% {
+  55% {
     opacity: 1;
-    transform: rotateX(-8deg) scale(1.02);
+    transform: rotateX(-5deg) scale(1.01);
+  }
+  70% {
+    transform: translateX(-3px);
+  }
+  85% {
+    transform: translateX(3px);
   }
   100% {
     opacity: 1;
-    transform: rotateX(0deg) scale(1);
+    transform: rotateX(0deg) scale(1) translateX(0);
   }
+}
+
+/* Correct guess: bouncy triumphant entrance */
+.cell-anim-correct {
+  animation: cellBounceCorrect 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) backwards;
+}
+
+@keyframes cellBounceCorrect {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotateY(180deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15) rotateY(10deg);
+  }
+  70% {
+    transform: scale(0.95) rotateY(-5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+/* Correct guess row gets a glow pulse after all cells revealed */
+.guess-row-correct {
+  animation: rowGlow 1.5s ease-in-out 1.2s;
+}
+
+@keyframes rowGlow {
+  0%, 100% { filter: none; }
+  50% { filter: drop-shadow(0 0 12px rgba(22, 163, 74, 0.5)); }
 }
 
 .cell {
@@ -462,28 +557,42 @@ header {
   box-shadow: 0 0 8px rgba(230, 36, 41, 0.15), inset 0 1px 0 rgba(255,255,255,0.06);
 }
 
-/* Champion cell (first column) */
+/* Champion cell (first column) — portrait only, name on hover */
 .cell-champion {
-  flex-direction: row;
-  gap: 10px;
-  justify-content: flex-start;
-  padding-left: 8px;
+  justify-content: center;
+  padding: 4px;
+}
+
+.cell-neutral {
+  background: rgba(25, 25, 55, 0.85);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 .champ-portrait-wrap {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: visible;
   flex-shrink: 0;
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  cursor: pointer;
+}
+
+.champ-portrait-wrap > img,
+.champ-portrait-wrap > div:first-child {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .champ-portrait {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .champ-portrait-placeholder {
@@ -498,9 +607,41 @@ header {
 .champ-portrait-placeholder.mystic { background: var(--mystic); }
 .champ-portrait-placeholder.skill { background: var(--skill); }
 
-.champ-name {
-  font-size: 0.82rem;
-  text-align: left;
+/* Tooltip name on hover/tap */
+.champ-tooltip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: rgba(10, 10, 30, 0.95);
+  border: 1px solid rgba(160, 100, 255, 0.3);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.15s;
+  z-index: 20;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.champ-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: rgba(10, 10, 30, 0.95);
+}
+
+.champ-portrait-wrap:hover .champ-tooltip,
+.champ-portrait-wrap:active .champ-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
 
 /* ===== Win Banner (inline) ===== */
@@ -951,8 +1092,8 @@ header {
   .cell-text { font-size: 0.7rem; }
   .cell { padding: 6px 4px; min-height: 48px; border-radius: 8px; }
   .cell-icon { font-size: 0.85rem; }
-  .champ-portrait-wrap { width: 32px; height: 32px; border-radius: 6px; }
-  .champ-name { font-size: 0.72rem; }
+  .champ-portrait-wrap { width: 40px; height: 40px; }
+  .champ-portrait-wrap > img, .champ-portrait-wrap > div:first-child { width: 40px; height: 40px; }
   .grid-header { grid-template-columns: 1.5fr repeat(7, 1fr); gap: 4px; min-width: 680px; }
   .guess-row { grid-template-columns: 1.5fr repeat(7, 1fr); gap: 4px; }
   .guesses-list { gap: 4px; min-width: 680px; }

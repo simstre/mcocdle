@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 
-export default function SearchInput({ champions, guesses, onGuess }) {
+export default function SearchInput({ champions, guesses, onGuess, disabled }) {
   const [query, setQuery] = useState('')
   const [suggestions, setSuggestions] = useState([])
   const [selectedIdx, setSelectedIdx] = useState(-1)
@@ -69,6 +69,7 @@ export default function SearchInput({ champions, guesses, onGuess }) {
           onKeyDown={handleKeyDown}
           autoComplete="off"
           autoFocus
+          disabled={disabled}
         />
       </div>
       {suggestions.length > 0 && (
