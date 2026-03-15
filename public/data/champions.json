@@ -1,0 +1,3470 @@
+[
+  {
+    "name": "Abomination",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Abomination (Immortal)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Absorbing Man",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Air-Walker",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2020
+  },
+  {
+    "name": "America Chavez",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Thunderbolts",
+      "Avengers",
+      "Young Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Angela",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Annihilus",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Ant-Man",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Ant-Man (Future)",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2023
+  },
+  {
+    "name": "Apocalypse",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Arcade",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Archangel",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Arnim Zola",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Hydra",
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2025
+  },
+  {
+    "name": "Attuma",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Baron Zemo",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Thunderbolts",
+      "Hydra"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2023
+  },
+  {
+    "name": "Bastion",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Beast",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "Illuminati"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Beta Ray Bill",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Bishop",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Black Bolt",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Illuminati"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Black Cat",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Black Panther",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Illuminati",
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Black Panther (Civil War)",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Black Widow",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "S.H.I.E.L.D.",
+      "Champions",
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Black Widow (Claire Voyant)",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2019
+  },
+  {
+    "name": "Black Widow (Deadly Origin)",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "S.H.I.E.L.D.",
+      "Champions",
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Blade",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Mighty Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Blue Marvel",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Mighty Avengers",
+      "Defenders"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2026
+  },
+  {
+    "name": "Bullseye",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Cable",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Captain America",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "S.H.I.E.L.D."
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Captain America (Infinity War)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Captain America (Sam Wilson)",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Mighty Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2022
+  },
+  {
+    "name": "Captain America (WWII)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "S.H.I.E.L.D."
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Captain Britain",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2022
+  },
+  {
+    "name": "Captain Marvel",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Kree"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Captain Marvel (Classic)",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Kree"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Carnage",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Cassandra Nova",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Unknown",
+    "release_year": 2025
+  },
+  {
+    "name": "Cassie Lang",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Young Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Chee'ilth",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Civil Warrior",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Colossus",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Corvus Glaive",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Cosmic Ghost Rider",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Count Nefaria",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Crossbones",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Hydra",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Cull Obsidian",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Unknown",
+    "release_year": 2019
+  },
+  {
+    "name": "Cyclops (Blue Team)",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Cyclops (New Xavier School)",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Dani Moonstar",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Daredevil (Classic)",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Daredevil (Hell's Kitchen)",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Dark Phoenix",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Darkhawk",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Dazzler",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Deadpool",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [
+      "X-Men",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Deadpool (X-Force)",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Diablo",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2019
+  },
+  {
+    "name": "Doctor Doom",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Doctor Octopus",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "Doctor Strange",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Illuminati",
+      "Defenders"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2015
+  },
+  {
+    "name": "Doctor Voodoo",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "S.H.I.E.L.D."
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Domino",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Dormammu",
+    "class": "Mystic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "Dragon Man",
+    "class": "Mystic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Drax",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Dust",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "Champions"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2024
+  },
+  {
+    "name": "Ebony Maw",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Electro",
+    "class": "Science",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Elektra",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Elsa Bloodstone",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Emma Frost",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Enchantress",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2024
+  },
+  {
+    "name": "Falcon",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Falcon (Joaqu\u00edn Torres)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Galan",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "L",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Gambit",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Gamora",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Gentle",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Ghost",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2018
+  },
+  {
+    "name": "Ghost Rider",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders",
+      "Thunderbolts",
+      "Champions"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Gladiator",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Goldpool",
+    "class": "Mutant",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Gorr",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Grandmaster",
+    "class": "Unknown",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Unknown",
+    "release_year": null
+  },
+  {
+    "name": "Green Goblin",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six",
+      "Cabal"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Groot",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Guillotine",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2015
+  },
+  {
+    "name": "Guillotine (Deathless)",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2023
+  },
+  {
+    "name": "Guillotine 2099",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "S",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Gwenpool",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Havok",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Hawkeye",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "S.H.I.E.L.D.",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Heimdall",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2018
+  },
+  {
+    "name": "Hela",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Hercules",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "High Evolutionary",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Hit-Monkey",
+    "class": "Skill",
+    "gender": "Other",
+    "size": "S",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Howard the Duck",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Hulk",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [
+      "Illuminati",
+      "Avengers",
+      "Defenders"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Hulk (Immortal)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Hulk (Ragnarok)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Hulkbuster",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Hulkling",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Kree",
+      "Avengers",
+      "Young Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Human Torch",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Fantastic Four"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Iceman",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Ikaris",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Imperiosa",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2025
+  },
+  {
+    "name": "Invisible Woman",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Fantastic Four"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Iron Fist",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Iron Fist (Immortal)",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "New Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Iron Man",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Iron Man (Infamous)",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Iron Man (Infinity War)",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2018
+  },
+  {
+    "name": "Ironheart",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Champions"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Isophyne",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Unknown",
+    "release_year": 2024
+  },
+  {
+    "name": "Jabari Panther",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Jack O'Lantern",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Jean Grey",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Jessica Jones",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Joe Fixit",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Jubilee",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Juggernaut",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Brotherhood of Mutants",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Kang the Conqueror",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Karnak",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Karolina Dean",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Kate Bishop",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Young Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Kindred",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2023
+  },
+  {
+    "name": "King Groot",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "King Groot (Deathless)",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Kingpin",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Kitty Pryde",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Knull",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2021
+  },
+  {
+    "name": "Korg",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Kraven",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Kushala",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Lady Deathstrike",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Lizard",
+    "class": "Science",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Loki",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Avengers",
+      "Young Avengers",
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Longshot",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Luke Cage",
+    "class": "Science",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders",
+      "Thunderbolts",
+      "Avengers",
+      "Mighty Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Lumatrix",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "M'Baku",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2026
+  },
+  {
+    "name": "Madelyne Pryor",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2026
+  },
+  {
+    "name": "Maestro (Cosmic)",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Magik",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "S.H.I.E.L.D."
+    ],
+    "fighting_style": "Control",
+    "release_year": 2015
+  },
+  {
+    "name": "Magneto",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Brotherhood of Mutants",
+      "Illuminati",
+      "X-Force",
+      "Cabal"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Magneto (House of X)",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Brotherhood of Mutants",
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Man-Thing",
+    "class": "Mystic",
+    "gender": "Other",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Mangog",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2021
+  },
+  {
+    "name": "Mantis",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Masacre",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Medusa",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Mephisto",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Mister Fantastic",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Fantastic Four",
+      "Illuminati"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Mister Negative",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Mister Sinister",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2019
+  },
+  {
+    "name": "Misty Knight",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Mojo",
+    "class": "Mystic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2020
+  },
+  {
+    "name": "Mole Man",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Moon Knight",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Moondragon",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Morbius",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Mordo",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Morningstar",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Ms. Marvel",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Kree"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Ms. Marvel (Kamala Khan)",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Champions"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Mysterio",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Namor",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "Illuminati",
+      "Avengers",
+      "Defenders",
+      "Cabal"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Nebula",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Negasonic Teenage Warhead",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Nick Fury",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "S.H.I.E.L.D."
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Nico Minoru",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2025
+  },
+  {
+    "name": "Night Thrasher",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Nightcrawler",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Nimrod",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Northstar",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "Alpha Flight"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Nova",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Odin",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Okoye",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Old Man Logan",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Omega Red",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Brotherhood of Mutants"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Omega Sentinel",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Onslaught",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Patriot",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Young Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Peni Parker",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Photon",
+    "class": "Science",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Mighty Avengers",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Pixie",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2026
+  },
+  {
+    "name": "Platinumpool",
+    "class": "Mutant",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Professor X",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Brotherhood of Mutants",
+      "X-Men"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2020
+  },
+  {
+    "name": "Proxima Midnight",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Unknown",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Psycho-Man",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2021
+  },
+  {
+    "name": "Psylocke",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "Punisher",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders",
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Punisher 2099",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Hydra",
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "Purgatory",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Quake",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "S.H.I.E.L.D."
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Quicksilver",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Red Goblin",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Red Guardian",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Red Hulk",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Red Skull",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Hydra",
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2018
+  },
+  {
+    "name": "Rintrah",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Rocket Raccoon",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Rogue",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Brotherhood of Mutants",
+      "X-Men"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Ronan",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Kree"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2014
+  },
+  {
+    "name": "Ronin",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Sabretooth",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Unknown",
+    "affiliations": [
+      "Brotherhood of Mutants"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Sandman",
+    "class": "Science",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Sasquatch",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [
+      "Alpha Flight"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Sauron",
+    "class": "Mutant",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Brotherhood of Mutants"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Scarlet Witch",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Scarlet Witch (Classic)",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Brotherhood of Mutants",
+      "Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2014
+  },
+  {
+    "name": "Scream",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Sentinel",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Sentry",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Sersi",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Shang-Chi",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Shathra",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "She-Hulk",
+    "class": "Science",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Mighty Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "She-Hulk (Deathless)",
+    "class": "Science",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2024
+  },
+  {
+    "name": "Shocker",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Shuri",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Silk",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Silver Centurion",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Silver Samurai",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2025
+  },
+  {
+    "name": "Silver Surfer",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Solvarch",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Sorcerer Supreme",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Spider-Gwen",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Spider-Ham",
+    "class": "Science",
+    "gender": "Other",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Spider-Man (Classic)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse",
+      "Avengers",
+      "New Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Spider-Man (Miles Morales)",
+    "class": "Science",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse",
+      "Avengers",
+      "New Avengers",
+      "Champions"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Spider-Man (Pavitr Prabhakar)",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Spider-Man (Stark Enhanced)",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Spider-Man (Stealth Suit)",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Spider-Man (Supreme)",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Spider-Man (Symbiote)",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse",
+      "Symbiote"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Spider-Man 2099",
+    "class": "Science",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Spider-Punk",
+    "class": "Science",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Spider-Slayer (J. Jonah Jameson)",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2026
+  },
+  {
+    "name": "Spider-Woman (Jessica Drew)",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Spider-Verse",
+      "Avengers",
+      "New Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Spiral",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Spot",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Squirrel Girl",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "New Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Star-Lord",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Star-Lord (Stellar-Forged)",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2026
+  },
+  {
+    "name": "Storm",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Storm (Pyramid X)",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Villain",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Stryfe",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Sunspot",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "New Avengers",
+      "X-Men",
+      "X-Force"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Super-Skrull",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Fantastic Four"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2021
+  },
+  {
+    "name": "Superior Iron Man",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Illuminati"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Symbiote Supreme",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2018
+  },
+  {
+    "name": "Taskmaster",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Hydra",
+      "Thunderbolts",
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "Terrax",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2020
+  },
+  {
+    "name": "Thanos",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Thanos (Deathless)",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "The Champion",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2018
+  },
+  {
+    "name": "The Destroyer",
+    "class": "Mystic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2024
+  },
+  {
+    "name": "The Hood",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "The Leader",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2024
+  },
+  {
+    "name": "The Maker",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Fantastic Four",
+      "Cabal"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2025
+  },
+  {
+    "name": "The Overseer",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Unknown",
+    "release_year": 2021
+  },
+  {
+    "name": "The Serpent",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024
+  },
+  {
+    "name": "Thing",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Thor",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Thor (Jane Foster)",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "New Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Thor (Ragnarok)",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2017
+  },
+  {
+    "name": "Tigra",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Titania",
+    "class": "Science",
+    "gender": "Female",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Toad",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Brotherhood of Mutants"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Ultron",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Ultron (Classic)",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Unstoppable Colossus",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Valkyrie",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Defenders"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Venom",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Venom the Duck",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Venompool",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2016
+  },
+  {
+    "name": "Vision",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2014
+  },
+  {
+    "name": "Vision (Aarkus)",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2019
+  },
+  {
+    "name": "Vision (Age of Ultron)",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2015
+  },
+  {
+    "name": "Vision (Deathless)",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2024
+  },
+  {
+    "name": "Void",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Vox",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Kree"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "Vulture",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2017
+  },
+  {
+    "name": "War Machine",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2015
+  },
+  {
+    "name": "Warlock",
+    "class": "Tech",
+    "gender": "Other",
+    "size": "XL",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2019
+  },
+  {
+    "name": "Wasp",
+    "class": "Science",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018
+  },
+  {
+    "name": "Werewolf By Night",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2023
+  },
+  {
+    "name": "White Tiger",
+    "class": "Mystic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "Mighty Avengers",
+      "New Avengers"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2024
+  },
+  {
+    "name": "Wiccan",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "New Avengers",
+      "Young Avengers"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022
+  },
+  {
+    "name": "Winter Soldier",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [
+      "Thunderbolts"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Wolverine",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men",
+      "Avengers",
+      "New Avengers",
+      "X-Force"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014
+  },
+  {
+    "name": "Wolverine (Weapon X)",
+    "class": "Mutant",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2020
+  },
+  {
+    "name": "Wolverine (X-23)",
+    "class": "Mutant",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Force",
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016
+  },
+  {
+    "name": "Wong",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2022
+  },
+  {
+    "name": "Yelena Belova",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2025
+  },
+  {
+    "name": "Yellowjacket",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": null
+  },
+  {
+    "name": "Yondu",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Unknown",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2017
+  }
+]
