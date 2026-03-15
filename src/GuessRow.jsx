@@ -9,13 +9,13 @@ const CLASS_COLORS = {
   Skill: '#ef4444',
 }
 
-const CLASS_ICONS = {
-  Cosmic: '\u2728',
-  Tech: '\u2699\uFE0F',
-  Mutant: '\u2622\uFE0F',
-  Science: '\u2697\uFE0F',
-  Mystic: '\uD83D\uDD2E',
-  Skill: '\uD83D\uDDE1\uFE0F',
+const CLASS_ICON_PATHS = {
+  Cosmic: '/icons/cosmic.png',
+  Tech: '/icons/tech.png',
+  Mutant: '/icons/mutant.png',
+  Science: '/icons/science.png',
+  Mystic: '/icons/mystic.png',
+  Skill: '/icons/skill.png',
 }
 
 function compareValue(guessVal, targetVal) {
@@ -89,7 +89,7 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
       {
         value: guess.class,
         status: classStatus,
-        icon: CLASS_ICONS[guess.class],
+        iconSrc: CLASS_ICON_PATHS[guess.class],
         accentColor: CLASS_COLORS[guess.class],
       },
       { value: guess.gender, status: genderStatus },
@@ -148,7 +148,7 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
               ...(cell.accentColor ? { '--cell-accent': cell.accentColor } : {}),
             }}
           >
-            {cell.icon && <span className="cell-icon">{cell.icon}</span>}
+            {cell.iconSrc && <img src={cell.iconSrc} alt="" className="cell-class-icon" />}
             <span className="cell-text">{cell.value}</span>
             {cell.arrow && (
               <span className={`arrow arrow-${cell.arrow}`}>

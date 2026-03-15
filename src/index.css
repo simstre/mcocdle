@@ -522,6 +522,13 @@ header {
   line-height: 1;
 }
 
+.cell-class-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
 .cell-text {
   font-size: 0.78rem;
   font-weight: 600;
