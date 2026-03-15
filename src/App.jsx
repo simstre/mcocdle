@@ -156,7 +156,7 @@ export default function App() {
   if (!target) {
     return (
       <div className="loading-screen">
-        <img src="/mcoc-logo.svg" alt="MCOC" className="loading-logo" />
+        <img src="/mcoc-logo.png" alt="MCOC" className="loading-logo" />
         <div className="loading-text">Loading champions...</div>
       </div>
     )
@@ -185,7 +185,7 @@ export default function App() {
       <div className="bg-overlay" />
 
       <header>
-        <img src="/mcoc-logo.svg" alt="Marvel Contest of Champions" className="header-logo" />
+        <img src="/mcoc-logo.png" alt="Marvel Contest of Champions" className="header-logo" />
         <span className="dle-badge">MCOCdle</span>
         <button className="help-btn" onClick={() => setShowHelp(true)} title="How to play">?</button>
       </header>
