@@ -3,13 +3,13 @@ import GuessRow from './GuessRow'
 import SearchInput from './SearchInput'
 import HelpModal from './HelpModal'
 import WinModal from './WinModal'
+import DevPage from './DevPage'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
-const MAX_GUESSES = 10
 
-function getDailyChampion(champions) {
+function getDailyChampion(champions, overrideSeed) {
   const today = new Date()
-  const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate()
+  const seed = overrideSeed ?? (today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate())
   let hash = seed
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
@@ -40,14 +40,17 @@ export default function App() {
   const [target, setTarget] = useState(null)
   const [guesses, setGuesses] = useState([])
   const [won, setWon] = useState(false)
-  const [lost, setLost] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
   const [showWin, setShowWin] = useState(false)
   const [dailyInfo, setDailyInfo] = useState(null)
   const [playerName, setPlayerName] = useState(getDisplayName)
+  const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
 
-  const guessesLeft = MAX_GUESSES - guesses.length
-  const gameOver = won || lost
+  useEffect(() => {
+    const onPop = () => setDevMode(window.location.pathname === '/dev')
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
 
   useEffect(() => {
     fetch('/api/daily')
@@ -73,8 +76,6 @@ export default function App() {
           setGuesses(restored)
           if (restored.some(c => c.name === daily.name)) {
             setWon(true)
-          } else if (restored.length >= MAX_GUESSES) {
-            setLost(true)
           }
         }
 
@@ -108,7 +109,7 @@ export default function App() {
   }, [])
 
   const handleGuess = useCallback((champion) => {
-    if (gameOver || guesses.some(g => g.name === champion.name)) return
+    if (won || guesses.some(g => g.name === champion.name)) return
 
     const newGuesses = [champion, ...guesses]
     setGuesses(newGuesses)
@@ -118,15 +119,29 @@ export default function App() {
       setWon(true)
       setShowWin(true)
       submitSolve(newGuesses.length)
-    } else if (newGuesses.length >= MAX_GUESSES) {
-      setLost(true)
     }
-  }, [gameOver, guesses, target, submitSolve])
+  }, [won, guesses, target, submitSolve])
 
   const handleSetName = useCallback((name) => {
     setPlayerName(name)
     localStorage.setItem('mcocdle-name', name)
   }, [])
+
+  // Dev mode handlers
+  const handleDevReset = useCallback(() => {
+    localStorage.removeItem(getStorageKey())
+    setGuesses([])
+    setWon(false)
+  }, [])
+
+  const handleDevNewChampion = useCallback(() => {
+    if (!champions.length) return
+    const randomSeed = Math.floor(Math.random() * 999999)
+    const newTarget = getDailyChampion(champions, randomSeed)
+    setTarget(newTarget)
+    setGuesses([])
+    setWon(false)
+  }, [champions])
 
   if (!target) {
     return (
@@ -134,6 +149,24 @@ export default function App() {
         <img src="/mcoc-logo.svg" alt="MCOC" className="loading-logo" />
         <div className="loading-text">Loading champions...</div>
       </div>
+    )
+  }
+
+  if (devMode) {
+    return (
+      <DevPage
+        target={target}
+        champions={champions}
+        guesses={guesses}
+        won={won}
+        onGuess={handleGuess}
+        onReset={handleDevReset}
+        onNewChampion={handleDevNewChampion}
+        onBack={() => {
+          window.history.pushState({}, '', '/')
+          setDevMode(false)
+        }}
+      />
     )
   }
 
@@ -147,7 +180,6 @@ export default function App() {
         <button className="help-btn" onClick={() => setShowHelp(true)} title="How to play">?</button>
       </header>
 
-      {/* Daily info bar */}
       {dailyInfo?.firstSolver && (
         <div className="daily-champion-bar">
           <span className="trophy-icon">&#127942;</span>
@@ -160,7 +192,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Game area */}
       {won ? (
         <div className="win-banner">
           <div className="win-portrait-wrap">
@@ -169,18 +200,7 @@ export default function App() {
           <div className="win-info">
             <div className="win-label">You found it!</div>
             <div className="win-champion">{target.name}</div>
-            <div className="win-stats">{guesses.length} / {MAX_GUESSES} guesses</div>
-          </div>
-        </div>
-      ) : lost ? (
-        <div className="lose-banner">
-          <div className="win-portrait-wrap">
-            {target.portrait && <img src={target.portrait} alt={target.name} className="win-portrait" />}
-          </div>
-          <div className="win-info">
-            <div className="lose-label">Out of guesses!</div>
-            <div className="win-champion">{target.name}</div>
-            <div className="lose-detail">Come back tomorrow for a new champion</div>
+            <div className="win-stats">{guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}</div>
           </div>
         </div>
       ) : (
@@ -188,8 +208,8 @@ export default function App() {
           <div className="guess-prompt">
             <span className="prompt-text">Guess today's champion</span>
             <span className="guess-counter">
-              <span className={`guess-count ${guessesLeft <= 3 ? 'low' : ''}`}>{guessesLeft}</span>
-              <span className="guess-total">/ {MAX_GUESSES} remaining</span>
+              <span className="guess-count">{guesses.length}</span>
+              <span className="guess-total"> guesses</span>
             </span>
           </div>
           <SearchInput
@@ -210,17 +230,16 @@ export default function App() {
         </div>
         <div className="guesses-list">
           {guesses.map((guess, i) => (
-            <GuessRow key={guess.name} guess={guess} target={target} index={i} />
+            <GuessRow key={guess.name} guess={guess} target={target} isNew={i === 0} />
           ))}
         </div>
       </div>
 
-      {showHelp && <HelpModal maxGuesses={MAX_GUESSES} onClose={() => setShowHelp(false)} />}
+      {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
       {showWin && (
         <WinModal
           target={target}
           guesses={guesses.length}
-          maxGuesses={MAX_GUESSES}
           dailyInfo={dailyInfo}
           playerName={playerName}
           onSetName={handleSetName}

@@ -353,7 +353,7 @@
     ],
     "fighting_style": "Control",
     "release_year": 2026,
-    "portrait": null
+    "portrait": "/portraits/452a19ca6f.png"
   },
   {
     "name": "Bullseye",
@@ -953,7 +953,7 @@
     ],
     "fighting_style": "Control",
     "release_year": 2016,
-    "portrait": null
+    "portrait": "/portraits/dc526452cd.png"
   },
   {
     "name": "Falcon (Joaqu\u00edn Torres)",
@@ -1086,7 +1086,7 @@
     "affiliations": [],
     "fighting_style": "Unknown",
     "release_year": null,
-    "portrait": null
+    "portrait": "/portraits/9d8eafbbcf.png"
   },
   {
     "name": "Green Goblin",
@@ -1569,7 +1569,7 @@
     ],
     "fighting_style": "Defensive",
     "release_year": 2014,
-    "portrait": null
+    "portrait": "/portraits/8b189a0a8d.png"
   },
   {
     "name": "Karnak",
@@ -1805,7 +1805,7 @@
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2026,
-    "portrait": null
+    "portrait": "/portraits/442384b5a8.png"
   },
   {
     "name": "Madelyne Pryor",
@@ -1816,7 +1816,7 @@
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2026,
-    "portrait": null
+    "portrait": "/portraits/2e8eb97137.png"
   },
   {
     "name": "Maestro (Cosmic)",
@@ -2359,7 +2359,7 @@
     ],
     "fighting_style": "Offensive",
     "release_year": 2026,
-    "portrait": null
+    "portrait": "/portraits/e5112e9e3a.png"
   },
   {
     "name": "Platinumpool",
@@ -2911,7 +2911,7 @@
     ],
     "fighting_style": "Defensive",
     "release_year": 2014,
-    "portrait": null
+    "portrait": "/portraits/cc8d6ed40f.png"
   },
   {
     "name": "Spider-Man (Miles Morales)",
@@ -3030,7 +3030,7 @@
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2026,
-    "portrait": null
+    "portrait": "/portraits/5080e9645f.png"
   },
   {
     "name": "Spider-Woman (Jessica Drew)",
@@ -3107,7 +3107,7 @@
     ],
     "fighting_style": "Offensive",
     "release_year": 2026,
-    "portrait": null
+    "portrait": "/portraits/4d3ed4b26d.png"
   },
   {
     "name": "Storm",
@@ -3744,7 +3744,7 @@
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2025,
-    "portrait": null
+    "portrait": "/portraits/3f22ac767b.png"
   },
   {
     "name": "Yellowjacket",

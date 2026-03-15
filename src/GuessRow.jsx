@@ -47,7 +47,7 @@ function compareSize(guessSize, targetSize) {
   return { status: 'wrong', arrow: gi > ti ? 'down' : 'up' }
 }
 
-export default function GuessRow({ guess, target, index }) {
+export default function GuessRow({ guess, target, isNew }) {
   const cells = useMemo(() => {
     const nameStatus = compareValue(guess.name, target.name)
     const classStatus = compareValue(guess.class, target.class)
@@ -82,11 +82,17 @@ export default function GuessRow({ guess, target, index }) {
   }, [guess, target])
 
   return (
-    <div className="guess-row" style={{ animationDelay: `${index * 0.06}s` }}>
+    <div className={`guess-row ${isNew ? 'guess-row-new' : ''}`}>
       {cells.map((cell, i) => {
+        const cellDelay = isNew ? `${i * 0.08}s` : '0s'
+
         if (cell.type === 'champion') {
           return (
-            <div key={i} className={`cell cell-champion cell-${cell.status}`}>
+            <div
+              key={i}
+              className={`cell cell-champion cell-${cell.status} ${isNew ? 'cell-animate' : ''}`}
+              style={{ animationDelay: cellDelay }}
+            >
               <div className="champ-portrait-wrap">
                 {cell.portrait ? (
                   <img src={cell.portrait} alt="" className="champ-portrait" />
@@ -102,8 +108,11 @@ export default function GuessRow({ guess, target, index }) {
         return (
           <div
             key={i}
-            className={`cell cell-${cell.status}`}
-            style={cell.accentColor ? { '--cell-accent': cell.accentColor } : undefined}
+            className={`cell cell-${cell.status} ${isNew ? 'cell-animate' : ''}`}
+            style={{
+              animationDelay: cellDelay,
+              ...(cell.accentColor ? { '--cell-accent': cell.accentColor } : {}),
+            }}
           >
             {cell.icon && <span className="cell-icon">{cell.icon}</span>}
             <span className="cell-text">{cell.value}</span>

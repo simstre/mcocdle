@@ -127,51 +127,11 @@ header {
   font-size: 1.4rem;
   color: var(--marvel-gold);
   letter-spacing: 1px;
-  transition: color 0.3s;
-}
-
-.guess-count.low {
-  color: var(--marvel-red);
-  animation: countPulse 0.8s ease-in-out infinite;
-}
-
-@keyframes countPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
 }
 
 .guess-total {
   font-size: 0.7rem;
   color: var(--text-muted);
-}
-
-/* ===== Lose Banner ===== */
-.lose-banner {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  background: linear-gradient(135deg, rgba(230, 36, 41, 0.12), rgba(230, 36, 41, 0.04));
-  border: 1px solid rgba(230, 36, 41, 0.25);
-  border-radius: 16px;
-  padding: 16px 24px;
-  margin-bottom: 20px;
-  backdrop-filter: blur(8px);
-  max-width: 440px;
-  width: 100%;
-}
-
-.lose-label {
-  font-size: 0.75rem;
-  color: var(--marvel-red);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-}
-
-.lose-detail {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-top: 2px;
 }
 
 .help-btn {
@@ -410,17 +370,26 @@ header {
   display: grid;
   grid-template-columns: 1.8fr repeat(7, 1fr);
   gap: 6px;
-  animation: rowReveal 0.4s ease-out backwards;
+  perspective: 600px;
 }
 
-@keyframes rowReveal {
-  from {
+/* Cell-by-cell staggered animation for new guesses */
+.cell-animate {
+  animation: cellFlipIn 0.45s ease-out backwards;
+}
+
+@keyframes cellFlipIn {
+  0% {
     opacity: 0;
-    transform: translateY(-12px) scale(0.98);
+    transform: rotateX(90deg) scale(0.8);
   }
-  to {
+  60% {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: rotateX(-8deg) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) scale(1);
   }
 }
 
@@ -488,9 +457,9 @@ header {
 }
 
 .cell-wrong {
-  background: var(--wrong);
-  border-color: rgba(255, 255, 255, 0.06);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+  background: linear-gradient(135deg, rgba(180, 30, 30, 0.7), rgba(140, 20, 20, 0.75));
+  border-color: rgba(230, 36, 41, 0.3);
+  box-shadow: 0 0 8px rgba(230, 36, 41, 0.15), inset 0 1px 0 rgba(255,255,255,0.06);
 }
 
 /* Champion cell (first column) */
@@ -872,6 +841,106 @@ header {
 .modal-action-btn:hover {
   background: linear-gradient(135deg, rgba(160, 100, 255, 0.3), rgba(160, 100, 255, 0.2));
   box-shadow: 0 0 16px rgba(160, 100, 255, 0.2);
+}
+
+/* ===== Dev Page ===== */
+.dev-panel {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(20, 20, 50, 0.9);
+  border: 1px solid rgba(255, 200, 0, 0.3);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.dev-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--marvel-gold);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.dev-answer {
+  margin-bottom: 16px;
+}
+
+.dev-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dev-answer-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.dev-portrait {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid var(--marvel-gold);
+}
+
+.dev-answer-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.dev-answer-class {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.dev-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.dev-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  color: white;
+}
+
+.dev-btn:hover {
+  transform: scale(1.03);
+}
+
+.dev-btn-reset {
+  background: linear-gradient(135deg, var(--marvel-red), #a01a1e);
+  box-shadow: 0 0 12px rgba(230, 36, 41, 0.3);
+}
+
+.dev-btn-new {
+  background: linear-gradient(135deg, var(--mystic), #7c3aed);
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.3);
+}
+
+.dev-info {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
 }
 
 /* ===== Responsive ===== */

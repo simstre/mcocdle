@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/api/daily", "destination": "/api/daily.js" },
-    { "source": "/api/solve", "destination": "/api/solve.js" }
+    { "source": "/api/solve", "destination": "/api/solve.js" },
+    { "source": "/dev", "destination": "/index.html" }
   ]
 }
