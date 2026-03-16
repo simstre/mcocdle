@@ -9,6 +9,7 @@ import Leaderboard from './Leaderboard'
 import ProfileModal from './ProfileModal'
 import Countdown from './Countdown'
 import ShareCard from './ShareCard'
+import championsData from './champions.js'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
@@ -84,11 +85,16 @@ function loadDailyInfo() {
   }
 }
 
+const initialTarget = getDailyChampion(championsData)
+const savedGuessNames = JSON.parse(localStorage.getItem(getStorageKey()) || '[]')
+const initialGuesses = savedGuessNames.map(name => championsData.find(c => c.name === name)).filter(Boolean)
+const initialWon = initialGuesses.some(c => c.name === initialTarget.name)
+
 export default function App() {
-  const [champions, setChampions] = useState([])
-  const [target, setTarget] = useState(null)
-  const [guesses, setGuesses] = useState([])
-  const [won, setWon] = useState(false)
+  const [champions] = useState(championsData)
+  const [target, setTarget] = useState(initialTarget)
+  const [guesses, setGuesses] = useState(initialGuesses)
+  const [won, setWon] = useState(initialWon)
   const [showHelp, setShowHelp] = useState(false)
   const [showWin, setShowWin] = useState(false)
   const [dailyInfo, setDailyInfo] = useState(loadDailyInfo)
@@ -122,31 +128,11 @@ export default function App() {
   }, [])
 
   useEffect(() => {
-    fetch('/data/champions.json')
-      .then(r => r.json())
-      .then(data => {
-        setChampions(data)
-        const daily = getDailyChampion(data)
-        setTarget(daily)
-
-        const saved = localStorage.getItem(getStorageKey())
-        if (saved) {
-          const savedGuesses = JSON.parse(saved)
-          const restored = savedGuesses
-            .map(name => data.find(c => c.name === name))
-            .filter(Boolean)
-          setGuesses(restored)
-          guessCountRef.current = restored.length
-          if (restored.some(c => c.name === daily.name)) {
-            setWon(true)
-          }
-        }
-
-        if (!localStorage.getItem('mcocdle-visited')) {
-          setShowHelp(true)
-          localStorage.setItem('mcocdle-visited', '1')
-        }
-      })
+    guessCountRef.current = initialGuesses.length
+    if (!localStorage.getItem('mcocdle-visited')) {
+      setShowHelp(true)
+      localStorage.setItem('mcocdle-visited', '1')
+    }
   }, [])
 
   const submitSolve = useCallback((guessCount) => {
@@ -239,15 +225,6 @@ export default function App() {
     window.history.pushState({}, '', path)
     setPage(path)
   }, [])
-
-  if (!target) {
-    return (
-      <div className="loading-screen">
-        <img src="/mcoc-logo.png" alt="MCOC" className="loading-logo" />
-        <div className="loading-text">Loading champions...</div>
-      </div>
-    )
-  }
 
   if (page === '/dev') {
     return (
