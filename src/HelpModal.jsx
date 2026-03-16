@@ -27,7 +27,7 @@ export default function HelpModal({ onClose }) {
 
         <h3>Attributes</h3>
         <ul>
-          <li><img src="/icons/cosmic.png" className="help-class-icon" alt="" /> <strong>Class</strong> &mdash; Cosmic, Tech, Mutant, Science, Mystic, Skill</li>
+          <li><strong>Class</strong> &mdash; Cosmic, Tech, Mutant, Science, Mystic, Skill</li>
           <li><strong>Gender</strong> &mdash; Male, Female, Other</li>
           <li><strong>Size</strong> &mdash; S, M, L, XL (arrows show direction)</li>
           <li><strong>Alignment</strong> &mdash; Hero or Villain</li>
@@ -38,8 +38,6 @@ export default function HelpModal({ onClose }) {
 
         <h3>Features</h3>
         <ul>
-          <li>Hover or tap a portrait to see the champion name</li>
-          <li>Each new guess animates in with a reveal sequence</li>
           <li>After 10 guesses, a <strong>hint</strong> button appears &mdash; it reveals the value of your least-matched attribute and suggests 5 possible champions</li>
           <li>The first player to solve each day is crowned on the leaderboard</li>
         </ul>
