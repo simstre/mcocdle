@@ -1177,6 +1177,7 @@ header {
 .search-row {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   gap: 10px;
   width: 100%;
   max-width: 540px;
