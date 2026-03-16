@@ -1,10 +1,12 @@
 import { kv } from "@vercel/kv";
 
+// Game day resets at 8am PST (16:00 UTC)
 function getTodayKey() {
   const now = new Date();
-  const yyyy = now.getUTCFullYear();
-  const mm = String(now.getUTCMonth() + 1).padStart(2, "0");
-  const dd = String(now.getUTCDate()).padStart(2, "0");
+  const adjusted = new Date(now.getTime() - 16 * 60 * 60 * 1000);
+  const yyyy = adjusted.getUTCFullYear();
+  const mm = String(adjusted.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(adjusted.getUTCDate()).padStart(2, "0");
   return `${yyyy}-${mm}-${dd}`;
 }
 

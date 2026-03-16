@@ -9,9 +9,21 @@ import Leaderboard from './Leaderboard'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
+// Game day resets at 8am PST (16:00 UTC)
+function getGameDay() {
+  const now = new Date()
+  // Subtract 16 hours from UTC so that 16:00 UTC (8am PST) becomes midnight
+  const adjusted = new Date(now.getTime() - 16 * 60 * 60 * 1000)
+  return {
+    year: adjusted.getUTCFullYear(),
+    month: adjusted.getUTCMonth() + 1,
+    day: adjusted.getUTCDate(),
+  }
+}
+
 function getDailyChampion(champions, overrideSeed) {
-  const today = new Date()
-  const seed = overrideSeed ?? (today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate())
+  const { year, month, day } = getGameDay()
+  const seed = overrideSeed ?? (year * 10000 + month * 100 + day)
   let hash = seed
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
@@ -21,16 +33,13 @@ function getDailyChampion(champions, overrideSeed) {
 }
 
 function getStorageKey() {
-  const today = new Date()
-  return `mcocdle-${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`
+  const { year, month, day } = getGameDay()
+  return `mcocdle-${year}-${month}-${day}`
 }
 
 function getTodayDateStr() {
-  const now = new Date()
-  const yyyy = now.getUTCFullYear()
-  const mm = String(now.getUTCMonth() + 1).padStart(2, '0')
-  const dd = String(now.getUTCDate()).padStart(2, '0')
-  return `${yyyy}-${mm}-${dd}`
+  const { year, month, day } = getGameDay()
+  return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
 }
 
 function getDisplayName() {
