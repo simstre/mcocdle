@@ -57,10 +57,10 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
 
   useEffect(() => {
     if (!isNew) return
-    // Phase 1: shimmer bar for anticipation
-    const t1 = setTimeout(() => setPhase('revealing'), 800)
+    // Phase 1: shimmer bar for anticipation (400ms)
+    const t1 = setTimeout(() => setPhase('revealing'), 400)
     // Phase 2: after all cells revealed, mark done
-    const totalRevealTime = 800 + 8 * 120 + 450 // shimmer + stagger + last animation
+    const totalRevealTime = 400 + 8 * 80 + 350 // shimmer + stagger + last animation
     const t2 = setTimeout(() => {
       setPhase('done')
       onRevealDone?.()
@@ -115,7 +115,7 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
   return (
     <div className={`guess-row ${isCorrect && animate ? 'guess-row-correct' : ''}`}>
       {cells.map((cell, i) => {
-        const cellDelay = animate ? `${i * 0.12}s` : '0s'
+        const cellDelay = animate ? `${i * 0.08}s` : '0s'
         const animClass = animate
           ? (isCorrect ? 'cell-anim-correct' : 'cell-anim-wrong')
           : ''

@@ -1,6 +1,5 @@
 import { useMemo } from 'react'
 
-// Attribute keys in priority order for tie-breaking
 const ATTR_PRIORITY = ['class', 'gender', 'release_year', 'size', 'affiliation', 'alignment', 'fighting_style']
 
 const ATTR_LABELS = {
@@ -13,39 +12,18 @@ const ATTR_LABELS = {
   fighting_style: 'Fighting Style',
 }
 
-function compareArrays(a, b) {
-  if (!a?.length && !b?.length) return true
-  if (!a?.length || !b?.length) return false
-  const sa = new Set(a.map(s => s.toLowerCase()))
-  const sb = new Set(b.map(s => s.toLowerCase()))
-  if (sa.size !== sb.size) return false
-  return [...sa].every(v => sb.has(v))
-}
-
-function attrMatch(guess, target, attr) {
+function attrMatch(champ, target, attr) {
   if (attr === 'affiliation') {
-    return compareArrays(guess.affiliations, target.affiliations)
+    const a = champ.affiliations || []
+    const b = target.affiliations || []
+    if (!a.length && !b.length) return true
+    if (!a.length || !b.length) return false
+    const sa = new Set(a.map(s => s.toLowerCase()))
+    const sb = new Set(b.map(s => s.toLowerCase()))
+    if (sa.size !== sb.size) return false
+    return [...sa].every(v => sb.has(v))
   }
-  return guess[attr] === target[attr]
-}
-
-function getKnownAttrs(guesses, target) {
-  // For each attribute, check if any guess got it correct
-  const known = {}
-  for (const attr of ATTR_PRIORITY) {
-    known[attr] = guesses.some(g => attrMatch(g, target, attr))
-  }
-  return known
-}
-
-function getHitRatios(guesses, target) {
-  // For each attribute, ratio of correct guesses
-  const ratios = {}
-  for (const attr of ATTR_PRIORITY) {
-    const hits = guesses.filter(g => attrMatch(g, target, attr)).length
-    ratios[attr] = guesses.length > 0 ? hits / guesses.length : 0
-  }
-  return ratios
+  return champ[attr] === target[attr]
 }
 
 function getAttrValue(champion, attr) {
@@ -54,65 +32,45 @@ function getAttrValue(champion, attr) {
   return champion[attr] || '?'
 }
 
-function champMatchesKnown(champ, target, knownAttrs, revealedAttr) {
-  // Must match all already-correct attributes AND the newly revealed one
-  for (const attr of ATTR_PRIORITY) {
-    if (knownAttrs[attr] || attr === revealedAttr) {
-      if (!attrMatch(champ, target, attr)) return false
-    }
-  }
-  // For size/year, also respect directional info from guesses
-  return true
-}
-
 export default function HintPanel({ target, champions, guesses, onClose }) {
   const hint = useMemo(() => {
-    const known = getKnownAttrs(guesses, target)
-    const ratios = getHitRatios(guesses, target)
+    // For each attribute, compute hit ratio across guesses
+    const ratios = {}
+    const known = {}
+    for (const attr of ATTR_PRIORITY) {
+      const hits = guesses.filter(g => attrMatch(g, target, attr)).length
+      ratios[attr] = guesses.length > 0 ? hits / guesses.length : 0
+      known[attr] = hits > 0
+    }
 
-    // Find the attribute with lowest hit ratio (that isn't already known)
-    // Use priority order for tie-breaking
+    // Find the attribute with lowest hit ratio (skip already-matched)
+    // Priority order breaks ties
     let bestAttr = null
     let bestRatio = Infinity
-
     for (const attr of ATTR_PRIORITY) {
-      if (known[attr]) continue // skip already matched
-      const r = ratios[attr]
-      if (r < bestRatio) {
-        bestRatio = r
+      if (known[attr]) continue
+      if (ratios[attr] < bestRatio) {
+        bestRatio = ratios[attr]
         bestAttr = attr
       }
-      // Equal ratio: priority order wins (earlier in loop = higher priority)
     }
-
-    // If all attrs are known, pick the first non-matched (shouldn't happen)
     if (!bestAttr) {
-      bestAttr = ATTR_PRIORITY.find(a => !known[a]) || ATTR_PRIORITY[0]
+      bestAttr = ATTR_PRIORITY[0]
     }
 
-    // The revealed value
     const revealedValue = getAttrValue(target, bestAttr)
 
-    // Find 5 champions who match all known + revealed attributes
+    // Find champions matching ONLY the hint attribute (not all revealed ones)
     const guessedNames = new Set(guesses.map(g => g.name))
     const candidates = champions.filter(c =>
-      !guessedNames.has(c.name) && champMatchesKnown(c, target, known, bestAttr)
+      !guessedNames.has(c.name) &&
+      c.name !== target.name &&
+      attrMatch(c, target, bestAttr)
     )
 
-    // Ensure target is included
-    let picks = []
-    const targetInCandidates = candidates.some(c => c.name === target.name)
-
-    if (targetInCandidates) {
-      // Shuffle candidates, pick 4 others + target
-      const others = candidates.filter(c => c.name !== target.name)
-      const shuffled = others.sort(() => Math.random() - 0.5).slice(0, 4)
-      picks = [...shuffled, target].sort(() => Math.random() - 0.5)
-    } else {
-      // Target was already guessed or filtered out, add manually
-      const shuffled = candidates.sort(() => Math.random() - 0.5).slice(0, 4)
-      picks = [...shuffled, target].sort(() => Math.random() - 0.5)
-    }
+    // Pick 4 random candidates + target, shuffled
+    const shuffled = candidates.sort(() => Math.random() - 0.5).slice(0, 4)
+    const picks = [...shuffled, target].sort(() => Math.random() - 0.5)
 
     return {
       attr: bestAttr,
