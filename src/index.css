@@ -153,7 +153,6 @@ header {
   font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
-  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,7 +178,6 @@ header {
   margin-bottom: 16px;
   font-size: 0.85rem;
   color: var(--text-secondary);
-  backdrop-filter: blur(8px);
   width: 100%;
   max-width: 600px;
   text-align: center;
@@ -236,7 +234,6 @@ header {
   font-family: inherit;
   outline: none;
   transition: all 0.25s;
-  backdrop-filter: blur(12px);
 }
 .search-input:focus {
   border-color: rgba(160, 100, 255, 0.5);
@@ -256,7 +253,6 @@ header {
   border-radius: 14px;
   max-height: 340px;
   overflow-y: auto;
-  backdrop-filter: blur(16px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
@@ -672,7 +668,6 @@ header {
   border-radius: 16px;
   padding: 16px 24px;
   margin-bottom: 20px;
-  backdrop-filter: blur(8px);
   max-width: 440px;
   width: 100%;
 }
@@ -780,7 +775,6 @@ header {
   justify-content: center;
   z-index: 1000;
   padding: 20px;
-  backdrop-filter: blur(4px);
 }
 
 .modal {
@@ -1058,7 +1052,6 @@ header {
   border-radius: 16px;
   padding: 20px;
   margin-top: 24px;
-  backdrop-filter: blur(8px);
 }
 
 .share-header {
@@ -1348,7 +1341,6 @@ header {
   border-radius: 16px;
   padding: 20px;
   margin-bottom: 20px;
-  backdrop-filter: blur(8px);
 }
 
 .dev-title {

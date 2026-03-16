@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react'
 
 export default function SearchInput({ champions, guesses, onGuess, disabled }) {
   const [query, setQuery] = useState('')
@@ -7,7 +7,7 @@ export default function SearchInput({ champions, guesses, onGuess, disabled }) {
   const inputRef = useRef(null)
   const listRef = useRef(null)
 
-  const guessedNames = new Set(guesses.map(g => g.name))
+  const guessedNames = useMemo(() => new Set(guesses.map(g => g.name)), [guesses])
 
   useEffect(() => {
     if (!query.trim()) {
@@ -83,7 +83,7 @@ export default function SearchInput({ champions, guesses, onGuess, disabled }) {
             >
               <div className="suggestion-portrait-wrap">
                 {champ.portrait ? (
-                  <img src={champ.portrait} alt="" className="suggestion-portrait" />
+                  <img src={champ.portrait} alt="" className="suggestion-portrait" loading="lazy" />
                 ) : (
                   <div className={`suggestion-portrait-placeholder ${champ.class.toLowerCase()}`} />
                 )}

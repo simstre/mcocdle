@@ -15,7 +15,6 @@ const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliatio
 // Game day resets at 8am PST (16:00 UTC)
 function getGameDay() {
   const now = new Date()
-  // Subtract 16 hours from UTC so that 16:00 UTC (8am PST) becomes midnight
   const adjusted = new Date(now.getTime() - 16 * 60 * 60 * 1000)
   return {
     year: adjusted.getUTCFullYear(),
@@ -74,6 +73,17 @@ if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
   localStorage.setItem('mcocdle-version', String(GAME_VERSION))
 }
 
+function loadDailyInfo() {
+  const dateStr = getTodayDateStr()
+  const localLb = JSON.parse(localStorage.getItem(`mcocdle-lb-${dateStr}`) || '[]')
+  return {
+    date: dateStr,
+    firstSolver: localLb[0] || null,
+    solvers: localLb,
+    totalSolvers: localLb.length,
+  }
+}
+
 export default function App() {
   const [champions, setChampions] = useState([])
   const [target, setTarget] = useState(null)
@@ -81,52 +91,34 @@ export default function App() {
   const [won, setWon] = useState(false)
   const [showHelp, setShowHelp] = useState(false)
   const [showWin, setShowWin] = useState(false)
-  const [dailyInfo, setDailyInfo] = useState(null)
+  const [dailyInfo, setDailyInfo] = useState(loadDailyInfo)
   const [playerName, setPlayerName] = useState(getDisplayName)
   const [revealing, setRevealing] = useState(false)
   const [showHint, setShowHint] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
   const [hintUsed, setHintUsed] = useState(() => localStorage.getItem(getStorageKey() + '-hint') === '1')
   const [showLeaderboard, setShowLeaderboard] = useState(false)
-  const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
-  const [helpMode, setHelpMode] = useState(window.location.pathname === '/help')
+  const [page, setPage] = useState(window.location.pathname)
+
+  const pendingWinRef = useRef(false)
+  const guessCountRef = useRef(0)
 
   useEffect(() => {
-    const onPop = () => {
-      setDevMode(window.location.pathname === '/dev')
-      setHelpMode(window.location.pathname === '/help')
-    }
+    const onPop = () => setPage(window.location.pathname)
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
+  // Try to fetch server-side daily info (non-blocking)
   useEffect(() => {
     fetch('/api/daily')
       .then(r => r.json())
       .then(data => {
-        // If API returned no solvers, check localStorage
-        if (!data.solvers?.length) {
-          const lbKey = `mcocdle-lb-${data.date || getTodayDateStr()}`
-          const localLb = JSON.parse(localStorage.getItem(lbKey) || '[]')
-          if (localLb.length) {
-            data.solvers = localLb
-            data.firstSolver = data.firstSolver || localLb[0]
-            data.totalSolvers = Math.max(data.totalSolvers || 0, localLb.length)
-          }
+        if (data.solvers?.length) {
+          setDailyInfo(data)
         }
-        setDailyInfo(data)
       })
-      .catch(() => {
-        // API completely failed, use localStorage
-        const dateStr = getTodayDateStr()
-        const localLb = JSON.parse(localStorage.getItem(`mcocdle-lb-${dateStr}`) || '[]')
-        setDailyInfo({
-          date: dateStr,
-          firstSolver: localLb[0] || null,
-          solvers: localLb,
-          totalSolvers: localLb.length,
-        })
-      })
+      .catch(() => {})
   }, [])
 
   useEffect(() => {
@@ -144,6 +136,7 @@ export default function App() {
             .map(name => data.find(c => c.name === name))
             .filter(Boolean)
           setGuesses(restored)
+          guessCountRef.current = restored.length
           if (restored.some(c => c.name === daily.name)) {
             setWon(true)
           }
@@ -161,7 +154,6 @@ export default function App() {
     const dateStr = getTodayDateStr()
     const solverEntry = { name, guesses: guessCount, timestamp: new Date().toISOString() }
 
-    // Always save to localStorage leaderboard
     const lbKey = `mcocdle-lb-${dateStr}`
     const localLb = JSON.parse(localStorage.getItem(lbKey) || '[]')
     if (localLb.length < 10) {
@@ -169,20 +161,17 @@ export default function App() {
       localStorage.setItem(lbKey, JSON.stringify(localLb))
     }
 
-    // Update state with local data immediately
     setDailyInfo(prev => {
-      const solvers = prev?.solvers?.length ? prev.solvers : []
-      const merged = [...solvers]
-      if (merged.length < 10) merged.push(solverEntry)
+      const solvers = [...(prev?.solvers || [])]
+      if (solvers.length < 10) solvers.push(solverEntry)
       return {
         ...prev,
         firstSolver: prev?.firstSolver || solverEntry,
-        solvers: merged,
+        solvers,
         totalSolvers: (prev?.totalSolvers || 0) + 1,
       }
     })
 
-    // Also try the API (works when KV is connected)
     fetch('/api/solve', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -202,13 +191,12 @@ export default function App() {
       .catch(() => {})
   }, [])
 
-  const pendingWinRef = useRef(false)
-
   const handleGuess = useCallback((champion) => {
     if (won || revealing || guesses.some(g => g.name === champion.name)) return
 
     const newGuesses = [champion, ...guesses]
     setGuesses(newGuesses)
+    guessCountRef.current = newGuesses.length
     setRevealing(true)
     localStorage.setItem(getStorageKey(), JSON.stringify(newGuesses.map(g => g.name)))
 
@@ -221,20 +209,20 @@ export default function App() {
       pendingWinRef.current = false
       setWon(true)
       setShowWin(true)
-      submitSolve(guesses.length)
+      submitSolve(guessCountRef.current)
     }
-  }, [guesses.length, submitSolve])
+  }, [submitSolve])
 
   const handleSetName = useCallback((name) => {
     setPlayerName(name)
     localStorage.setItem('mcocdle-name', name)
   }, [])
 
-  // Dev mode handlers
   const handleDevReset = useCallback(() => {
     localStorage.removeItem(getStorageKey())
     setGuesses([])
     setWon(false)
+    guessCountRef.current = 0
   }, [])
 
   const handleDevNewChampion = useCallback(() => {
@@ -244,7 +232,13 @@ export default function App() {
     setTarget(newTarget)
     setGuesses([])
     setWon(false)
+    guessCountRef.current = 0
   }, [champions])
+
+  const navigateTo = useCallback((path) => {
+    window.history.pushState({}, '', path)
+    setPage(path)
+  }, [])
 
   if (!target) {
     return (
@@ -255,16 +249,7 @@ export default function App() {
     )
   }
 
-  // Auto-show hint when navigating to /help
-  if (helpMode && guesses.length < 10) {
-    window.history.replaceState({}, '', '/')
-    setHelpMode(false)
-  } else if (helpMode && guesses.length >= 10 && !hintUsed) {
-    setHintUsed(true)
-    localStorage.setItem(getStorageKey() + '-hint', '1')
-  }
-
-  if (devMode) {
+  if (page === '/dev') {
     return (
       <DevPage
         target={target}
@@ -274,13 +259,12 @@ export default function App() {
         onGuess={handleGuess}
         onReset={handleDevReset}
         onNewChampion={handleDevNewChampion}
-        onBack={() => {
-          window.history.pushState({}, '', '/')
-          setDevMode(false)
-        }}
+        onBack={() => navigateTo('/')}
       />
     )
   }
+
+  const showHintPanel = (showHint || page === '/help') && guesses.length >= 10
 
   return (
     <div className="app">
@@ -304,7 +288,7 @@ export default function App() {
         </div>
       </header>
 
-      {dailyInfo?.firstSolver && (
+      {dailyInfo?.firstSolver && !won && (
         <div className="daily-champion-bar">
           <span className="trophy-icon">&#127942;</span>
           <span>
@@ -389,17 +373,14 @@ export default function App() {
       {showProfile && <ProfileModal playerName={playerName} onSetName={handleSetName} onClose={() => setShowProfile(false)} />}
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
       {showLeaderboard && <Leaderboard dailyInfo={dailyInfo} onClose={() => setShowLeaderboard(false)} />}
-      {(showHint || helpMode) && guesses.length >= 10 && (
+      {showHintPanel && (
         <HintPanel
           target={target}
           champions={champions}
           guesses={guesses}
           onClose={() => {
             setShowHint(false)
-            if (helpMode) {
-              window.history.pushState({}, '', '/')
-              setHelpMode(false)
-            }
+            if (page === '/help') navigateTo('/')
           }}
         />
       )}
