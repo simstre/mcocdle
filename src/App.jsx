@@ -26,7 +26,7 @@ function getGameDay() {
 
 function getDailyChampion(champions, overrideSeed) {
   const { year, month, day } = getGameDay()
-  const seed = overrideSeed ?? (year * 10000 + month * 100 + day)
+  const seed = overrideSeed ?? (year * 10000 + month * 100 + day + 7777)
   let hash = seed
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
@@ -62,6 +62,16 @@ function getDisplayName() {
     localStorage.setItem('mcocdle-name', name)
   }
   return name
+}
+
+// Clear old progress on version bump
+const GAME_VERSION = 2
+if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
+  const savedName = localStorage.getItem('mcocdle-name')
+  const keys = Object.keys(localStorage).filter(k => k.startsWith('mcocdle-'))
+  keys.forEach(k => localStorage.removeItem(k))
+  if (savedName) localStorage.setItem('mcocdle-name', savedName)
+  localStorage.setItem('mcocdle-version', String(GAME_VERSION))
 }
 
 export default function App() {
