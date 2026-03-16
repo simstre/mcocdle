@@ -713,9 +713,35 @@ header {
   line-height: 1.1;
 }
 
-.win-stats {
+.win-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.8rem;
   color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.win-solvers {
+  color: var(--text-muted);
+}
+
+.win-solvers::before {
+  content: '\00B7';
+  margin-right: 6px;
+}
+
+.win-countdown {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.countdown {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.9rem;
+  color: var(--marvel-gold);
+  letter-spacing: 1px;
 }
 
 /* ===== Loading ===== */
@@ -1000,6 +1026,59 @@ header {
 .modal-action-btn:hover {
   background: linear-gradient(135deg, rgba(160, 100, 255, 0.3), rgba(160, 100, 255, 0.2));
   box-shadow: 0 0 16px rgba(160, 100, 255, 0.2);
+}
+
+/* ===== Share Card ===== */
+.share-card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border-glow);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.share-header {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.share-preview {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 14px;
+  font-family: 'Inter', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.share-btn {
+  width: 100%;
+  padding: 11px;
+  background: linear-gradient(135deg, var(--marvel-gold), #d4a020);
+  border: none;
+  border-radius: 10px;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.share-btn:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 16px rgba(240, 192, 64, 0.3);
 }
 
 /* ===== Leaderboard ===== */

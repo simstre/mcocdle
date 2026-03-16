@@ -6,6 +6,8 @@ import WinModal from './WinModal'
 import DevPage from './DevPage'
 import HintPanel from './HintPanel'
 import Leaderboard from './Leaderboard'
+import Countdown from './Countdown'
+import ShareCard from './ShareCard'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
@@ -287,7 +289,15 @@ export default function App() {
           <div className="win-info">
             <div className="win-label">You found it!</div>
             <div className="win-champion">{target.name}</div>
-            <div className="win-stats">{guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}</div>
+            <div className="win-meta">
+              <span>{guesses.length} {guesses.length === 1 ? 'guess' : 'guesses'}</span>
+              {dailyInfo?.totalSolvers > 0 && (
+                <span className="win-solvers">{dailyInfo.totalSolvers} {dailyInfo.totalSolvers === 1 ? 'solver' : 'solvers'} today</span>
+              )}
+            </div>
+            <div className="win-countdown">
+              Next champion in <Countdown />
+            </div>
           </div>
         </div>
       ) : (
@@ -336,6 +346,10 @@ export default function App() {
           ))}
         </div>
       </div>
+
+      {won && (
+        <ShareCard guesses={guesses} target={target} dailyInfo={dailyInfo} />
+      )}
 
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
       {showLeaderboard && <Leaderboard dailyInfo={dailyInfo} onClose={() => setShowLeaderboard(false)} />}
