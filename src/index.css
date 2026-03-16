@@ -1030,8 +1030,8 @@ header {
 
 /* ===== Share Card ===== */
 .share-card {
-  width: 100%;
-  max-width: 440px;
+  width: fit-content;
+  min-width: 260px;
   background: var(--bg-glass);
   border: 1px solid var(--border-glow);
   border-radius: 16px;
@@ -1057,10 +1057,10 @@ header {
   font-size: 0.8rem;
   line-height: 1.6;
   color: var(--text-primary);
-  white-space: pre-wrap;
-  word-break: break-word;
+  white-space: pre;
   margin-bottom: 12px;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  overflow-x: auto;
 }
 
 .share-btn {
