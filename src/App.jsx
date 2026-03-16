@@ -5,6 +5,7 @@ import HelpModal from './HelpModal'
 import WinModal from './WinModal'
 import DevPage from './DevPage'
 import HintPanel from './HintPanel'
+import Leaderboard from './Leaderboard'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
@@ -47,6 +48,7 @@ export default function App() {
   const [playerName, setPlayerName] = useState(getDisplayName)
   const [revealing, setRevealing] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
   const [helpMode, setHelpMode] = useState(window.location.pathname === '/help')
 
@@ -109,6 +111,7 @@ export default function App() {
         setDailyInfo(prev => ({
           ...prev,
           firstSolver: data.firstSolver,
+          solvers: data.solvers || prev?.solvers || [],
           totalSolvers: data.totalSolvers,
         }))
       })
@@ -200,7 +203,14 @@ export default function App() {
       <header>
         <img src="/mcoc-logo.png" alt="Marvel Contest of Champions" className="header-logo" />
         <span className="dle-badge">MCOCdle</span>
-        <button className="help-btn" onClick={() => setShowHelp(true)} title="How to play">?</button>
+        <div className="header-actions">
+          <button className="header-icon-btn" onClick={() => setShowLeaderboard(true)} title="Leaderboard">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
+              <rect x="4" y="14" width="4" height="8" rx="1" /><rect x="10" y="6" width="4" height="16" rx="1" /><rect x="16" y="10" width="4" height="12" rx="1" />
+            </svg>
+          </button>
+          <button className="header-icon-btn" onClick={() => setShowHelp(true)} title="How to play">?</button>
+        </div>
       </header>
 
       {dailyInfo?.firstSolver && (
@@ -274,6 +284,7 @@ export default function App() {
       </div>
 
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
+      {showLeaderboard && <Leaderboard dailyInfo={dailyInfo} onClose={() => setShowLeaderboard(false)} />}
       {(showHint || helpMode) && guesses.length >= 10 && (
         <HintPanel
           target={target}

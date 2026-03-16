@@ -34,6 +34,7 @@ export default async function handler(req, res) {
       return res.status(200).json({
         date,
         firstSolver: null,
+        solvers: [],
         totalSolvers: 0,
       });
     }
@@ -41,14 +42,15 @@ export default async function handler(req, res) {
     return res.status(200).json({
       date,
       firstSolver: data.firstSolver || null,
+      solvers: data.solvers || [],
       totalSolvers: data.totalSolvers || 0,
     });
   } catch (err) {
-    // KV not configured or unavailable — return empty data gracefully
     console.error("KV error (daily):", err.message);
     return res.status(200).json({
       date,
       firstSolver: null,
+      solvers: [],
       totalSolvers: 0,
       _kvError: true,
     });

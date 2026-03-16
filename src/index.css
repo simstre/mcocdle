@@ -134,10 +134,15 @@ header {
   color: var(--text-muted);
 }
 
-.help-btn {
+.header-actions {
   position: absolute;
   right: 0;
   top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.header-icon-btn {
   background: var(--bg-glass);
   border: 1px solid var(--border-glow);
   color: var(--text-secondary);
@@ -149,11 +154,17 @@ header {
   cursor: pointer;
   transition: all 0.2s;
   backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.help-btn:hover {
+.header-icon-btn:hover {
   color: var(--marvel-gold);
   border-color: var(--marvel-gold);
   box-shadow: 0 0 12px rgba(240, 192, 64, 0.3);
+}
+.header-icon-btn svg {
+  stroke: currentColor;
 }
 
 /* ===== Daily Champion Bar ===== */
@@ -829,7 +840,7 @@ header {
 }
 .help-swatch.correct { background: var(--correct); box-shadow: 0 0 8px var(--correct-glow); }
 .help-swatch.partial { background: var(--partial); box-shadow: 0 0 8px var(--partial-glow); }
-.help-swatch.wrong { background: var(--wrong); border: 1px solid rgba(255,255,255,0.08); }
+.help-swatch.wrong { background: linear-gradient(135deg, rgba(180, 30, 30, 0.9), rgba(140, 20, 20, 0.95)); border: 1px solid rgba(230, 36, 41, 0.4); }
 
 .help-arrow {
   font-size: 1rem;
@@ -989,6 +1000,77 @@ header {
 .modal-action-btn:hover {
   background: linear-gradient(135deg, rgba(160, 100, 255, 0.3), rgba(160, 100, 255, 0.2));
   box-shadow: 0 0 16px rgba(160, 100, 255, 0.2);
+}
+
+/* ===== Leaderboard ===== */
+.lb-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.lb-empty {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  padding: 24px 0;
+}
+
+.lb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.lb-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  transition: background 0.15s;
+}
+
+.lb-entry:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.lb-first {
+  background: linear-gradient(135deg, rgba(240, 192, 64, 0.1), rgba(240, 192, 64, 0.04));
+  border-color: rgba(240, 192, 64, 0.2);
+}
+
+.lb-rank {
+  width: 32px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.lb-first .lb-rank {
+  font-size: 1.2rem;
+}
+
+.lb-name {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.lb-first .lb-name {
+  color: var(--marvel-gold);
+}
+
+.lb-guesses {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
 }
 
 /* ===== Search Row (search + hint button) ===== */

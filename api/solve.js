@@ -32,22 +32,23 @@ export default async function handler(req, res) {
   }
 
   const kvKey = `mcocdle:${date}`;
+  const solverEntry = {
+    name: name.trim(),
+    guesses,
+    timestamp: new Date().toISOString(),
+  };
 
   try {
     const existing = await kv.get(kvKey);
 
     if (!existing) {
-      // First solver for this date
       const record = {
-        firstSolver: {
-          name: name.trim(),
-          guesses,
-          timestamp: new Date().toISOString(),
-        },
+        firstSolver: solverEntry,
+        solvers: [solverEntry],
         totalSolvers: 1,
       };
 
-      await kv.set(kvKey, record, { ex: 60 * 60 * 48 }); // expire after 48 hours
+      await kv.set(kvKey, record, { ex: 60 * 60 * 48 });
 
       return res.status(200).json({
         ...record,
@@ -55,9 +56,15 @@ export default async function handler(req, res) {
       });
     }
 
-    // Subsequent solver — increment count, keep first solver unchanged
+    // Add to solvers list (keep up to 10)
+    const solvers = existing.solvers || [];
+    if (solvers.length < 10) {
+      solvers.push(solverEntry);
+    }
+
     const updated = {
       ...existing,
+      solvers,
       totalSolvers: (existing.totalSolvers || 1) + 1,
     };
 
@@ -65,18 +72,15 @@ export default async function handler(req, res) {
 
     return res.status(200).json({
       firstSolver: updated.firstSolver,
+      solvers: updated.solvers,
       totalSolvers: updated.totalSolvers,
       isFirst: false,
     });
   } catch (err) {
-    // KV not configured or unavailable — return mock data gracefully
     console.error("KV error (solve):", err.message);
     return res.status(200).json({
-      firstSolver: {
-        name: name.trim(),
-        guesses,
-        timestamp: new Date().toISOString(),
-      },
+      firstSolver: solverEntry,
+      solvers: [solverEntry],
       totalSolvers: 1,
       isFirst: true,
       _kvError: true,
