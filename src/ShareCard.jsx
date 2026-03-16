@@ -62,7 +62,7 @@ function getRowEmojis(guess, target) {
   return cells.map(c => cellEmoji(c.status, c.arrow)).join('')
 }
 
-export default function ShareCard({ guesses, target, dailyInfo }) {
+export default function ShareCard({ guesses, target, dailyInfo, hintUsed }) {
   const [copied, setCopied] = useState(false)
   const dayIndex = getGameDayIndex()
 
@@ -79,7 +79,7 @@ export default function ShareCard({ guesses, target, dailyInfo }) {
 
     const lines = [
       `MCOCdle #${dayIndex}`,
-      `Solved in ${guesses.length} ${guesses.length === 1 ? 'guess' : 'guesses'}${rank ? ` | Rank #${rank}` : ''}`,
+      `Solved in ${guesses.length} ${guesses.length === 1 ? 'guess' : 'guesses'}${rank ? ` | Rank #${rank}` : ''}${hintUsed ? ' | \uD83D\uDCA1 Hint used' : ''}`,
       '',
       ...shown,
     ]

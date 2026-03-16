@@ -59,6 +59,7 @@ export default function App() {
   const [playerName, setPlayerName] = useState(getDisplayName)
   const [revealing, setRevealing] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const [hintUsed, setHintUsed] = useState(() => localStorage.getItem(getStorageKey() + '-hint') === '1')
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
   const [helpMode, setHelpMode] = useState(window.location.pathname === '/help')
@@ -229,9 +230,11 @@ export default function App() {
 
   // Auto-show hint when navigating to /help
   if (helpMode && guesses.length < 10) {
-    // Not enough guesses — redirect back
     window.history.replaceState({}, '', '/')
     setHelpMode(false)
+  } else if (helpMode && guesses.length >= 10 && !hintUsed) {
+    setHintUsed(true)
+    localStorage.setItem(getStorageKey() + '-hint', '1')
   }
 
   if (devMode) {
@@ -317,7 +320,7 @@ export default function App() {
               disabled={revealing}
             />
             {guesses.length >= 10 && (
-              <button className="hint-btn" onClick={() => setShowHint(true)} title="Get a hint">
+              <button className="hint-btn" onClick={() => { setShowHint(true); setHintUsed(true); localStorage.setItem(getStorageKey() + '-hint', '1') }} title="Get a hint">
                 <span className="hint-btn-icon">?!</span>
                 <span className="hint-btn-label">Hint</span>
               </button>
@@ -348,7 +351,7 @@ export default function App() {
       </div>
 
       {won && (
-        <ShareCard guesses={guesses} target={target} dailyInfo={dailyInfo} />
+        <ShareCard guesses={guesses} target={target} dailyInfo={dailyInfo} hintUsed={hintUsed} />
       )}
 
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
