@@ -361,7 +361,7 @@ export default function App() {
         </>
       )}
 
-      <div className="grid-container">
+      {guesses.length > 0 && <div className="grid-container">
         <div className="grid-header">
           {COLUMNS.map((col, i) => (
             <div key={col} className={`header-cell ${i === 0 ? 'header-champ' : ''}`}>
@@ -380,7 +380,7 @@ export default function App() {
             />
           ))}
         </div>
-      </div>
+      </div>}
 
       {won && (
         <ShareCard guesses={guesses} target={target} dailyInfo={dailyInfo} hintUsed={hintUsed} />
