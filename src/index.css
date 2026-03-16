@@ -1031,6 +1031,7 @@ header {
 /* ===== Share Card ===== */
 .share-card {
   width: fit-content;
+  max-width: 100%;
   min-width: 260px;
   background: var(--bg-glass);
   border: 1px solid var(--border-glow);
