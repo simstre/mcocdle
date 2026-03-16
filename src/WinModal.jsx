@@ -1,16 +1,4 @@
-import { useState } from 'react'
-
-export default function WinModal({ target, guesses, dailyInfo, playerName, onSetName, onClose }) {
-  const [nameInput, setNameInput] = useState(playerName)
-  const hasName = !!playerName
-
-  const handleSubmit = () => {
-    if (nameInput.trim()) {
-      onSetName(nameInput.trim())
-    }
-    onClose()
-  }
-
+export default function WinModal({ target, guesses, dailyInfo, playerName, onClose }) {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal win-modal" onClick={e => e.stopPropagation()}>
@@ -25,27 +13,9 @@ export default function WinModal({ target, guesses, dailyInfo, playerName, onSet
           <h2 className="win-modal-title">Victory!</h2>
           <div className="win-modal-champ">{target.name}</div>
           <div className="win-modal-guesses">
-            Solved in <strong>{guesses}</strong> {guesses === 1 ? 'guess' : 'guesses'}
+            <strong>{playerName}</strong> solved in <strong>{guesses}</strong> {guesses === 1 ? 'guess' : 'guesses'}
           </div>
         </div>
-
-        {!hasName && (
-          <div className="name-prompt">
-            <p>Enter your name for the leaderboard:</p>
-            <div className="name-input-row">
-              <input
-                type="text"
-                className="name-input"
-                value={nameInput}
-                onChange={e => setNameInput(e.target.value)}
-                onKeyDown={e => e.key === 'Enter' && handleSubmit()}
-                placeholder="Your name..."
-                maxLength={20}
-                autoFocus
-              />
-            </div>
-          </div>
-        )}
 
         {dailyInfo?.firstSolver && (
           <div className="first-solver-section">
@@ -60,9 +30,7 @@ export default function WinModal({ target, guesses, dailyInfo, playerName, onSet
           </div>
         )}
 
-        <button className="modal-action-btn" onClick={handleSubmit}>
-          {hasName ? 'Continue' : 'Save & Continue'}
-        </button>
+        <button className="modal-action-btn" onClick={onClose}>Continue</button>
       </div>
     </div>
   )

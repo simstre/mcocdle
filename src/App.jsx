@@ -6,6 +6,7 @@ import WinModal from './WinModal'
 import DevPage from './DevPage'
 import HintPanel from './HintPanel'
 import Leaderboard from './Leaderboard'
+import ProfileModal from './ProfileModal'
 import Countdown from './Countdown'
 import ShareCard from './ShareCard'
 
@@ -44,8 +45,23 @@ function getTodayDateStr() {
   return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
 }
 
+const ADJECTIVES = ['Mighty','Cosmic','Mystic','Savage','Iron','Shadow','Crimson','Golden','Silent','Blazing','Frozen','Dark','Swift','Noble','Raging']
+const NOUNS = ['Summoner','Champion','Warrior','Sentinel','Guardian','Contender','Gladiator','Fighter','Slayer','Knight','Avenger','Brawler','Hunter','Titan','Seeker']
+
+function generateUsername() {
+  const adj = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)]
+  const noun = NOUNS[Math.floor(Math.random() * NOUNS.length)]
+  const num = Math.floor(Math.random() * 100)
+  return `${adj}${noun}${num}`
+}
+
 function getDisplayName() {
-  return localStorage.getItem('mcocdle-name') || ''
+  let name = localStorage.getItem('mcocdle-name')
+  if (!name) {
+    name = generateUsername()
+    localStorage.setItem('mcocdle-name', name)
+  }
+  return name
 }
 
 export default function App() {
@@ -59,6 +75,7 @@ export default function App() {
   const [playerName, setPlayerName] = useState(getDisplayName)
   const [revealing, setRevealing] = useState(false)
   const [showHint, setShowHint] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
   const [hintUsed, setHintUsed] = useState(() => localStorage.getItem(getStorageKey() + '-hint') === '1')
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
@@ -263,6 +280,11 @@ export default function App() {
         <img src="/mcoc-logo.png" alt="Marvel Contest of Champions" className="header-logo" />
         <span className="dle-badge">MCOCdle</span>
         <div className="header-actions">
+          <button className="header-icon-btn" onClick={() => setShowProfile(true)} title="Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
+              <circle cx="12" cy="8" r="4" /><path d="M4 21v-1a6 6 0 0 1 12 0v1" />
+            </svg>
+          </button>
           <button className="header-icon-btn" onClick={() => setShowLeaderboard(true)} title="Leaderboard">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
               <rect x="4" y="14" width="4" height="8" rx="1" /><rect x="10" y="6" width="4" height="16" rx="1" /><rect x="16" y="10" width="4" height="12" rx="1" />
@@ -354,6 +376,7 @@ export default function App() {
         <ShareCard guesses={guesses} target={target} dailyInfo={dailyInfo} hintUsed={hintUsed} />
       )}
 
+      {showProfile && <ProfileModal playerName={playerName} onSetName={handleSetName} onClose={() => setShowProfile(false)} />}
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
       {showLeaderboard && <Leaderboard dailyInfo={dailyInfo} onClose={() => setShowLeaderboard(false)} />}
       {(showHint || helpMode) && guesses.length >= 10 && (
@@ -376,7 +399,6 @@ export default function App() {
           guesses={guesses.length}
           dailyInfo={dailyInfo}
           playerName={playerName}
-          onSetName={handleSetName}
           onClose={() => setShowWin(false)}
         />
       )}

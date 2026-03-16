@@ -1028,6 +1028,26 @@ header {
   box-shadow: 0 0 16px rgba(160, 100, 255, 0.2);
 }
 
+/* ===== Profile Modal ===== */
+.profile-field {
+  margin-bottom: 20px;
+}
+
+.profile-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.profile-hint {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
 /* ===== Share Card ===== */
 .share-card {
   width: fit-content;
