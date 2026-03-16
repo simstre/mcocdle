@@ -991,6 +991,171 @@ header {
   box-shadow: 0 0 16px rgba(160, 100, 255, 0.2);
 }
 
+/* ===== Search Row (search + hint button) ===== */
+.search-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+
+.search-row .search-container {
+  margin-bottom: 0;
+}
+
+.hint-btn {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, rgba(240, 192, 64, 0.15), rgba(240, 192, 64, 0.08));
+  border: 1px solid rgba(240, 192, 64, 0.3);
+  border-radius: 14px;
+  color: var(--marvel-gold);
+  cursor: pointer;
+  transition: all 0.2s;
+  animation: hintPulse 2s ease-in-out infinite;
+}
+
+.hint-btn:hover {
+  background: linear-gradient(135deg, rgba(240, 192, 64, 0.25), rgba(240, 192, 64, 0.15));
+  box-shadow: 0 0 16px rgba(240, 192, 64, 0.3);
+  transform: scale(1.05);
+}
+
+@keyframes hintPulse {
+  0%, 100% { border-color: rgba(240, 192, 64, 0.3); }
+  50% { border-color: rgba(240, 192, 64, 0.6); }
+}
+
+.hint-btn-icon {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.hint-btn-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ===== Help class icon in modal ===== */
+.help-class-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+/* ===== Hint Panel ===== */
+.hint-reveal {
+  background: rgba(240, 192, 64, 0.08);
+  border: 1px solid rgba(240, 192, 64, 0.2);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hint-reveal-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.hint-reveal-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  color: var(--marvel-gold);
+  letter-spacing: 3px;
+}
+
+.hint-candidates {
+  margin-bottom: 20px;
+}
+
+.hint-candidates-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.hint-candidates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hint-candidate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  transition: background 0.15s;
+}
+
+.hint-candidate:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hint-candidate-portrait {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hint-candidate-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hint-candidate-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.hint-candidate-name {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.hint-candidate-class {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  margin-left: auto;
+}
+
+.hint-candidate-class.cosmic { color: var(--cosmic); }
+.hint-candidate-class.tech { color: var(--tech); }
+.hint-candidate-class.mutant { color: var(--mutant); }
+.hint-candidate-class.science { color: var(--science); }
+.hint-candidate-class.mystic { color: var(--mystic); }
+.hint-candidate-class.skill { color: var(--skill); }
+
 /* ===== Dev Page ===== */
 .dev-panel {
   width: 100%;

@@ -4,7 +4,7 @@ export default function HelpModal({ onClose }) {
       <div className="modal" onClick={e => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>&times;</button>
         <h2>How to Play</h2>
-        <p>Guess the daily MCOC champion! Each guess reveals how your pick compares to the mystery champion.</p>
+        <p>Guess the daily MCOC champion! You have unlimited tries. Each guess shows the champion's portrait and compares attributes to the mystery champion.</p>
 
         <div className="help-colors">
           <div className="help-item">
@@ -27,13 +27,21 @@ export default function HelpModal({ onClose }) {
 
         <h3>Attributes</h3>
         <ul>
-          <li><strong>Class</strong> &mdash; Cosmic, Tech, Mutant, Science, Mystic, Skill</li>
+          <li><img src="/icons/cosmic.png" className="help-class-icon" alt="" /> <strong>Class</strong> &mdash; Cosmic, Tech, Mutant, Science, Mystic, Skill</li>
           <li><strong>Gender</strong> &mdash; Male, Female, Other</li>
-          <li><strong>Size</strong> &mdash; S, M, L, XL (with direction arrows)</li>
+          <li><strong>Size</strong> &mdash; S, M, L, XL (arrows show direction)</li>
           <li><strong>Alignment</strong> &mdash; Hero or Villain</li>
-          <li><strong>Affiliation</strong> &mdash; Team tags (orange = partial overlap)</li>
+          <li><strong>Affiliation</strong> &mdash; Team tags (orange = some overlap)</li>
           <li><strong>Fighting Style</strong> &mdash; Offensive, Defensive, or Control</li>
-          <li><strong>Release Year</strong> &mdash; When added to MCOC (with direction arrows)</li>
+          <li><strong>Release Year</strong> &mdash; When added to MCOC (arrows show direction)</li>
+        </ul>
+
+        <h3>Features</h3>
+        <ul>
+          <li>Hover or tap a portrait to see the champion name</li>
+          <li>Each new guess animates in with a reveal sequence</li>
+          <li>After 10 guesses, a <strong>hint</strong> button appears &mdash; it reveals the value of your least-matched attribute and suggests 5 possible champions</li>
+          <li>The first player to solve each day is crowned on the leaderboard</li>
         </ul>
 
         <p className="help-footer">A new champion every day. Be the first to solve it!</p>

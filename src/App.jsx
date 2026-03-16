@@ -4,6 +4,7 @@ import SearchInput from './SearchInput'
 import HelpModal from './HelpModal'
 import WinModal from './WinModal'
 import DevPage from './DevPage'
+import HintPanel from './HintPanel'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
@@ -45,10 +46,15 @@ export default function App() {
   const [dailyInfo, setDailyInfo] = useState(null)
   const [playerName, setPlayerName] = useState(getDisplayName)
   const [revealing, setRevealing] = useState(false)
+  const [showHint, setShowHint] = useState(false)
   const [devMode, setDevMode] = useState(window.location.pathname === '/dev')
+  const [helpMode, setHelpMode] = useState(window.location.pathname === '/help')
 
   useEffect(() => {
-    const onPop = () => setDevMode(window.location.pathname === '/dev')
+    const onPop = () => {
+      setDevMode(window.location.pathname === '/dev')
+      setHelpMode(window.location.pathname === '/help')
+    }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
@@ -162,6 +168,13 @@ export default function App() {
     )
   }
 
+  // Auto-show hint when navigating to /help
+  if (helpMode && guesses.length < 10) {
+    // Not enough guesses — redirect back
+    window.history.replaceState({}, '', '/')
+    setHelpMode(false)
+  }
+
   if (devMode) {
     return (
       <DevPage
@@ -222,12 +235,20 @@ export default function App() {
               <span className="guess-total"> guesses</span>
             </span>
           </div>
-          <SearchInput
-            champions={champions}
-            guesses={guesses}
-            onGuess={handleGuess}
-            disabled={revealing}
-          />
+          <div className="search-row">
+            <SearchInput
+              champions={champions}
+              guesses={guesses}
+              onGuess={handleGuess}
+              disabled={revealing}
+            />
+            {guesses.length >= 10 && (
+              <button className="hint-btn" onClick={() => setShowHint(true)} title="Get a hint">
+                <span className="hint-btn-icon">?!</span>
+                <span className="hint-btn-label">Hint</span>
+              </button>
+            )}
+          </div>
         </>
       )}
 
@@ -253,6 +274,20 @@ export default function App() {
       </div>
 
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
+      {(showHint || helpMode) && guesses.length >= 10 && (
+        <HintPanel
+          target={target}
+          champions={champions}
+          guesses={guesses}
+          onClose={() => {
+            setShowHint(false)
+            if (helpMode) {
+              window.history.pushState({}, '', '/')
+              setHelpMode(false)
+            }
+          }}
+        />
+      )}
       {showWin && (
         <WinModal
           target={target}
