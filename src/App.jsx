@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import GuessRow from './GuessRow'
 import SearchInput from './SearchInput'
 import HelpModal from './HelpModal'
@@ -118,6 +118,8 @@ export default function App() {
       .catch(() => {})
   }, [])
 
+  const pendingWinRef = useRef(false)
+
   const handleGuess = useCallback((champion) => {
     if (won || revealing || guesses.some(g => g.name === champion.name)) return
 
@@ -126,20 +128,18 @@ export default function App() {
     setRevealing(true)
     localStorage.setItem(getStorageKey(), JSON.stringify(newGuesses.map(g => g.name)))
 
-    if (champion.name === target.name) {
-      // Win is shown after reveal animation finishes (via onRevealDone)
-    }
+    pendingWinRef.current = champion.name === target.name
   }, [won, revealing, guesses, target])
 
   const handleRevealDone = useCallback(() => {
     setRevealing(false)
-    // Check if the latest guess was correct
-    if (guesses.length > 0 && guesses[0].name === target?.name) {
+    if (pendingWinRef.current) {
+      pendingWinRef.current = false
       setWon(true)
       setShowWin(true)
       submitSolve(guesses.length)
     }
-  }, [guesses, target, submitSolve])
+  }, [guesses.length, submitSolve])
 
   const handleSetName = useCallback((name) => {
     setPlayerName(name)

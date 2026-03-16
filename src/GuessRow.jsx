@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect, useRef } from 'react'
 
 const CLASS_COLORS = {
   Cosmic: '#3b82f6',
@@ -49,24 +49,19 @@ function compareSize(guessSize, targetSize) {
 
 export default function GuessRow({ guess, target, isNew, onRevealDone }) {
   const [phase, setPhase] = useState(isNew ? 'loading' : 'done')
-  // 'loading' -> show shimmer bar (anticipation)
-  // 'revealing' -> cells flip in one by one
-  // 'done' -> static display
-
   const isCorrect = guess.name === target.name
+  const onRevealDoneRef = useRef(onRevealDone)
+  onRevealDoneRef.current = onRevealDone
 
   useEffect(() => {
     if (!isNew) return
-    // Phase 1: shimmer bar for anticipation (400ms)
     const t1 = setTimeout(() => setPhase('revealing'), 400)
-    // Phase 2: after all cells revealed, mark done
-    const totalRevealTime = 400 + 8 * 80 + 350 // shimmer + stagger + last animation
     const t2 = setTimeout(() => {
       setPhase('done')
-      onRevealDone?.()
-    }, totalRevealTime)
+      onRevealDoneRef.current?.()
+    }, 400 + 8 * 80 + 350)
     return () => { clearTimeout(t1); clearTimeout(t2) }
-  }, [isNew, onRevealDone])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps — only run on mount
 
   const cells = useMemo(() => {
     const nameStatus = compareValue(guess.name, target.name)
@@ -101,7 +96,6 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
     ]
   }, [guess, target])
 
-  // Phase: loading shimmer
   if (phase === 'loading') {
     return (
       <div className={`guess-row-shimmer ${isCorrect ? 'shimmer-correct' : 'shimmer-wrong'}`}>
