@@ -2,13 +2,13 @@ import { useState } from 'react'
 
 export default function WinModal({ target, guesses, dailyInfo, playerName, onSetName, onClose }) {
   const [nameInput, setNameInput] = useState(playerName)
-  const [saved, setSaved] = useState(!!playerName)
+  const hasName = !!playerName
 
-  const handleSave = () => {
+  const handleSubmit = () => {
     if (nameInput.trim()) {
       onSetName(nameInput.trim())
-      setSaved(true)
     }
+    onClose()
   }
 
   return (
@@ -29,7 +29,7 @@ export default function WinModal({ target, guesses, dailyInfo, playerName, onSet
           </div>
         </div>
 
-        {!saved && (
+        {!hasName && (
           <div className="name-prompt">
             <p>Enter your name for the leaderboard:</p>
             <div className="name-input-row">
@@ -38,12 +38,11 @@ export default function WinModal({ target, guesses, dailyInfo, playerName, onSet
                 className="name-input"
                 value={nameInput}
                 onChange={e => setNameInput(e.target.value)}
-                onKeyDown={e => e.key === 'Enter' && handleSave()}
+                onKeyDown={e => e.key === 'Enter' && handleSubmit()}
                 placeholder="Your name..."
                 maxLength={20}
                 autoFocus
               />
-              <button className="name-save-btn" onClick={handleSave}>Save</button>
             </div>
           </div>
         )}
@@ -61,7 +60,9 @@ export default function WinModal({ target, guesses, dailyInfo, playerName, onSet
           </div>
         )}
 
-        <button className="modal-action-btn" onClick={onClose}>Continue</button>
+        <button className="modal-action-btn" onClick={handleSubmit}>
+          {hasName ? 'Continue' : 'Save & Continue'}
+        </button>
       </div>
     </div>
   )

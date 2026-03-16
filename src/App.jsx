@@ -73,8 +73,30 @@ export default function App() {
   useEffect(() => {
     fetch('/api/daily')
       .then(r => r.json())
-      .then(setDailyInfo)
-      .catch(() => {})
+      .then(data => {
+        // If API returned no solvers, check localStorage
+        if (!data.solvers?.length) {
+          const lbKey = `mcocdle-lb-${data.date || getTodayDateStr()}`
+          const localLb = JSON.parse(localStorage.getItem(lbKey) || '[]')
+          if (localLb.length) {
+            data.solvers = localLb
+            data.firstSolver = data.firstSolver || localLb[0]
+            data.totalSolvers = Math.max(data.totalSolvers || 0, localLb.length)
+          }
+        }
+        setDailyInfo(data)
+      })
+      .catch(() => {
+        // API completely failed, use localStorage
+        const dateStr = getTodayDateStr()
+        const localLb = JSON.parse(localStorage.getItem(`mcocdle-lb-${dateStr}`) || '[]')
+        setDailyInfo({
+          date: dateStr,
+          firstSolver: localLb[0] || null,
+          solvers: localLb,
+          totalSolvers: localLb.length,
+        })
+      })
   }, [])
 
   useEffect(() => {
@@ -106,23 +128,46 @@ export default function App() {
 
   const submitSolve = useCallback((guessCount) => {
     const name = localStorage.getItem('mcocdle-name') || 'Anonymous'
+    const dateStr = getTodayDateStr()
+    const solverEntry = { name, guesses: guessCount, timestamp: new Date().toISOString() }
+
+    // Always save to localStorage leaderboard
+    const lbKey = `mcocdle-lb-${dateStr}`
+    const localLb = JSON.parse(localStorage.getItem(lbKey) || '[]')
+    if (localLb.length < 10) {
+      localLb.push(solverEntry)
+      localStorage.setItem(lbKey, JSON.stringify(localLb))
+    }
+
+    // Update state with local data immediately
+    setDailyInfo(prev => {
+      const solvers = prev?.solvers?.length ? prev.solvers : []
+      const merged = [...solvers]
+      if (merged.length < 10) merged.push(solverEntry)
+      return {
+        ...prev,
+        firstSolver: prev?.firstSolver || solverEntry,
+        solvers: merged,
+        totalSolvers: (prev?.totalSolvers || 0) + 1,
+      }
+    })
+
+    // Also try the API (works when KV is connected)
     fetch('/api/solve', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name,
-        guesses: guessCount,
-        date: getTodayDateStr(),
-      }),
+      body: JSON.stringify({ name, guesses: guessCount, date: dateStr }),
     })
       .then(r => r.json())
       .then(data => {
-        setDailyInfo(prev => ({
-          ...prev,
-          firstSolver: data.firstSolver,
-          solvers: data.solvers || prev?.solvers || [],
-          totalSolvers: data.totalSolvers,
-        }))
+        if (!data._kvError && data.solvers?.length) {
+          setDailyInfo(prev => ({
+            ...prev,
+            firstSolver: data.firstSolver,
+            solvers: data.solvers,
+            totalSolvers: data.totalSolvers,
+          }))
+        }
       })
       .catch(() => {})
   }, [])
