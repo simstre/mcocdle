@@ -495,7 +495,7 @@
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Unknown",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/c940a70a76.png"
   },
@@ -527,7 +527,7 @@
   {
     "name": "Civil Warrior",
     "class": "Tech",
-    "gender": "Other",
+    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -554,7 +554,7 @@
     "class": "Cosmic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [
       "Cabal"
     ],
@@ -603,9 +603,9 @@
     "class": "Cosmic",
     "gender": "Male",
     "size": "XL",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Unknown",
+    "fighting_style": "Offensive",
     "release_year": 2019,
     "portrait": "/portraits/9b4d094612.png"
   },
@@ -689,7 +689,7 @@
   {
     "name": "Darkhawk",
     "class": "Tech",
-    "gender": "Other",
+    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -715,7 +715,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [
       "X-Men",
       "Thunderbolts"
@@ -729,7 +729,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [
       "X-Force"
     ],
@@ -870,7 +870,7 @@
     "class": "Mystic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2019,
@@ -971,7 +971,7 @@
     "class": "Cosmic",
     "gender": "Other",
     "size": "L",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2022,
@@ -1060,7 +1060,7 @@
     "class": "Mutant",
     "gender": "Other",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2018,
@@ -1079,13 +1079,13 @@
   },
   {
     "name": "Grandmaster",
-    "class": "Unknown",
+    "class": "Mystic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Unknown",
-    "release_year": null,
+    "fighting_style": "Control",
+    "release_year": 2020,
     "portrait": "/portraits/9d8eafbbcf.png"
   },
   {
@@ -1140,9 +1140,9 @@
   {
     "name": "Guillotine 2099",
     "class": "Tech",
-    "gender": "Other",
+    "gender": "Female",
     "size": "S",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2019,
@@ -1234,9 +1234,9 @@
   {
     "name": "Hit-Monkey",
     "class": "Skill",
-    "gender": "Other",
+    "gender": "Male",
     "size": "S",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2020,
@@ -1467,7 +1467,7 @@
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Unknown",
+    "fighting_style": "Defensive",
     "release_year": 2024,
     "portrait": "/portraits/36cf859fa2.png"
   },
@@ -1576,7 +1576,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2016,
@@ -1801,7 +1801,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "L",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2026,
@@ -1889,7 +1889,7 @@
   {
     "name": "Mangog",
     "class": "Mystic",
-    "gender": "Male",
+    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -1916,7 +1916,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2018,
@@ -1936,7 +1936,7 @@
   {
     "name": "Mephisto",
     "class": "Mystic",
-    "gender": "Male",
+    "gender": "Other",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -2018,7 +2018,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [
       "Defenders"
     ],
@@ -2133,7 +2133,7 @@
     "class": "Tech",
     "gender": "Female",
     "size": "S",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2017,
@@ -2366,7 +2366,7 @@
     "class": "Mutant",
     "gender": "Other",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2020,
@@ -2391,7 +2391,7 @@
     "class": "Cosmic",
     "gender": "Female",
     "size": "S",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [
       "Cabal"
     ],
@@ -2611,7 +2611,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "L",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [
       "Brotherhood of Mutants"
     ],
@@ -2648,7 +2648,7 @@
   {
     "name": "Sauron",
     "class": "Mutant",
-    "gender": "Other",
+    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3194,7 +3194,7 @@
     "class": "Mystic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [
       "Symbiote"
     ],
@@ -3259,7 +3259,7 @@
     "class": "Cosmic",
     "gender": "Male",
     "size": "L",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2018,
@@ -3270,7 +3270,7 @@
     "class": "Mystic",
     "gender": "Other",
     "size": "XL",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2024,
@@ -3321,9 +3321,9 @@
     "class": "Science",
     "gender": "Male",
     "size": "XL",
-    "alignment": "Unknown",
+    "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Unknown",
+    "fighting_style": "Control",
     "release_year": 2021,
     "portrait": "/portraits/97653b14ce.png"
   },
@@ -3365,7 +3365,7 @@
   {
     "name": "Thor (Jane Foster)",
     "class": "Mystic",
-    "gender": "Male",
+    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3675,7 +3675,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [
       "Thunderbolts"
     ],
@@ -3704,7 +3704,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2020,
@@ -3740,7 +3740,7 @@
     "class": "Skill",
     "gender": "Female",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2025,
@@ -3754,7 +3754,7 @@
     "alignment": "Villain",
     "affiliations": [],
     "fighting_style": "Control",
-    "release_year": null,
+    "release_year": 2015,
     "portrait": "/portraits/a359006ce8.png"
   },
   {
@@ -3762,7 +3762,7 @@
     "class": "Tech",
     "gender": "Male",
     "size": "M",
-    "alignment": "Unknown",
+    "alignment": "Hero",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2017,
