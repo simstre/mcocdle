@@ -1,23 +1,14 @@
 import { useState, useMemo } from 'react'
 
 // Epoch: today is day #1 (2026-03-15 PST)
-const EPOCH_MS = Date.UTC(2026, 2, 15, 16, 0, 0) // 2026-03-15 at 16:00 UTC = 8am PST
+const EPOCH_MS = Date.UTC(2026, 2, 15, 16, 0, 0)
+const MAX_ROWS = 5
 
 function getGameDayIndex() {
   const now = Date.now()
   const adjusted = now - 16 * 60 * 60 * 1000
   const epochAdjusted = EPOCH_MS - 16 * 60 * 60 * 1000
   return Math.floor((adjusted - epochAdjusted) / (24 * 60 * 60 * 1000)) + 1
-}
-
-function statusEmoji(status) {
-  if (status === 'correct') return '\uD83D\uDFE9' // green
-  if (status === 'partial') return '\uD83D\uDFE8' // yellow
-  return '\uD83D\uDFE5' // red
-}
-
-function compareValue(a, b) {
-  return a === b ? 'correct' : 'wrong'
 }
 
 function compareArrays(a, b) {
@@ -30,42 +21,74 @@ function compareArrays(a, b) {
   return 'wrong'
 }
 
+function cellEmoji(status, arrow) {
+  if (status === 'correct') return '\uD83D\uDFE9'
+  if (status === 'partial') return '\uD83D\uDFE8'
+  if (arrow === 'up') return '\u2B06\uFE0F'
+  if (arrow === 'down') return '\u2B07\uFE0F'
+  return '\uD83D\uDFE5'
+}
+
 function getRowEmojis(guess, target) {
-  const results = [
-    compareValue(guess.class, target.class),
-    compareValue(guess.gender, target.gender),
-    (() => { const o = ['S','M','L','XL']; return o.indexOf(guess.size) === o.indexOf(target.size) ? 'correct' : 'wrong' })(),
-    compareValue(guess.alignment, target.alignment),
-    compareArrays(guess.affiliations, target.affiliations),
-    compareValue(guess.fighting_style, target.fighting_style),
-    (() => guess.release_year === target.release_year ? 'correct' : 'wrong')(),
+  const sizeOrder = ['S', 'M', 'L', 'XL']
+  const gi = sizeOrder.indexOf(guess.size)
+  const ti = sizeOrder.indexOf(target.size)
+
+  const cells = [
+    // Class
+    { status: guess.class === target.class ? 'correct' : 'wrong' },
+    // Gender
+    { status: guess.gender === target.gender ? 'correct' : 'wrong' },
+    // Size (with arrows)
+    {
+      status: gi === ti ? 'correct' : 'wrong',
+      arrow: gi === ti ? null : gi > ti ? 'down' : 'up',
+    },
+    // Alignment
+    { status: guess.alignment === target.alignment ? 'correct' : 'wrong' },
+    // Affiliation
+    { status: compareArrays(guess.affiliations, target.affiliations) },
+    // Fighting Style
+    { status: guess.fighting_style === target.fighting_style ? 'correct' : 'wrong' },
+    // Release Year (with arrows)
+    {
+      status: guess.release_year === target.release_year ? 'correct' : 'wrong',
+      arrow: guess.release_year === target.release_year ? null
+        : (!guess.release_year || !target.release_year) ? null
+        : guess.release_year > target.release_year ? 'down' : 'up',
+    },
   ]
-  return results.map(statusEmoji).join('')
+
+  return cells.map(c => cellEmoji(c.status, c.arrow)).join('')
 }
 
 export default function ShareCard({ guesses, target, dailyInfo }) {
   const [copied, setCopied] = useState(false)
   const dayIndex = getGameDayIndex()
 
-  // Determine player's rank (position among solvers)
   const playerName = localStorage.getItem('mcocdle-name') || 'Anonymous'
   const solvers = dailyInfo?.solvers || []
   const rankIdx = solvers.findIndex(s => s.name === playerName)
   const rank = rankIdx >= 0 ? rankIdx + 1 : solvers.length
 
   const shareText = useMemo(() => {
-    // Guesses are stored newest-first, reverse for display
-    const ordered = [...guesses].reverse()
-    const emojiGrid = ordered.map(g => getRowEmojis(g, target)).join('\n')
+    // Guesses are newest-first (matches screen order)
+    const rows = guesses.map(g => getRowEmojis(g, target))
+    const shown = rows.slice(0, MAX_ROWS)
+    const extra = rows.length - MAX_ROWS
 
     const lines = [
       `MCOCdle #${dayIndex}`,
       `Solved in ${guesses.length} ${guesses.length === 1 ? 'guess' : 'guesses'}${rank ? ` | Rank #${rank}` : ''}`,
       '',
-      emojiGrid,
-      '',
-      'https://mcocdle.vercel.app',
+      ...shown,
     ]
+
+    if (extra > 0) {
+      lines.push(`+${extra} more`)
+    }
+
+    lines.push('', 'https://mcocdle.vercel.app')
     return lines.join('\n')
   }, [guesses, target, dayIndex, rank])
 
@@ -75,7 +98,6 @@ export default function ShareCard({ guesses, target, dailyInfo }) {
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
     } catch {
-      // Fallback
       const ta = document.createElement('textarea')
       ta.value = shareText
       document.body.appendChild(ta)
