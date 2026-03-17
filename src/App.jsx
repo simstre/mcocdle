@@ -10,7 +10,6 @@ import ProfileModal from './ProfileModal'
 import Countdown from './Countdown'
 import ShareCard from './ShareCard'
 import championsData from './champions.js'
-import dailySequence from './dailySequence.js'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
@@ -25,17 +24,21 @@ function getGameDay() {
   }
 }
 
-// Epoch: 2026-03-15 at 8am PST (16:00 UTC) = day 0
-const EPOCH_MS = Date.UTC(2026, 2, 15, 16, 0, 0)
-
-function getDayIndex() {
-  const now = Date.now()
-  return Math.floor((now - EPOCH_MS) / (24 * 60 * 60 * 1000))
+// Deterministic hash from a string — same input always produces same number
+function hashString(str) {
+  let h = 0x811c9dc5
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i)
+    h = Math.imul(h, 0x01000193)
+  }
+  return h >>> 0
 }
+
+// Build a sorted list of champion names — sorted so insertion order doesn't matter
+const SORTED_NAMES = championsData.map(c => c.name).sort()
 
 function getDailyChampion(champions, overrideSeed) {
   if (overrideSeed != null) {
-    // Dev mode: random pick
     let hash = overrideSeed
     hash = ((hash >> 16) ^ hash) * 0x45d9f3b
     hash = ((hash >> 16) ^ hash) * 0x45d9f3b
@@ -43,8 +46,12 @@ function getDailyChampion(champions, overrideSeed) {
     return champions[Math.abs(hash) % champions.length]
   }
 
-  const idx = getDayIndex()
-  const name = dailySequence[idx % dailySequence.length]
+  const { year, month, day } = getGameDay()
+  // Hash the date string — deterministic, stable regardless of champion list size
+  const dateKey = `mcocdle-${year}-${month}-${day}`
+  const hash = hashString(dateKey)
+  const index = hash % SORTED_NAMES.length
+  const name = SORTED_NAMES[index]
   return champions.find(c => c.name === name) || champions[0]
 }
 
@@ -78,7 +85,7 @@ function getDisplayName() {
 }
 
 // Clear old progress on version bump
-const GAME_VERSION = 4
+const GAME_VERSION = 5
 if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
   const savedName = localStorage.getItem('mcocdle-name')
   const keys = Object.keys(localStorage).filter(k => k.startsWith('mcocdle-'))
