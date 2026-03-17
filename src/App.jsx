@@ -10,6 +10,7 @@ import ProfileModal from './ProfileModal'
 import Countdown from './Countdown'
 import ShareCard from './ShareCard'
 import championsData from './champions.js'
+import dailySequence from './dailySequence.js'
 
 const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
@@ -24,18 +25,27 @@ function getGameDay() {
   }
 }
 
-// Use a fixed pool size so adding champions doesn't change today's pick
-const CHAMPION_POOL_SIZE = 322
+// Epoch: 2026-03-15 at 8am PST (16:00 UTC) = day 0
+const EPOCH_MS = Date.UTC(2026, 2, 15, 16, 0, 0)
+
+function getDayIndex() {
+  const now = Date.now()
+  return Math.floor((now - EPOCH_MS) / (24 * 60 * 60 * 1000))
+}
 
 function getDailyChampion(champions, overrideSeed) {
-  const { year, month, day } = getGameDay()
-  const seed = overrideSeed ?? (year * 10000 + month * 100 + day + 7777)
-  let hash = seed
-  hash = ((hash >> 16) ^ hash) * 0x45d9f3b
-  hash = ((hash >> 16) ^ hash) * 0x45d9f3b
-  hash = (hash >> 16) ^ hash
-  const index = Math.abs(hash) % CHAMPION_POOL_SIZE
-  return champions[index % champions.length]
+  if (overrideSeed != null) {
+    // Dev mode: random pick
+    let hash = overrideSeed
+    hash = ((hash >> 16) ^ hash) * 0x45d9f3b
+    hash = ((hash >> 16) ^ hash) * 0x45d9f3b
+    hash = (hash >> 16) ^ hash
+    return champions[Math.abs(hash) % champions.length]
+  }
+
+  const idx = getDayIndex()
+  const name = dailySequence[idx % dailySequence.length]
+  return champions.find(c => c.name === name) || champions[0]
 }
 
 function getStorageKey() {
@@ -68,7 +78,7 @@ function getDisplayName() {
 }
 
 // Clear old progress on version bump
-const GAME_VERSION = 3
+const GAME_VERSION = 4
 if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
   const savedName = localStorage.getItem('mcocdle-name')
   const keys = Object.keys(localStorage).filter(k => k.startsWith('mcocdle-'))
