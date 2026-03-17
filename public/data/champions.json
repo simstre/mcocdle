@@ -35,6 +35,31 @@
     "portrait": "/portraits/01d06d47b2.png"
   },
   {
+    "name": "Adam Warlock",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2023,
+    "portrait": "/portraits/07c942c973.png"
+  },
+  {
+    "name": "Agent Venom",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016,
+    "portrait": "/portraits/5ae8f55417.png"
+  },
+  {
     "name": "Air-Walker",
     "class": "Cosmic",
     "gender": "Male",
@@ -105,6 +130,19 @@
     "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/7ed3c7096d.png"
+  },
+  {
+    "name": "Anti-Venom",
+    "class": "Science",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2021,
+    "portrait": "/portraits/c881b95785.png"
   },
   {
     "name": "Apocalypse",
@@ -817,6 +855,17 @@
     "portrait": "/portraits/97fae39bfd.png"
   },
   {
+    "name": "Doombot",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025,
+    "portrait": "/portraits/c7ec6d2e22.png"
+  },
+  {
     "name": "Dormammu",
     "class": "Mystic",
     "gender": "Other",
@@ -826,6 +875,17 @@
     "fighting_style": "Control",
     "release_year": 2017,
     "portrait": "/portraits/ccf04b1b5b.png"
+  },
+  {
+    "name": "Dracula",
+    "class": "Mystic",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025,
+    "portrait": "/portraits/7acf416aa1.png"
   },
   {
     "name": "Dragon Man",
@@ -965,6 +1025,17 @@
     "fighting_style": "Defensive",
     "release_year": 2025,
     "portrait": "/portraits/4618c6c259.png"
+  },
+  {
+    "name": "Franken-Castle",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025,
+    "portrait": "/portraits/ee65861136.png"
   },
   {
     "name": "Galan",
@@ -1114,6 +1185,19 @@
     "fighting_style": "Defensive",
     "release_year": 2015,
     "portrait": "/portraits/2965cd13b3.png"
+  },
+  {
+    "name": "Guardian",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Alpha Flight"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2020,
+    "portrait": "/portraits/25d6e85196.png"
   },
   {
     "name": "Guillotine",
@@ -1336,6 +1420,21 @@
     "portrait": "/portraits/7783f1096f.png"
   },
   {
+    "name": "Hyperion",
+    "class": "Cosmic",
+    "gender": "Male",
+    "size": "L",
+    "alignment": "Hero",
+    "affiliations": [
+      "Avengers",
+      "New Avengers",
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2016,
+    "portrait": "/portraits/57ae9ee559.png"
+  },
+  {
     "name": "Iceman",
     "class": "Mutant",
     "gender": "Male",
@@ -1446,6 +1545,20 @@
     "fighting_style": "Control",
     "release_year": 2018,
     "portrait": "/portraits/9f64b91337.png"
+  },
+  {
+    "name": "Iron Patriot",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Sinister Six",
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2015,
+    "portrait": "/portraits/5cb34b89ef.png"
   },
   {
     "name": "Ironheart",
@@ -1606,6 +1719,17 @@
     "fighting_style": "Offensive",
     "release_year": 2023,
     "portrait": "/portraits/8e46bbf898.png"
+  },
+  {
+    "name": "Killmonger",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [],
+    "fighting_style": "Defensive",
+    "release_year": 2018,
+    "portrait": "/portraits/32a8bda893.png"
   },
   {
     "name": "Kindred",
@@ -1806,6 +1930,19 @@
     "fighting_style": "Offensive",
     "release_year": 2026,
     "portrait": "/portraits/442384b5a8.png"
+  },
+  {
+    "name": "M.O.D.O.K.",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Cabal"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2017,
+    "portrait": "/portraits/8302ba0d08.png"
   },
   {
     "name": "Madelyne Pryor",
@@ -2073,6 +2210,17 @@
     "portrait": "/portraits/064b1dd628.png"
   },
   {
+    "name": "Mr. Knight",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2025,
+    "portrait": "/portraits/38c486f256.png"
+  },
+  {
     "name": "Ms. Marvel",
     "class": "Cosmic",
     "gender": "Female",
@@ -2334,6 +2482,19 @@
     "portrait": "/portraits/a5410b56dc.png"
   },
   {
+    "name": "Phoenix",
+    "class": "Cosmic",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "X-Men"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2016,
+    "portrait": "/portraits/5047bc596a.png"
+  },
+  {
     "name": "Photon",
     "class": "Science",
     "gender": "Female",
@@ -2385,6 +2546,17 @@
     "fighting_style": "Offensive",
     "release_year": 2020,
     "portrait": "/portraits/e22d6f6f46.png"
+  },
+  {
+    "name": "Prowler",
+    "class": "Tech",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Control",
+    "release_year": 2024,
+    "portrait": "/portraits/332e3c4d6a.png"
   },
   {
     "name": "Proxima Midnight",
@@ -2543,6 +2715,19 @@
     "portrait": "/portraits/e281d0f744.png"
   },
   {
+    "name": "Rhino",
+    "class": "Science",
+    "gender": "Male",
+    "size": "XL",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2014,
+    "portrait": "/portraits/87ab6c72fe.png"
+  },
+  {
     "name": "Rintrah",
     "class": "Mystic",
     "gender": "Male",
@@ -2686,6 +2871,19 @@
     "portrait": "/portraits/9b7ed41053.png"
   },
   {
+    "name": "Scorpion",
+    "class": "Science",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Villain",
+    "affiliations": [
+      "Sinister Six"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2022,
+    "portrait": "/portraits/5d0f5219d1.png"
+  },
+  {
     "name": "Scream",
     "class": "Cosmic",
     "gender": "Female",
@@ -2825,6 +3023,17 @@
     "fighting_style": "Offensive",
     "release_year": 2021,
     "portrait": "/portraits/2d86edf41d.png"
+  },
+  {
+    "name": "Silver Sable",
+    "class": "Skill",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2024,
+    "portrait": "/portraits/bdd79f8a26.png"
   },
   {
     "name": "Silver Samurai",
@@ -3146,6 +3355,32 @@
     "fighting_style": "Offensive",
     "release_year": 2021,
     "portrait": "/portraits/fa08b75f4b.png"
+  },
+  {
+    "name": "Summoned Symbioid",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Offensive",
+    "release_year": 2018,
+    "portrait": "/portraits/16ccfcbf10.png"
+  },
+  {
+    "name": "Summoned Symbiote",
+    "class": "Cosmic",
+    "gender": "Other",
+    "size": "L",
+    "alignment": "Villain",
+    "affiliations": [
+      "Symbiote"
+    ],
+    "fighting_style": "Defensive",
+    "release_year": 2021,
+    "portrait": "/portraits/f07d64f443.png"
   },
   {
     "name": "Sunspot",
@@ -3560,6 +3795,19 @@
     "portrait": "/portraits/32a8cb6405.png"
   },
   {
+    "name": "Viv Vision",
+    "class": "Tech",
+    "gender": "Female",
+    "size": "S",
+    "alignment": "Hero",
+    "affiliations": [
+      "Champions"
+    ],
+    "fighting_style": "Control",
+    "release_year": 2023,
+    "portrait": "/portraits/6dc8494e96.png"
+  },
+  {
     "name": "Void",
     "class": "Science",
     "gender": "Male",
@@ -3767,5 +4015,16 @@
     "fighting_style": "Defensive",
     "release_year": 2017,
     "portrait": "/portraits/2507f266e6.png"
+  },
+  {
+    "name": "\u00c6gon",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018,
+    "portrait": "/portraits/7b47b7557b.png"
   }
 ]
