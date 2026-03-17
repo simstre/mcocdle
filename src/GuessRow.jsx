@@ -1,8 +1,8 @@
 import { useMemo, useState, useEffect, useRef } from 'react'
 
 const CLASS_COLORS = {
-  Cosmic: '#3b82f6',
-  Tech: '#06b6d4',
+  Cosmic: '#06b6d4',
+  Tech: '#3b82f6',
   Mutant: '#eab308',
   Science: '#22c55e',
   Mystic: '#a855f7',
