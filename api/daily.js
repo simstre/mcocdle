@@ -1,5 +1,3 @@
-import { kv } from "@vercel/kv";
-
 // Game day resets at 8am PST (16:00 UTC)
 function getTodayKey() {
   const now = new Date();
@@ -29,32 +27,29 @@ export default async function handler(req, res) {
 
   const date = getTodayKey();
 
-  try {
-    const data = await kv.get(`mcocdle:${date}`);
+  // Only attempt KV if env vars are configured
+  if (process.env.KV_REST_API_URL) {
+    try {
+      const { kv } = await import("@vercel/kv");
+      const data = await kv.get(`mcocdle:${date}`);
 
-    if (!data) {
-      return res.status(200).json({
-        date,
-        firstSolver: null,
-        solvers: [],
-        totalSolvers: 0,
-      });
+      if (data) {
+        return res.status(200).json({
+          date,
+          firstSolver: data.firstSolver || null,
+          solvers: data.solvers || [],
+          totalSolvers: data.totalSolvers || 0,
+        });
+      }
+    } catch (err) {
+      console.error("KV error (daily):", err.message);
     }
-
-    return res.status(200).json({
-      date,
-      firstSolver: data.firstSolver || null,
-      solvers: data.solvers || [],
-      totalSolvers: data.totalSolvers || 0,
-    });
-  } catch (err) {
-    console.error("KV error (daily):", err.message);
-    return res.status(200).json({
-      date,
-      firstSolver: null,
-      solvers: [],
-      totalSolvers: 0,
-      _kvError: true,
-    });
   }
+
+  return res.status(200).json({
+    date,
+    firstSolver: null,
+    solvers: [],
+    totalSolvers: 0,
+  });
 }

@@ -24,6 +24,9 @@ function getGameDay() {
   }
 }
 
+// Use a fixed pool size so adding champions doesn't change today's pick
+const CHAMPION_POOL_SIZE = 322
+
 function getDailyChampion(champions, overrideSeed) {
   const { year, month, day } = getGameDay()
   const seed = overrideSeed ?? (year * 10000 + month * 100 + day + 7777)
@@ -31,8 +34,8 @@ function getDailyChampion(champions, overrideSeed) {
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
   hash = ((hash >> 16) ^ hash) * 0x45d9f3b
   hash = (hash >> 16) ^ hash
-  const index = Math.abs(hash) % champions.length
-  return champions[index]
+  const index = Math.abs(hash) % CHAMPION_POOL_SIZE
+  return champions[index % champions.length]
 }
 
 function getStorageKey() {
@@ -65,7 +68,7 @@ function getDisplayName() {
 }
 
 // Clear old progress on version bump
-const GAME_VERSION = 2
+const GAME_VERSION = 3
 if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
   const savedName = localStorage.getItem('mcocdle-name')
   const keys = Object.keys(localStorage).filter(k => k.startsWith('mcocdle-'))

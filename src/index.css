@@ -1497,7 +1497,7 @@ header {
   .guess-prompt { flex-direction: column; align-items: center; gap: 2px; }
   .prompt-text { font-size: 0.75rem; }
   .search-row { max-width: 100%; }
-  .search-input { font-size: 0.9rem; padding: 12px 14px 12px 38px; }
+  .search-input { font-size: 16px; padding: 12px 14px 12px 38px; }
   .search-icon { width: 16px; height: 16px; left: 12px; }
   .suggestions { border-radius: 10px; }
   .suggestion-item { padding: 6px 10px; font-size: 0.82rem; }

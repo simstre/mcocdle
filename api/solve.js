@@ -1,5 +1,3 @@
-import { kv } from "@vercel/kv";
-
 function setCors(res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -38,52 +36,51 @@ export default async function handler(req, res) {
     timestamp: new Date().toISOString(),
   };
 
-  try {
-    const existing = await kv.get(kvKey);
+  // Only attempt KV if env vars are configured
+  if (process.env.KV_REST_API_URL) {
+    try {
+      const { kv } = await import("@vercel/kv");
+      const existing = await kv.get(kvKey);
 
-    if (!existing) {
-      const record = {
-        firstSolver: solverEntry,
-        solvers: [solverEntry],
-        totalSolvers: 1,
+      if (!existing) {
+        const record = {
+          firstSolver: solverEntry,
+          solvers: [solverEntry],
+          totalSolvers: 1,
+        };
+        await kv.set(kvKey, record, { ex: 60 * 60 * 48 });
+        return res.status(200).json({ ...record, isFirst: true });
+      }
+
+      const solvers = existing.solvers || [];
+      if (solvers.length < 10) {
+        solvers.push(solverEntry);
+      }
+
+      const updated = {
+        ...existing,
+        solvers,
+        totalSolvers: (existing.totalSolvers || 1) + 1,
       };
-
-      await kv.set(kvKey, record, { ex: 60 * 60 * 48 });
+      await kv.set(kvKey, updated, { ex: 60 * 60 * 48 });
 
       return res.status(200).json({
-        ...record,
-        isFirst: true,
+        firstSolver: updated.firstSolver,
+        solvers: updated.solvers,
+        totalSolvers: updated.totalSolvers,
+        isFirst: false,
       });
+    } catch (err) {
+      console.error("KV error (solve):", err.message);
     }
-
-    // Add to solvers list (keep up to 10)
-    const solvers = existing.solvers || [];
-    if (solvers.length < 10) {
-      solvers.push(solverEntry);
-    }
-
-    const updated = {
-      ...existing,
-      solvers,
-      totalSolvers: (existing.totalSolvers || 1) + 1,
-    };
-
-    await kv.set(kvKey, updated, { ex: 60 * 60 * 48 });
-
-    return res.status(200).json({
-      firstSolver: updated.firstSolver,
-      solvers: updated.solvers,
-      totalSolvers: updated.totalSolvers,
-      isFirst: false,
-    });
-  } catch (err) {
-    console.error("KV error (solve):", err.message);
-    return res.status(200).json({
-      firstSolver: solverEntry,
-      solvers: [solverEntry],
-      totalSolvers: 1,
-      isFirst: true,
-      _kvError: true,
-    });
   }
+
+  // Fallback when KV not available
+  return res.status(200).json({
+    firstSolver: solverEntry,
+    solvers: [solverEntry],
+    totalSolvers: 1,
+    isFirst: true,
+    _kvError: true,
+  });
 }
