@@ -1431,7 +1431,7 @@ header {
   text-align: center;
 }
 
-/* ===== Responsive ===== */
+/* ===== Responsive: Tablet ===== */
 @media (max-width: 768px) {
   .header-logo { height: 50px; }
   .dle-badge { font-size: 1.2rem; }
@@ -1450,9 +1450,84 @@ header {
   .win-champion { font-size: 1.3rem; }
 }
 
+/* ===== Responsive: Mobile — no horizontal scroll, everything fits viewport ===== */
 @media (max-width: 480px) {
-  .app { padding: 0 8px 40px; }
+  .app { padding: 0 6px 40px; }
   .header-logo { height: 40px; }
   .dle-badge { font-size: 1rem; letter-spacing: 2px; }
-  .header-tagline { font-size: 0.55rem; letter-spacing: 2px; }
+
+  /* Remove horizontal scroll — grid fits screen */
+  .grid-container { overflow-x: visible; }
+  .grid-header {
+    grid-template-columns: 42px repeat(7, 1fr);
+    gap: 3px;
+    min-width: 0;
+  }
+  .guess-row {
+    grid-template-columns: 42px repeat(7, 1fr);
+    gap: 3px;
+  }
+  .guesses-list { gap: 3px; min-width: 0; }
+  .guess-row-shimmer { min-height: 44px; }
+
+  /* Smaller cells */
+  .header-cell {
+    font-size: 0.45rem;
+    padding: 6px 2px;
+    letter-spacing: 0.5px;
+  }
+  .cell {
+    padding: 4px 2px;
+    min-height: 44px;
+    border-radius: 6px;
+  }
+  .cell-text { font-size: 0.6rem; }
+  .cell-class-icon { width: 16px; height: 16px; }
+  .arrow { font-size: 0.55rem; }
+
+  /* Smaller portrait */
+  .champ-portrait-wrap { width: 34px; height: 34px; }
+  .champ-portrait-wrap > img,
+  .champ-portrait-wrap > div:first-child { width: 34px; height: 34px; border-radius: 6px; }
+
+  /* Tooltip adjustments */
+  .champ-tooltip { font-size: 0.65rem; padding: 3px 6px; }
+
+  /* Search + prompt */
+  .guess-prompt { flex-direction: column; align-items: center; gap: 2px; }
+  .prompt-text { font-size: 0.75rem; }
+  .search-row { max-width: 100%; }
+  .search-input { font-size: 0.9rem; padding: 12px 14px 12px 38px; }
+  .search-icon { width: 16px; height: 16px; left: 12px; }
+  .suggestions { border-radius: 10px; }
+  .suggestion-item { padding: 6px 10px; font-size: 0.82rem; }
+  .suggestion-portrait-wrap { width: 30px; height: 30px; border-radius: 6px; }
+
+  /* Win banner */
+  .win-banner { padding: 10px 14px; gap: 12px; }
+  .win-portrait-wrap { width: 40px; height: 40px; border-radius: 8px; }
+  .win-champion { font-size: 1.1rem; }
+  .win-meta { font-size: 0.72rem; }
+  .win-countdown { font-size: 0.68rem; }
+
+  /* Daily bar */
+  .daily-champion-bar { font-size: 0.72rem; padding: 8px 12px; border-radius: 10px; }
+
+  /* Modals */
+  .modal { padding: 20px 16px; border-radius: 14px; }
+  .modal h2 { font-size: 1.4rem; }
+
+  /* Share card */
+  .share-card { padding: 14px; min-width: 0; }
+  .share-preview { font-size: 0.72rem; padding: 10px; }
+
+  /* Hint button */
+  .hint-btn { padding: 8px 10px; border-radius: 10px; }
+  .hint-btn-icon { font-size: 0.9rem; }
+  .hint-btn-label { font-size: 0.5rem; }
+
+  /* Header actions */
+  .header-actions { gap: 6px; }
+  .header-icon-btn { width: 32px; height: 32px; }
+  .header-icon-btn svg { width: 15px; height: 15px; }
 }
