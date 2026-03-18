@@ -206,18 +206,23 @@ export default function App() {
     setRevealing(true)
     localStorage.setItem(getStorageKey(), JSON.stringify(newGuesses.map(g => g.name)))
 
-    pendingWinRef.current = champion.name === target.name
-  }, [won, revealing, guesses, target])
+    const isWin = champion.name === target.name
 
-  const handleRevealDone = useCallback(() => {
-    setRevealing(false)
-    if (pendingWinRef.current) {
-      pendingWinRef.current = false
-      setWon(true)
-      setShowWin(true)
-      submitSolve(guessCountRef.current)
-    }
-  }, [submitSolve])
+    // Reveal animation runs, then we finalize
+    // Use a timeout matching the reveal duration as a safety net
+    const revealDuration = 400 + 8 * 80 + 350 + 100 // shimmer + stagger + animation + buffer
+    setTimeout(() => {
+      setRevealing(false)
+      if (isWin) {
+        setWon(true)
+        setShowWin(true)
+        submitSolve(newGuesses.length)
+      }
+    }, revealDuration)
+  }, [won, revealing, guesses, target, submitSolve])
+
+  // Still needed for GuessRow callback but as a no-op safety
+  const handleRevealDone = useCallback(() => {}, [])
 
   const handleSetName = useCallback((name) => {
     setPlayerName(name)
