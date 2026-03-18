@@ -380,6 +380,21 @@ header {
   perspective: 600px;
 }
 
+/* ===== Close match hint ===== */
+.close-match-hint {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--marvel-gold);
+  padding: 4px 0 2px;
+  font-weight: 600;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* ===== Shimmer loading bar (anticipation before reveal) ===== */
 .guess-row-shimmer {
   min-height: 58px;

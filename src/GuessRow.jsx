@@ -96,6 +96,8 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
     ]
   }, [guess, target])
 
+  const allGreen = !isCorrect && cells.slice(1).every(c => c.status === 'correct')
+
   if (phase === 'loading') {
     return (
       <div className={`guess-row-shimmer ${isCorrect ? 'shimmer-correct' : 'shimmer-wrong'}`}>
@@ -107,6 +109,7 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
   const animate = phase === 'revealing'
 
   return (
+    <>
     <div className={`guess-row ${isCorrect && animate ? 'guess-row-correct' : ''}`}>
       {cells.map((cell, i) => {
         const cellDelay = animate ? `${i * 0.08}s` : '0s'
@@ -153,5 +156,9 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
         )
       })}
     </div>
+    {allGreen && phase === 'done' && (
+      <div className="close-match-hint">All attributes match — but it's a different champion!</div>
+    )}
+    </>
   )
 }
