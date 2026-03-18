@@ -963,7 +963,7 @@ header {
   border-radius: 10px;
   color: var(--text-primary);
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 16px;
   outline: none;
 }
 .name-input:focus {

@@ -88,9 +88,11 @@ function getDisplayName() {
 const GAME_VERSION = 5
 if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
   const savedName = localStorage.getItem('mcocdle-name')
+  const visited = localStorage.getItem('mcocdle-visited')
   const keys = Object.keys(localStorage).filter(k => k.startsWith('mcocdle-'))
   keys.forEach(k => localStorage.removeItem(k))
   if (savedName) localStorage.setItem('mcocdle-name', savedName)
+  if (visited) localStorage.setItem('mcocdle-visited', visited)
   localStorage.setItem('mcocdle-version', String(GAME_VERSION))
 }
 
