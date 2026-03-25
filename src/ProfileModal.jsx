@@ -4,19 +4,31 @@ export default function ProfileModal({ playerName, onSetName, onClose }) {
   const [nameInput, setNameInput] = useState(playerName)
   const [saved, setSaved] = useState(false)
 
-  const handleSave = () => {
+  const saveIfChanged = () => {
     const trimmed = nameInput.trim()
     if (trimmed && trimmed !== playerName) {
       onSetName(trimmed)
+      return true
+    }
+    return false
+  }
+
+  const handleSave = () => {
+    if (saveIfChanged()) {
       setSaved(true)
       setTimeout(() => setSaved(false), 1500)
     }
   }
 
+  const handleClose = () => {
+    saveIfChanged()
+    onClose()
+  }
+
   return (
-    <div className="modal-overlay" onClick={onClose}>
+    <div className="modal-overlay" onClick={handleClose}>
       <div className="modal profile-modal" onClick={e => e.stopPropagation()}>
-        <button className="modal-close" onClick={onClose}>&times;</button>
+        <button className="modal-close" onClick={handleClose}>&times;</button>
         <h2>Profile</h2>
 
         <div className="profile-field">
@@ -38,7 +50,7 @@ export default function ProfileModal({ playerName, onSetName, onClose }) {
           <div className="profile-hint">This name appears on the leaderboard and in shared results.</div>
         </div>
 
-        <button className="modal-action-btn" onClick={onClose}>Done</button>
+        <button className="modal-action-btn" onClick={handleClose}>Done</button>
       </div>
     </div>
   )

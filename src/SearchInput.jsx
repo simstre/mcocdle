@@ -18,7 +18,6 @@ export default function SearchInput({ champions, guesses, onGuess, disabled }) {
     const q = query.toLowerCase()
     const matches = champions
       .filter(c => !guessedNames.has(c.name) && c.name.toLowerCase().includes(q))
-      .slice(0, 8)
     setSuggestions(matches)
     setSelectedIdx(-1)
   }, [query, champions, guessedNames])

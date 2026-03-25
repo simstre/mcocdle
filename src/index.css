@@ -251,7 +251,7 @@ header {
   background: rgba(15, 15, 35, 0.95);
   border: 1px solid var(--border-glow);
   border-radius: 14px;
-  max-height: 340px;
+  max-height: 420px;
   overflow-y: auto;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
@@ -1514,7 +1514,7 @@ header {
   .search-row { max-width: 100%; }
   .search-input { font-size: 16px; padding: 12px 14px 12px 38px; }
   .search-icon { width: 16px; height: 16px; left: 12px; }
-  .suggestions { border-radius: 10px; }
+  .suggestions { border-radius: 10px; max-height: 200px; }
   .suggestion-item { padding: 6px 10px; font-size: 0.82rem; }
   .suggestion-portrait-wrap { width: 30px; height: 30px; border-radius: 6px; }
 
