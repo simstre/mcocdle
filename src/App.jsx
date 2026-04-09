@@ -153,6 +153,7 @@ export default function App() {
       .then(r => r.json())
       .then(data => {
         if (data.solvers?.length) {
+          data.solvers.sort((a, b) => a.guesses - b.guesses)
           setDailyInfo(data)
         }
       })
@@ -200,6 +201,7 @@ export default function App() {
       .then(r => r.json())
       .then(data => {
         if (!data._kvError && data.solvers?.length) {
+          data.solvers.sort((a, b) => a.guesses - b.guesses)
           setDailyInfo(prev => ({
             ...prev,
             firstSolver: data.firstSolver,

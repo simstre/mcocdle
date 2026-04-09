@@ -37,7 +37,7 @@ export default async function handler(req, res) {
         return res.status(200).json({
           date,
           firstSolver: data.firstSolver || null,
-          solvers: data.solvers || [],
+          solvers: (data.solvers || []).sort((a, b) => a.guesses - b.guesses),
           totalSolvers: data.totalSolvers || 0,
         });
       }
