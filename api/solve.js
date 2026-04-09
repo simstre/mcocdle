@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const { name, guesses, date } = req.body || {};
+  const { name, guesses, date, playerId } = req.body || {};
 
   if (!name || typeof name !== "string" || name.trim().length === 0) {
     return res.status(400).json({ error: "name is required" });
@@ -34,6 +34,7 @@ export default async function handler(req, res) {
     name: name.trim(),
     guesses,
     timestamp: new Date().toISOString(),
+    ...(playerId && { playerId }),
   };
 
   // Only attempt KV if env vars are configured

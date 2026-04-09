@@ -84,6 +84,15 @@ function getDisplayName() {
   return name
 }
 
+function getPlayerId() {
+  let id = localStorage.getItem('mcocdle-pid')
+  if (!id) {
+    id = crypto.randomUUID()
+    localStorage.setItem('mcocdle-pid', id)
+  }
+  return id
+}
+
 // Clear old progress on version bump
 const GAME_VERSION = 5
 if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
@@ -161,7 +170,8 @@ export default function App() {
   const submitSolve = useCallback((guessCount) => {
     const name = localStorage.getItem('mcocdle-name') || 'Anonymous'
     const dateStr = getTodayDateStr()
-    const solverEntry = { name, guesses: guessCount, timestamp: new Date().toISOString() }
+    const playerId = getPlayerId()
+    const solverEntry = { name, guesses: guessCount, timestamp: new Date().toISOString(), playerId }
 
     const lbKey = `mcocdle-lb-${dateStr}`
     const localLb = JSON.parse(localStorage.getItem(lbKey) || '[]')
@@ -185,7 +195,7 @@ export default function App() {
     fetch('/api/solve', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, guesses: guessCount, date: dateStr }),
+      body: JSON.stringify({ name, guesses: guessCount, date: dateStr, playerId }),
     })
       .then(r => r.json())
       .then(data => {
@@ -231,6 +241,30 @@ export default function App() {
   const handleSetName = useCallback((name) => {
     setPlayerName(name)
     localStorage.setItem('mcocdle-name', name)
+
+    const playerId = getPlayerId()
+    const dateStr = getTodayDateStr()
+
+    // Update local leaderboard
+    const lbKey = `mcocdle-lb-${dateStr}`
+    const localLb = JSON.parse(localStorage.getItem(lbKey) || '[]')
+    const updated = localLb.map(s => s.playerId === playerId ? { ...s, name } : s)
+    localStorage.setItem(lbKey, JSON.stringify(updated))
+
+    // Update state
+    setDailyInfo(prev => {
+      if (!prev) return prev
+      const solvers = (prev.solvers || []).map(s => s.playerId === playerId ? { ...s, name } : s)
+      const firstSolver = prev.firstSolver?.playerId === playerId ? { ...prev.firstSolver, name } : prev.firstSolver
+      return { ...prev, solvers, firstSolver }
+    })
+
+    // Update server
+    fetch('/api/rename', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ playerId, name, date: dateStr }),
+    }).catch(() => {})
   }, [])
 
   const handleDevReset = useCallback(() => {
