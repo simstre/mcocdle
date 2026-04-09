@@ -52,10 +52,9 @@ export default async function handler(req, res) {
         return res.status(200).json({ ...record, isFirst: true });
       }
 
-      const solvers = existing.solvers || [];
-      if (solvers.length < 10) {
-        solvers.push(solverEntry);
-      }
+      let solvers = [...(existing.solvers || []), solverEntry];
+      solvers.sort((a, b) => a.guesses - b.guesses);
+      solvers = solvers.slice(0, 10);
 
       const updated = {
         ...existing,

@@ -99,10 +99,11 @@ if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
 function loadDailyInfo() {
   const dateStr = getTodayDateStr()
   const localLb = JSON.parse(localStorage.getItem(`mcocdle-lb-${dateStr}`) || '[]')
+  const sorted = [...localLb].sort((a, b) => a.guesses - b.guesses)
   return {
     date: dateStr,
     firstSolver: localLb[0] || null,
-    solvers: localLb,
+    solvers: sorted,
     totalSolvers: localLb.length,
   }
 }
@@ -170,8 +171,9 @@ export default function App() {
     }
 
     setDailyInfo(prev => {
-      const solvers = [...(prev?.solvers || [])]
-      if (solvers.length < 10) solvers.push(solverEntry)
+      let solvers = [...(prev?.solvers || []), solverEntry]
+      solvers.sort((a, b) => a.guesses - b.guesses)
+      solvers = solvers.slice(0, 10)
       return {
         ...prev,
         firstSolver: prev?.firstSolver || solverEntry,
