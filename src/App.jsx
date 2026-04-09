@@ -108,7 +108,7 @@ if (Number(localStorage.getItem('mcocdle-version')) !== GAME_VERSION) {
 function loadDailyInfo() {
   const dateStr = getTodayDateStr()
   const localLb = JSON.parse(localStorage.getItem(`mcocdle-lb-${dateStr}`) || '[]')
-  const sorted = [...localLb].sort((a, b) => a.guesses - b.guesses)
+  const sorted = [...localLb].sort((a, b) => a.guesses - b.guesses || new Date(a.timestamp) - new Date(b.timestamp))
   return {
     date: dateStr,
     firstSolver: localLb[0] || null,
@@ -153,7 +153,7 @@ export default function App() {
       .then(r => r.json())
       .then(data => {
         if (data.solvers?.length) {
-          data.solvers.sort((a, b) => a.guesses - b.guesses)
+          data.solvers.sort((a, b) => a.guesses - b.guesses || new Date(a.timestamp) - new Date(b.timestamp))
           setDailyInfo(data)
         }
       })
@@ -183,7 +183,7 @@ export default function App() {
 
     setDailyInfo(prev => {
       let solvers = [...(prev?.solvers || []), solverEntry]
-      solvers.sort((a, b) => a.guesses - b.guesses)
+      solvers.sort((a, b) => a.guesses - b.guesses || new Date(a.timestamp) - new Date(b.timestamp))
       solvers = solvers.slice(0, 10)
       return {
         ...prev,
@@ -201,7 +201,7 @@ export default function App() {
       .then(r => r.json())
       .then(data => {
         if (!data._kvError && data.solvers?.length) {
-          data.solvers.sort((a, b) => a.guesses - b.guesses)
+          data.solvers.sort((a, b) => a.guesses - b.guesses || new Date(a.timestamp) - new Date(b.timestamp))
           setDailyInfo(prev => ({
             ...prev,
             firstSolver: data.firstSolver,

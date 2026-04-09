@@ -54,7 +54,7 @@ export default async function handler(req, res) {
       }
 
       let solvers = [...(existing.solvers || []), solverEntry];
-      solvers.sort((a, b) => a.guesses - b.guesses);
+      solvers.sort((a, b) => a.guesses - b.guesses || new Date(a.timestamp) - new Date(b.timestamp));
       solvers = solvers.slice(0, 10);
 
       const updated = {
