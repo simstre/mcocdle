@@ -19,7 +19,7 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2020,
     "portrait": "/portraits/132a3c38af.png"
   },
@@ -28,9 +28,9 @@
     "class": "Mystic",
     "gender": "Male",
     "size": "L",
-    "alignment": "Villain",
+    "alignment": "Mercenary",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2023,
     "portrait": "/portraits/01d06d47b2.png"
   },
@@ -41,7 +41,7 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/07c942c973.png"
   },
@@ -53,7 +53,8 @@
     "alignment": "Hero",
     "affiliations": [
       "Guardians of the Galaxy",
-      "Symbiote"
+      "Symbiote",
+      "Thunderbolts"
     ],
     "fighting_style": "Offensive",
     "release_year": 2016,
@@ -127,7 +128,7 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Control",
     "release_year": 2023,
     "portrait": "/portraits/7ed3c7096d.png"
   },
@@ -136,7 +137,7 @@
     "class": "Science",
     "gender": "Male",
     "size": "L",
-    "alignment": "Hero",
+    "alignment": "Unknown",
     "affiliations": [
       "Symbiote"
     ],
@@ -151,7 +152,7 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2020,
     "portrait": "/portraits/abf95deab7.png"
   },
@@ -162,7 +163,7 @@
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2024,
     "portrait": "/portraits/ee1dde1e71.png"
   },
@@ -190,7 +191,7 @@
       "Hydra",
       "Cabal"
     ],
-    "fighting_style": "Defensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/07ab7b3ec3.png"
   },
@@ -217,7 +218,7 @@
       "Thunderbolts",
       "Hydra"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2023,
     "portrait": "/portraits/90ba40f7ba.png"
   },
@@ -319,7 +320,7 @@
     "affiliations": [
       "Avengers"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2016,
     "portrait": "/portraits/00d65303d5.png"
   },
@@ -345,7 +346,7 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2019,
     "portrait": "/portraits/01cf04da24.png"
   },
@@ -389,7 +390,7 @@
       "Mighty Avengers",
       "Defenders"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2026,
     "portrait": "/portraits/452a19ca6f.png"
   },
@@ -398,7 +399,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Villain",
+    "alignment": "Mercenary",
     "affiliations": [
       "Thunderbolts"
     ],
@@ -483,7 +484,7 @@
     "affiliations": [
       "X-Men"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2022,
     "portrait": "/portraits/54f26a791b.png"
   },
@@ -533,7 +534,7 @@
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Control",
+    "fighting_style": "Unknown",
     "release_year": 2025,
     "portrait": "/portraits/c940a70a76.png"
   },
@@ -547,7 +548,7 @@
       "Avengers",
       "Young Avengers"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/add433c679.png"
   },
@@ -565,10 +566,12 @@
   {
     "name": "Civil Warrior",
     "class": "Tech",
-    "gender": "Male",
+    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
-    "affiliations": [],
+    "affiliations": [
+      "Stark Tech"
+    ],
     "fighting_style": "Defensive",
     "release_year": 2016,
     "portrait": "/portraits/f8f6347686.png"
@@ -592,7 +595,7 @@
     "class": "Cosmic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [
       "Cabal"
     ],
@@ -627,7 +630,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "L",
-    "alignment": "Villain",
+    "alignment": "Mercenary",
     "affiliations": [
       "Hydra",
       "Thunderbolts"
@@ -641,9 +644,9 @@
     "class": "Cosmic",
     "gender": "Male",
     "size": "XL",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Unknown",
     "release_year": 2019,
     "portrait": "/portraits/9b4d094612.png"
   },
@@ -727,7 +730,7 @@
   {
     "name": "Darkhawk",
     "class": "Tech",
-    "gender": "Male",
+    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -753,7 +756,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [
       "X-Men",
       "Thunderbolts"
@@ -767,7 +770,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [
       "X-Force"
     ],
@@ -795,7 +798,7 @@
     "affiliations": [
       "Cabal"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2019,
     "portrait": "/portraits/96ac6a77f5.png"
   },
@@ -845,7 +848,7 @@
     "class": "Mutant",
     "gender": "Female",
     "size": "S",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [
       "X-Men",
       "X-Force"
@@ -857,11 +860,11 @@
   {
     "name": "Doombot",
     "class": "Cosmic",
-    "gender": "Other",
+    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/c7ec6d2e22.png"
   },
@@ -883,7 +886,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/7acf416aa1.png"
   },
@@ -921,7 +924,7 @@
       "X-Men",
       "Champions"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2024,
     "portrait": "/portraits/de3493ea6e.png"
   },
@@ -930,7 +933,7 @@
     "class": "Mystic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2019,
@@ -998,7 +1001,7 @@
     "affiliations": [
       "Cabal"
     ],
-    "fighting_style": "Defensive",
+    "fighting_style": "Control",
     "release_year": 2024,
     "portrait": "/portraits/009dd2fda1.png"
   },
@@ -1033,7 +1036,7 @@
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2025,
     "portrait": "/portraits/ee65861136.png"
   },
@@ -1042,9 +1045,9 @@
     "class": "Cosmic",
     "gender": "Other",
     "size": "L",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2022,
     "portrait": "/portraits/03abe02d04.png"
   },
@@ -1122,7 +1125,7 @@
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2023,
     "portrait": "/portraits/f92b36491a.png"
   },
@@ -1131,7 +1134,7 @@
     "class": "Mutant",
     "gender": "Other",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2018,
@@ -1150,13 +1153,13 @@
   },
   {
     "name": "Grandmaster",
-    "class": "Mystic",
+    "class": "Unknown",
     "gender": "Male",
     "size": "M",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
-    "fighting_style": "Control",
-    "release_year": 2020,
+    "fighting_style": "Unknown",
+    "release_year": null,
     "portrait": "/portraits/9d8eafbbcf.png"
   },
   {
@@ -1224,11 +1227,11 @@
   {
     "name": "Guillotine 2099",
     "class": "Tech",
-    "gender": "Female",
+    "gender": "Other",
     "size": "S",
-    "alignment": "Hero",
+    "alignment": "Unknown",
     "affiliations": [],
-    "fighting_style": "Control",
+    "fighting_style": "Offensive",
     "release_year": 2019,
     "portrait": "/portraits/4b12e7728d.png"
   },
@@ -1311,16 +1314,16 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2025,
     "portrait": "/portraits/6a4213891e.png"
   },
   {
     "name": "Hit-Monkey",
     "class": "Skill",
-    "gender": "Male",
+    "gender": "Other",
     "size": "S",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2020,
@@ -1361,7 +1364,7 @@
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2020,
     "portrait": "/portraits/4fe5a8826f.png"
   },
@@ -1385,6 +1388,7 @@
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
+      "Stark Tech",
       "Avengers"
     ],
     "fighting_style": "Defensive",
@@ -1402,7 +1406,7 @@
       "Avengers",
       "Young Avengers"
     ],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2022,
     "portrait": "/portraits/d91df8abbf.png"
   },
@@ -1465,7 +1469,7 @@
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/642ce6aef0.png"
   },
@@ -1478,7 +1482,7 @@
     "affiliations": [
       "Fantastic Four"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2019,
     "portrait": "/portraits/aa6ec66ffd.png"
   },
@@ -1516,7 +1520,8 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
-      "Avengers"
+      "Avengers",
+      "Stark Tech"
     ],
     "fighting_style": "Defensive",
     "release_year": 2014,
@@ -1528,8 +1533,10 @@
     "gender": "Male",
     "size": "M",
     "alignment": "Hero",
-    "affiliations": [],
-    "fighting_style": "Control",
+    "affiliations": [
+      "Stark Tech"
+    ],
+    "fighting_style": "Defensive",
     "release_year": 2022,
     "portrait": "/portraits/6c19f5c557.png"
   },
@@ -1540,7 +1547,8 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
-      "Avengers"
+      "Avengers",
+      "Stark Tech"
     ],
     "fighting_style": "Control",
     "release_year": 2018,
@@ -1551,9 +1559,11 @@
     "class": "Tech",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Villain",
     "affiliations": [
       "Sinister Six",
+      "Thunderbolts",
+      "Stark Tech",
       "Cabal"
     ],
     "fighting_style": "Defensive",
@@ -1567,7 +1577,8 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Champions"
+      "Champions",
+      "Stark Tech"
     ],
     "fighting_style": "Offensive",
     "release_year": 2024,
@@ -1580,7 +1591,7 @@
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Unknown",
     "release_year": 2024,
     "portrait": "/portraits/36cf859fa2.png"
   },
@@ -1616,7 +1627,7 @@
       "X-Men",
       "X-Force"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2025,
     "portrait": "/portraits/3f5e95ac4a.png"
   },
@@ -1629,7 +1640,7 @@
     "affiliations": [
       "Defenders"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2022,
     "portrait": "/portraits/79eb984ab7.png"
   },
@@ -1653,7 +1664,7 @@
     "affiliations": [
       "X-Men"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2021,
     "portrait": "/portraits/288c7f9228.png"
   },
@@ -1689,7 +1700,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2016,
@@ -1702,7 +1713,7 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2025,
     "portrait": "/portraits/b0857f7ecf.png"
   },
@@ -1727,7 +1738,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2018,
     "portrait": "/portraits/32a8bda893.png"
   },
@@ -1738,7 +1749,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2023,
     "portrait": "/portraits/cb9b1d6881.png"
   },
@@ -1799,7 +1810,7 @@
     "affiliations": [
       "Symbiote"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2021,
     "portrait": "/portraits/629b31f481.png"
   },
@@ -1951,7 +1962,7 @@
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2026,
     "portrait": "/portraits/2e8eb97137.png"
   },
@@ -2026,11 +2037,11 @@
   {
     "name": "Mangog",
     "class": "Mystic",
-    "gender": "Other",
+    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2021,
     "portrait": "/portraits/4953dda69e.png"
   },
@@ -2044,7 +2055,7 @@
       "Guardians of the Galaxy",
       "Avengers"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2022,
     "portrait": "/portraits/05b86bc18b.png"
   },
@@ -2053,7 +2064,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2018,
@@ -2073,7 +2084,7 @@
   {
     "name": "Mephisto",
     "class": "Mystic",
-    "gender": "Other",
+    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -2091,7 +2102,7 @@
       "Fantastic Four",
       "Illuminati"
     ],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2019,
     "portrait": "/portraits/bb526e9c66.png"
   },
@@ -2102,7 +2113,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2021,
     "portrait": "/portraits/09be9ece94.png"
   },
@@ -2122,9 +2133,11 @@
     "class": "Skill",
     "gender": "Female",
     "size": "S",
-    "alignment": "Hero",
-    "affiliations": [],
-    "fighting_style": "Offensive",
+    "alignment": "Mercenary",
+    "affiliations": [
+      "Stark Tech"
+    ],
+    "fighting_style": "Defensive",
     "release_year": 2022,
     "portrait": "/portraits/a94df89e24.png"
   },
@@ -2135,7 +2148,7 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2020,
     "portrait": "/portraits/c4a5b9a13a.png"
   },
@@ -2155,7 +2168,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [
       "Defenders"
     ],
@@ -2172,7 +2185,7 @@
     "affiliations": [
       "Guardians of the Galaxy"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/9b64177159.png"
   },
@@ -2214,7 +2227,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2025,
@@ -2253,6 +2266,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
+      "Stark Tech",
       "Sinister Six"
     ],
     "fighting_style": "Offensive",
@@ -2281,7 +2295,7 @@
     "class": "Tech",
     "gender": "Female",
     "size": "S",
-    "alignment": "Villain",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2017,
@@ -2309,7 +2323,7 @@
     "affiliations": [
       "S.H.I.E.L.D."
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2019,
     "portrait": "/portraits/34e2a6b08a.png"
   },
@@ -2320,7 +2334,7 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/aa689ae429.png"
   },
@@ -2369,7 +2383,7 @@
       "X-Men",
       "Alpha Flight"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2024,
     "portrait": "/portraits/c440d25fd9.png"
   },
@@ -2391,7 +2405,7 @@
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2021,
     "portrait": "/portraits/644311b63b.png"
   },
@@ -2450,7 +2464,7 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/c58de8415b.png"
   },
@@ -2475,16 +2489,17 @@
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2021,
     "portrait": "/portraits/a5410b56dc.png"
   },
   {
     "name": "Phoenix",
     "class": "Cosmic",
-    "gender": "Female",
+    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2505,7 +2520,7 @@
       "Mighty Avengers",
       "Thunderbolts"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/fd22b656b2.png"
   },
@@ -2527,7 +2542,7 @@
     "class": "Mutant",
     "gender": "Other",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2020,
@@ -2543,7 +2558,7 @@
       "Brotherhood of Mutants",
       "X-Men"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2020,
     "portrait": "/portraits/e22d6f6f46.png"
   },
@@ -2563,11 +2578,11 @@
     "class": "Cosmic",
     "gender": "Female",
     "size": "S",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [
       "Cabal"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2018,
     "portrait": "/portraits/ea1d9af682.png"
   },
@@ -2721,7 +2736,8 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
-      "Sinister Six"
+      "Sinister Six",
+      "Thunderbolts"
     ],
     "fighting_style": "Defensive",
     "release_year": 2014,
@@ -2734,7 +2750,7 @@
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2022,
     "portrait": "/portraits/1dc25f73d2.png"
   },
@@ -2796,7 +2812,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "L",
-    "alignment": "Villain",
+    "alignment": "Mercenary",
     "affiliations": [
       "Brotherhood of Mutants"
     ],
@@ -2826,14 +2842,14 @@
     "affiliations": [
       "Alpha Flight"
     ],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2020,
     "portrait": "/portraits/283477b8fb.png"
   },
   {
     "name": "Sauron",
     "class": "Mutant",
-    "gender": "Male",
+    "gender": "Other",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2892,7 +2908,7 @@
     "affiliations": [
       "Symbiote"
     ],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2024,
     "portrait": "/portraits/a8ae3ea8d3.png"
   },
@@ -2972,7 +2988,7 @@
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2024,
     "portrait": "/portraits/dabfbc6654.png"
   },
@@ -2996,7 +3012,7 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2022,
     "portrait": "/portraits/0b8099a97c.png"
   },
@@ -3007,9 +3023,10 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2023,
     "portrait": "/portraits/a2a3a0347f.png"
   },
@@ -3019,7 +3036,9 @@
     "gender": "Male",
     "size": "M",
     "alignment": "Hero",
-    "affiliations": [],
+    "affiliations": [
+      "Stark Tech"
+    ],
     "fighting_style": "Offensive",
     "release_year": 2021,
     "portrait": "/portraits/2d86edf41d.png"
@@ -3027,9 +3046,9 @@
   {
     "name": "Silver Sable",
     "class": "Skill",
-    "gender": "Female",
+    "gender": "Male",
     "size": "S",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2024,
@@ -3042,7 +3061,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/37640a3f97.png"
   },
@@ -3088,7 +3107,8 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
     "fighting_style": "Defensive",
     "release_year": 2015,
@@ -3101,9 +3121,10 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2020,
     "portrait": "/portraits/eef5715bc6.png"
   },
@@ -3115,6 +3136,7 @@
     "alignment": "Hero",
     "affiliations": [
       "Spider-Verse",
+      "Spider-Verse Heroes",
       "Avengers",
       "New Avengers"
     ],
@@ -3130,6 +3152,7 @@
     "alignment": "Hero",
     "affiliations": [
       "Spider-Verse",
+      "Spider-Verse Heroes",
       "Avengers",
       "New Avengers",
       "Champions"
@@ -3145,9 +3168,10 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2025,
     "portrait": "/portraits/6a652ed9ed.png"
   },
@@ -3158,7 +3182,9 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes",
+      "Stark Tech"
     ],
     "fighting_style": "Defensive",
     "release_year": 2017,
@@ -3171,7 +3197,8 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
     "fighting_style": "Offensive",
     "release_year": 2019,
@@ -3184,7 +3211,8 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
     "fighting_style": "Offensive",
     "release_year": 2022,
@@ -3198,6 +3226,7 @@
     "alignment": "Hero",
     "affiliations": [
       "Spider-Verse",
+      "Spider-Verse Heroes",
       "Symbiote"
     ],
     "fighting_style": "Defensive",
@@ -3211,7 +3240,8 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
     "fighting_style": "Offensive",
     "release_year": 2021,
@@ -3224,9 +3254,10 @@
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
-      "Spider-Verse"
+      "Spider-Verse",
+      "Spider-Verse Heroes"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2024,
     "portrait": "/portraits/8a17a898be.png"
   },
@@ -3237,7 +3268,7 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2026,
     "portrait": "/portraits/5080e9645f.png"
   },
@@ -3249,6 +3280,7 @@
     "alignment": "Hero",
     "affiliations": [
       "Spider-Verse",
+      "Spider-Verse Heroes",
       "Avengers",
       "New Avengers"
     ],
@@ -3282,7 +3314,7 @@
     "name": "Squirrel Girl",
     "class": "Skill",
     "gender": "Female",
-    "size": "S",
+    "size": "M",
     "alignment": "Hero",
     "affiliations": [
       "Avengers",
@@ -3358,23 +3390,23 @@
   },
   {
     "name": "Summoned Symbioid",
-    "class": "Cosmic",
-    "gender": "Other",
+    "class": "Combined",
+    "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Unknown",
     "affiliations": [
       "Symbiote"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Unknown",
     "release_year": 2018,
     "portrait": "/portraits/16ccfcbf10.png"
   },
   {
     "name": "Summoned Symbiote",
-    "class": "Cosmic",
-    "gender": "Other",
+    "class": "Combined",
+    "gender": "Male",
     "size": "L",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [
       "Symbiote"
     ],
@@ -3418,6 +3450,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
+      "Stark Tech",
       "Illuminati"
     ],
     "fighting_style": "Defensive",
@@ -3429,7 +3462,7 @@
     "class": "Mystic",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Unknown",
     "affiliations": [
       "Symbiote"
     ],
@@ -3442,7 +3475,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Villain",
+    "alignment": "Mercenary",
     "affiliations": [
       "Hydra",
       "Thunderbolts",
@@ -3485,7 +3518,7 @@
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2025,
     "portrait": "/portraits/bf499a5fbd.png"
   },
@@ -3494,7 +3527,7 @@
     "class": "Cosmic",
     "gender": "Male",
     "size": "L",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2018,
@@ -3505,7 +3538,7 @@
     "class": "Mystic",
     "gender": "Other",
     "size": "XL",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2024,
@@ -3533,7 +3566,7 @@
     "affiliations": [
       "Cabal"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Defensive",
     "release_year": 2024,
     "portrait": "/portraits/7ad3dfe45d.png"
   },
@@ -3547,7 +3580,7 @@
       "Fantastic Four",
       "Cabal"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2025,
     "portrait": "/portraits/765d242ba5.png"
   },
@@ -3556,9 +3589,9 @@
     "class": "Science",
     "gender": "Male",
     "size": "XL",
-    "alignment": "Villain",
+    "alignment": "Unknown",
     "affiliations": [],
-    "fighting_style": "Control",
+    "fighting_style": "Unknown",
     "release_year": 2021,
     "portrait": "/portraits/97653b14ce.png"
   },
@@ -3569,7 +3602,7 @@
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2024,
     "portrait": "/portraits/201ff2b380.png"
   },
@@ -3600,7 +3633,7 @@
   {
     "name": "Thor (Jane Foster)",
     "class": "Mystic",
-    "gender": "Female",
+    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3642,7 +3675,7 @@
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2022,
     "portrait": "/portraits/533aa41bee.png"
   },
@@ -3665,7 +3698,9 @@
     "gender": "Other",
     "size": "L",
     "alignment": "Villain",
-    "affiliations": [],
+    "affiliations": [
+      "Stark Tech"
+    ],
     "fighting_style": "Defensive",
     "release_year": 2015,
     "portrait": "/portraits/548e90a992.png"
@@ -3777,6 +3812,7 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
+      "Stark Tech",
       "Avengers"
     ],
     "fighting_style": "Control",
@@ -3797,7 +3833,7 @@
   {
     "name": "Viv Vision",
     "class": "Tech",
-    "gender": "Female",
+    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3814,7 +3850,7 @@
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
-    "fighting_style": "Defensive",
+    "fighting_style": "Offensive",
     "release_year": 2018,
     "portrait": "/portraits/81ceb48a97.png"
   },
@@ -3850,7 +3886,9 @@
     "gender": "Male",
     "size": "M",
     "alignment": "Hero",
-    "affiliations": [],
+    "affiliations": [
+      "Stark Tech"
+    ],
     "fighting_style": "Offensive",
     "release_year": 2015,
     "portrait": "/portraits/afd7681b6a.png"
@@ -3862,7 +3900,7 @@
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2019,
     "portrait": "/portraits/21305b754e.png"
   },
@@ -3899,7 +3937,7 @@
       "Mighty Avengers",
       "New Avengers"
     ],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2024,
     "portrait": "/portraits/86e859045a.png"
   },
@@ -3923,7 +3961,7 @@
     "class": "Skill",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [
       "Thunderbolts"
     ],
@@ -3952,7 +3990,7 @@
     "class": "Mutant",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Offensive",
     "release_year": 2020,
@@ -3979,7 +4017,7 @@
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
-    "fighting_style": "Offensive",
+    "fighting_style": "Control",
     "release_year": 2022,
     "portrait": "/portraits/e61848e696.png"
   },
@@ -3988,7 +4026,7 @@
     "class": "Skill",
     "gender": "Female",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2025,
@@ -4010,7 +4048,7 @@
     "class": "Tech",
     "gender": "Male",
     "size": "M",
-    "alignment": "Hero",
+    "alignment": "Mercenary",
     "affiliations": [],
     "fighting_style": "Defensive",
     "release_year": 2017,

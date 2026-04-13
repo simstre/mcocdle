@@ -17,12 +17,12 @@ export default function WinModal({ target, guesses, dailyInfo, playerName, onClo
           </div>
         </div>
 
-        {dailyInfo?.firstSolver && (
+        {dailyInfo?.solvers?.[0] && (
           <div className="first-solver-section">
             <div className="first-solver-label">Today's Champion</div>
-            <div className="first-solver-name">{dailyInfo.firstSolver.name}</div>
+            <div className="first-solver-name">{dailyInfo.solvers[0].name}</div>
             <div className="first-solver-detail">
-              First to solve in {dailyInfo.firstSolver.guesses} {dailyInfo.firstSolver.guesses === 1 ? 'guess' : 'guesses'}
+              Solved in {dailyInfo.solvers[0].guesses} {dailyInfo.solvers[0].guesses === 1 ? 'guess' : 'guesses'}
             </div>
             {dailyInfo.totalSolvers > 1 && (
               <div className="total-solvers">{dailyInfo.totalSolvers} players solved today</div>

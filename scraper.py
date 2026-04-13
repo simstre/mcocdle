@@ -16,9 +16,10 @@ WIKI_API = "https://marvel-contestofchampions.fandom.com/api.php"
 
 # Champion names from the wiki's List of Champions page
 CHAMPIONS = [
-    "Abomination", "Abomination (Immortal)", "Absorbing Man", "Air-Walker",
+    "Abomination", "Abomination (Immortal)", "Absorbing Man", "Adam Warlock",
+    "Agent Venom", "Air-Walker",
     "America Chavez", "Annihilus", "Ant-Man", "Ant-Man (Future)", "Angela",
-    "Apocalypse", "Arcade", "Archangel", "Arnim Zola", "Attuma",
+    "Anti-Venom", "Apocalypse", "Arcade", "Archangel", "Arnim Zola", "Attuma",
     "Baron Zemo", "Bastion", "Beast", "Beta Ray Bill", "Bishop",
     "Black Cat", "Black Panther", "Black Panther (Civil War)", "Black Bolt",
     "Black Widow", "Black Widow (Claire Voyant)", "Black Widow (Deadly Origin)",
@@ -32,40 +33,41 @@ CHAMPIONS = [
     "Dani Moonstar", "Daredevil (Classic)", "Daredevil (Hell's Kitchen)",
     "Dark Phoenix", "Darkhawk", "Dazzler", "Deadpool", "Deadpool (X-Force)",
     "Diablo", "Doctor Doom", "Doctor Octopus", "Doctor Strange", "Doctor Voodoo",
-    "Domino", "Dormammu", "Dragon Man", "Drax", "Dust",
+    "Domino", "Doombot", "Dormammu", "Dracula", "Dragon Man", "Drax", "Dust",
     "Ebony Maw", "Electro", "Elektra", "Elsa Bloodstone", "Enchantress",
-    "Emma Frost", "Falcon", "Falcon (Joaquín Torres)", "Gambit", "Gamora", "Galan",
+    "Emma Frost", "Falcon", "Falcon (Joaquín Torres)", "Franken-Castle",
+    "Gambit", "Gamora", "Galan",
     "Gentle", "Ghost", "Ghost Rider", "Gladiator", "Goldpool", "Gorr",
-    "Grandmaster", "Green Goblin", "Groot", "Guillotine",
+    "Grandmaster", "Green Goblin", "Groot", "Guardian", "Guillotine",
     "Guillotine (Deathless)", "Guillotine 2099", "Gwenpool",
     "Havok", "Hawkeye", "Heimdall", "Hela", "Hercules", "High Evolutionary",
     "Hit-Monkey", "Howard the Duck", "Hulk", "Hulk (Immortal)",
-    "Hulk (Ragnarok)", "Hulkbuster", "Hulkling", "Human Torch",
+    "Hulk (Ragnarok)", "Hulkbuster", "Hulkling", "Human Torch", "Hyperion",
     "Iceman", "Ikaris", "Imperiosa", "Invisible Woman",
     "Iron Fist", "Iron Fist (Immortal)", "Iron Man", "Iron Man (Infamous)",
-    "Iron Man (Infinity War)", "Ironheart", "Isophyne",
+    "Iron Man (Infinity War)", "Iron Patriot", "Ironheart", "Isophyne",
     "Jabari Panther", "Jack O'Lantern", "Jessica Jones", "Jean Grey",
     "Joe Fixit", "Jubilee", "Juggernaut", "Kang the Conqueror",
-    "Karolina Dean", "Karnak", "Kate Bishop", "Kindred",
+    "Karolina Dean", "Karnak", "Kate Bishop", "Killmonger", "Kindred",
     "King Groot", "King Groot (Deathless)", "Kingpin", "Kitty Pryde", "Knull", "Korg", "Kraven",
     "Kushala", "Lady Deathstrike", "Lizard", "Loki", "Longshot", "Luke Cage", "Lumatrix",
-    "M'Baku", "Madelyne Pryor", "Maestro (Cosmic)", "Magik", "Magneto",
+    "M.O.D.O.K.", "M'Baku", "Madelyne Pryor", "Maestro (Cosmic)", "Magik", "Magneto",
     "Magneto (House of X)", "Man-Thing", "Mangog", "Mantis", "Masacre",
     "Medusa", "Mephisto", "Mister Fantastic", "Mister Negative", "Mister Sinister",
     "Misty Knight", "Mojo", "Mole Man", "Moondragon", "Mordo", "Morningstar",
-    "Morbius", "Moon Knight", "Ms. Marvel", "Ms. Marvel (Kamala Khan)", "Mysterio",
+    "Morbius", "Moon Knight", "Mr. Knight", "Ms. Marvel", "Ms. Marvel (Kamala Khan)", "Mysterio",
     "Namor", "Nebula", "Negasonic Teenage Warhead", "Nick Fury", "Nico Minoru",
     "Night Thrasher", "Nightcrawler", "Nimrod", "Northstar", "Nova",
     "Odin", "Okoye", "Old Man Logan", "Omega Red", "Omega Sentinel", "Onslaught",
-    "Patriot", "Peni Parker", "Photon", "Pixie", "Platinumpool",
-    "Professor X", "Proxima Midnight", "Psylocke", "Psycho-Man",
+    "Patriot", "Peni Parker", "Phoenix", "Photon", "Pixie", "Platinumpool",
+    "Professor X", "Prowler", "Proxima Midnight", "Psylocke", "Psycho-Man",
     "Punisher", "Punisher 2099", "Purgatory", "Quake", "Quicksilver",
-    "Red Goblin", "Red Guardian", "Red Hulk", "Red Skull", "Rintrah",
+    "Red Goblin", "Red Guardian", "Red Hulk", "Red Skull", "Rhino", "Rintrah",
     "Rocket Raccoon", "Rogue", "Ronin", "Ronan", "Sabretooth", "Sandman",
-    "Sasquatch", "Sauron", "Scarlet Witch", "Scarlet Witch (Classic)", "Scream",
+    "Sasquatch", "Sauron", "Scarlet Witch", "Scarlet Witch (Classic)", "Scorpion", "Scream",
     "Sentinel", "Sentry", "Sersi", "Shathra", "She-Hulk",
     "She-Hulk (Deathless)", "Shang-Chi", "Shocker", "Shuri", "Silk",
-    "Silver Centurion", "Silver Samurai", "Silver Surfer", "Solvarch",
+    "Silver Centurion", "Silver Sable", "Silver Samurai", "Silver Surfer", "Solvarch",
     "Sorcerer Supreme", "Spider-Gwen", "Spider-Ham",
     "Spider-Man (Classic)", "Spider-Man (Miles Morales)",
     "Spider-Man (Pavitr Prabhakar)", "Spider-Man (Stark Enhanced)",
@@ -74,6 +76,7 @@ CHAMPIONS = [
     "Spider-Slayer (J. Jonah Jameson)", "Spider-Woman (Jessica Drew)",
     "Spiral", "Spot", "Squirrel Girl", "Star-Lord",
     "Star-Lord (Stellar-Forged)", "Storm", "Storm (Pyramid X)", "Stryfe",
+    "Summoned Symbioid", "Summoned Symbiote",
     "Sunspot", "Super-Skrull", "Superior Iron Man", "Symbiote Supreme",
     "Taskmaster", "Terrax", "The Champion", "The Destroyer", "The Hood",
     "The Leader", "The Maker", "The Overseer", "The Serpent", "Thing",
@@ -82,10 +85,10 @@ CHAMPIONS = [
     "Ultron", "Ultron (Classic)", "Unstoppable Colossus",
     "Valkyrie", "Venom", "Venom the Duck", "Venompool",
     "Vision", "Vision (Aarkus)", "Vision (Age of Ultron)", "Vision (Deathless)",
-    "Void", "Vox", "Vulture", "War Machine", "Warlock", "Wasp",
+    "Viv Vision", "Void", "Vox", "Vulture", "War Machine", "Warlock", "Wasp",
     "Werewolf By Night", "White Tiger", "Wiccan", "Winter Soldier",
     "Wolverine", "Wolverine (Weapon X)", "Wolverine (X-23)", "Wong",
-    "Yellowjacket", "Yondu", "Yelena Belova",
+    "Yellowjacket", "Yondu", "Yelena Belova", "Ægon",
 ]
 
 # Known affiliations extracted from wiki tags
@@ -201,7 +204,7 @@ def parse_tags(tags_str):
     }
 
     # Convert <br> separators to commas BEFORE stripping HTML
-    tags_str = re.sub(r"<br\s*/?>", ",", tags_str)
+    tags_str = re.sub(r"<br\s*/?>", ",", tags_str, flags=re.IGNORECASE)
 
     # Clean wiki markup
     tags_str = re.sub(r"\[\[.*?\|(.*?)\]\]", r"\1", tags_str)
@@ -217,6 +220,8 @@ def parse_tags(tags_str):
             result["alignment"] = "Hero"
         elif part_clean == "Villain":
             result["alignment"] = "Villain"
+        elif part_clean == "Mercenary":
+            result["alignment"] = "Mercenary"
 
         # Size
         size_match = re.match(r"Size:\s*(\w+)", part_clean)
@@ -262,7 +267,10 @@ def scrape_champion(champion_name):
     if not wikitext:
         return None
 
-    champ_class = extract_field(wikitext, "class")
+    raw_class = extract_field(wikitext, "class")
+    # Handle wiki templates like {{Class|Skill}} -> Skill
+    class_match = re.match(r"\{\{Class\|(\w+)\}\}", raw_class or "")
+    champ_class = class_match.group(1) if class_match else raw_class
     tags_str = extract_field(wikitext, "tags")
     release_date = extract_field(wikitext, "release date")
 

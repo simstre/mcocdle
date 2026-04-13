@@ -330,11 +330,11 @@ export default function App() {
         </div>
       </header>
 
-      {dailyInfo?.firstSolver && !won && (
+      {dailyInfo?.solvers?.[0] && !won && (
         <div className="daily-champion-bar">
           <span className="trophy-icon">&#127942;</span>
           <span>
-            <strong>{dailyInfo.firstSolver.name}</strong> was first to solve today in {dailyInfo.firstSolver.guesses} {dailyInfo.firstSolver.guesses === 1 ? 'guess' : 'guesses'}!
+            <strong>{dailyInfo.solvers[0].name}</strong> leads today with {dailyInfo.solvers[0].guesses} {dailyInfo.solvers[0].guesses === 1 ? 'guess' : 'guesses'}!
           </span>
           {dailyInfo.totalSolvers > 1 && (
             <span className="solver-count">{dailyInfo.totalSolvers} total solvers</span>
