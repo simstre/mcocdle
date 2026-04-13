@@ -14,6 +14,11 @@ import os
 
 WIKI_API = "https://marvel-contestofchampions.fandom.com/api.php"
 
+# Wiki names that should be renamed in output
+NAME_OVERRIDES = {
+    "Ægon": "Aegon",
+}
+
 # Champion names from the wiki's List of Champions page
 CHAMPIONS = [
     "Abomination", "Abomination (Immortal)", "Absorbing Man", "Adam Warlock",
@@ -276,8 +281,11 @@ def scrape_champion(champion_name):
 
     tags = parse_tags(tags_str)
 
+    # Normalize display names
+    display_name = NAME_OVERRIDES.get(champion_name, champion_name)
+
     return {
-        "name": champion_name,
+        "name": display_name,
         "class": champ_class or "Unknown",
         "gender": get_gender(champion_name),
         "size": tags.get("size", "M"),
