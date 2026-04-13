@@ -46,17 +46,6 @@
     "portrait": "/portraits/07c942c973.png"
   },
   {
-    "name": "Aegon",
-    "class": "Skill",
-    "gender": "Male",
-    "size": "M",
-    "alignment": "Hero",
-    "affiliations": [],
-    "fighting_style": "Offensive",
-    "release_year": 2018,
-    "portrait": "/portraits/7b47b7557b.png"
-  },
-  {
     "name": "Agent Venom",
     "class": "Skill",
     "gender": "Male",
@@ -4064,5 +4053,16 @@
     "fighting_style": "Defensive",
     "release_year": 2017,
     "portrait": "/portraits/2507f266e6.png"
+  },
+  {
+    "name": "\u00c6gon",
+    "class": "Skill",
+    "gender": "Male",
+    "size": "M",
+    "alignment": "Hero",
+    "affiliations": [],
+    "fighting_style": "Offensive",
+    "release_year": 2018,
+    "portrait": "/portraits/7b47b7557b.png"
   }
 ]
