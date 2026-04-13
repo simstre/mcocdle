@@ -11,7 +11,7 @@ import Countdown from './Countdown'
 import ShareCard from './ShareCard'
 import championsData from './champions.js'
 
-const COLUMNS = ['Champion', 'Class', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
+const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
 // Game day resets at 8am PST (16:00 UTC)
 function getGameDay() {

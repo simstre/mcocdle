@@ -28,6 +28,7 @@ export default function HelpModal({ onClose }) {
         <h3>Attributes</h3>
         <ul>
           <li><strong>Class</strong> &mdash; Cosmic, Tech, Mutant, Science, Mystic, Skill</li>
+          <li><strong>Gender</strong> &mdash; Male, Female, Other</li>
           <li><strong>Size</strong> &mdash; S, M, L, XL (arrows show direction)</li>
           <li><strong>Alignment</strong> &mdash; Hero, Villain, Mercenary, or Unknown</li>
           <li><strong>Affiliation</strong> &mdash; Team tags (orange = some overlap)</li>

@@ -1,7 +1,7 @@
 import GuessRow from './GuessRow'
 import SearchInput from './SearchInput'
 
-const COLUMNS = ['Champion', 'Class', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
+const COLUMNS = ['Champion', 'Class', 'Gender', 'Size', 'Alignment', 'Affiliation', 'Fighting Style', 'Release Year']
 
 export default function DevPage({ target, champions, guesses, won, onGuess, onReset, onNewChampion, onBack }) {
   return (

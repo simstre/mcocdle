@@ -37,6 +37,8 @@ function getRowEmojis(guess, target) {
   const cells = [
     // Class
     { status: guess.class === target.class ? 'correct' : 'wrong' },
+    // Gender
+    { status: guess.gender === target.gender ? 'correct' : 'wrong' },
     // Size (with arrows)
     {
       status: gi === ti ? 'correct' : 'wrong',
