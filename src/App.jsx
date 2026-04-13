@@ -34,8 +34,9 @@ function hashString(str) {
   return h >>> 0
 }
 
-// Build a sorted list of champion names — sorted so insertion order doesn't matter
-const SORTED_NAMES = championsData.map(c => c.name).sort()
+// Build a sorted list of seed names for daily selection — uses seed_name if present
+// so that display name changes (e.g. Ægon -> Aegon) don't shift the daily pick
+const SORTED_SEEDS = championsData.map(c => c.seed_name || c.name).sort()
 
 function getDailyChampion(champions, overrideSeed) {
   if (overrideSeed != null) {
@@ -50,9 +51,9 @@ function getDailyChampion(champions, overrideSeed) {
   // Hash the date string — deterministic, stable regardless of champion list size
   const dateKey = `mcocdle-${year}-${month}-${day}`
   const hash = hashString(dateKey)
-  const index = hash % SORTED_NAMES.length
-  const name = SORTED_NAMES[index]
-  return champions.find(c => c.name === name) || champions[0]
+  const index = hash % SORTED_SEEDS.length
+  const seed = SORTED_SEEDS[index]
+  return champions.find(c => (c.seed_name || c.name) === seed) || champions[0]
 }
 
 function getStorageKey() {
