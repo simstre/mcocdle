@@ -109,44 +109,6 @@ AFFILIATION_KEYWORDS = [
     "Midnight Sons", "Stark Tech",
 ]
 
-# Gender mapping for known champions
-FEMALE_CHAMPIONS = {
-    "America Chavez", "Angela", "Black Cat", "Black Widow",
-    "Black Widow (Claire Voyant)", "Black Widow (Deadly Origin)",
-    "Captain Marvel", "Captain Marvel (Classic)", "Cassandra Nova", "Cassie Lang",
-    "Dani Moonstar", "Dark Phoenix", "Dazzler", "Domino", "Dust",
-    "Elektra", "Elsa Bloodstone", "Enchantress", "Emma Frost",
-    "Gamora", "Ghost", "Guillotine", "Guillotine (Deathless)",
-    "Gwenpool", "Hela", "Invisible Woman", "Ironheart",
-    "Jabari Panther", "Jean Grey", "Jessica Jones", "Jubilee",
-    "Karolina Dean", "Kate Bishop", "Kitty Pryde", "Kushala",
-    "Lady Deathstrike", "Lumatrix", "Madelyne Pryor", "Magik", "Mantis",
-    "Medusa", "Misty Knight", "Moondragon", "Morningstar",
-    "Ms. Marvel", "Ms. Marvel (Kamala Khan)", "Nebula",
-    "Negasonic Teenage Warhead", "Nico Minoru",
-    "Okoye", "Omega Sentinel", "Peni Parker", "Photon", "Pixie",
-    "Proxima Midnight", "Psylocke", "Purgatory", "Quake",
-    "Rogue", "Scarlet Witch", "Scarlet Witch (Classic)", "Scream",
-    "Sersi", "Shathra", "She-Hulk", "She-Hulk (Deathless)", "Shuri", "Silk",
-    "Sorcerer Supreme", "Spider-Gwen", "Spider-Woman (Jessica Drew)",
-    "Spiral", "Squirrel Girl", "Storm", "Storm (Pyramid X)",
-    "Tigra", "Titania", "Valkyrie", "Wasp", "White Tiger",
-    "Wolverine (X-23)", "Yelena Belova", "Imperiosa", "Isophyne",
-    "Captain Britain",
-}
-
-# Non-binary / Robot / Other gender
-NON_BINARY_CHAMPIONS = {
-    "Groot", "King Groot", "King Groot (Deathless)", "Howard the Duck",
-    "Man-Thing", "Dragon Man", "Rocket Raccoon", "Spider-Ham",
-    "Venom the Duck", "Goldpool", "Platinumpool", "Sentinel", "Nimrod",
-    "Ultron", "Ultron (Classic)", "Vision", "Vision (Aarkus)",
-    "Vision (Age of Ultron)", "Vision (Deathless)", "Warlock",
-    "Guillotine 2099", "Civil Warrior", "Darkhawk",
-    "Hit-Monkey", "Sauron", "Mojo", "Dormammu",
-    "The Destroyer", "Galan", "Annihilus",
-}
-
 FIGHTING_STYLE_MAP = {
     "Offensive: Raw Damage": "Offensive",
     "Offensive: Damage Over Time": "Offensive",
@@ -257,15 +219,6 @@ def parse_release_year(date_str):
     return None
 
 
-def get_gender(champion_name):
-    """Determine gender for a champion."""
-    if champion_name in FEMALE_CHAMPIONS:
-        return "Female"
-    if champion_name in NON_BINARY_CHAMPIONS:
-        return "Other"
-    return "Male"
-
-
 def scrape_champion(champion_name):
     """Scrape all attributes for a single champion."""
     wikitext = fetch_champion_wikitext(champion_name)
@@ -287,7 +240,6 @@ def scrape_champion(champion_name):
     return {
         "name": display_name,
         "class": champ_class or "Unknown",
-        "gender": get_gender(champion_name),
         "size": tags.get("size", "M"),
         "alignment": tags.get("alignment", "Unknown"),
         "affiliations": tags.get("affiliations", []),

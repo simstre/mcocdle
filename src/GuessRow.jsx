@@ -66,7 +66,6 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
   const cells = useMemo(() => {
     const nameStatus = compareValue(guess.name, target.name)
     const classStatus = compareValue(guess.class, target.class)
-    const genderStatus = compareValue(guess.gender, target.gender)
     const sizeResult = compareSize(guess.size, target.size)
     const alignStatus = compareValue(guess.alignment, target.alignment)
     const affStatus = compareArrays(guess.affiliations, target.affiliations)
@@ -87,7 +86,6 @@ export default function GuessRow({ guess, target, isNew, onRevealDone }) {
         iconSrc: CLASS_ICON_PATHS[guess.class],
         accentColor: CLASS_COLORS[guess.class],
       },
-      { value: guess.gender, status: genderStatus },
       { value: guess.size, status: sizeResult.status, arrow: sizeResult.arrow },
       { value: guess.alignment, status: alignStatus },
       { value: guess.affiliations?.join(', ') || 'None', status: affStatus },

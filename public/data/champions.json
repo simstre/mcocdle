@@ -2,7 +2,6 @@
   {
     "name": "Abomination",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -15,7 +14,6 @@
   {
     "name": "Abomination (Immortal)",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -26,7 +24,6 @@
   {
     "name": "Absorbing Man",
     "class": "Mystic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -37,7 +34,6 @@
   {
     "name": "Adam Warlock",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -48,7 +44,6 @@
   {
     "name": "Aegon",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -60,7 +55,6 @@
   {
     "name": "Agent Venom",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -75,7 +69,6 @@
   {
     "name": "Air-Walker",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -86,7 +79,6 @@
   {
     "name": "America Chavez",
     "class": "Mystic",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -101,7 +93,6 @@
   {
     "name": "Angela",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -112,7 +103,6 @@
   {
     "name": "Annihilus",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -123,7 +113,6 @@
   {
     "name": "Ant-Man",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -136,7 +125,6 @@
   {
     "name": "Ant-Man (Future)",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -147,7 +135,6 @@
   {
     "name": "Anti-Venom",
     "class": "Science",
-    "gender": "Male",
     "size": "L",
     "alignment": "Unknown",
     "affiliations": [
@@ -160,7 +147,6 @@
   {
     "name": "Apocalypse",
     "class": "Mutant",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -171,7 +157,6 @@
   {
     "name": "Arcade",
     "class": "Tech",
-    "gender": "Male",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -182,7 +167,6 @@
   {
     "name": "Archangel",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -196,7 +180,6 @@
   {
     "name": "Arnim Zola",
     "class": "Tech",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -210,7 +193,6 @@
   {
     "name": "Attuma",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -223,7 +205,6 @@
   {
     "name": "Baron Zemo",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -237,7 +218,6 @@
   {
     "name": "Bastion",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -248,7 +228,6 @@
   {
     "name": "Beast",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -262,7 +241,6 @@
   {
     "name": "Beta Ray Bill",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -275,7 +253,6 @@
   {
     "name": "Bishop",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -288,7 +265,6 @@
   {
     "name": "Black Bolt",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -301,7 +277,6 @@
   {
     "name": "Black Cat",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -312,7 +287,6 @@
   {
     "name": "Black Panther",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -326,7 +300,6 @@
   {
     "name": "Black Panther (Civil War)",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -339,7 +312,6 @@
   {
     "name": "Black Widow",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -354,7 +326,6 @@
   {
     "name": "Black Widow (Claire Voyant)",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -365,7 +336,6 @@
   {
     "name": "Black Widow (Deadly Origin)",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -380,7 +350,6 @@
   {
     "name": "Blade",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -394,7 +363,6 @@
   {
     "name": "Blue Marvel",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -409,7 +377,6 @@
   {
     "name": "Bullseye",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [
@@ -422,7 +389,6 @@
   {
     "name": "Cable",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -436,7 +402,6 @@
   {
     "name": "Captain America",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -450,7 +415,6 @@
   {
     "name": "Captain America (Infinity War)",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -463,7 +427,6 @@
   {
     "name": "Captain America (Sam Wilson)",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -477,7 +440,6 @@
   {
     "name": "Captain America (WWII)",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -490,7 +452,6 @@
   {
     "name": "Captain Britain",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -503,7 +464,6 @@
   {
     "name": "Captain Marvel",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -516,7 +476,6 @@
   {
     "name": "Captain Marvel (Classic)",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -529,7 +488,6 @@
   {
     "name": "Carnage",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -542,7 +500,6 @@
   {
     "name": "Cassandra Nova",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -553,7 +510,6 @@
   {
     "name": "Cassie Lang",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -567,7 +523,6 @@
   {
     "name": "Chee'ilth",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -578,7 +533,6 @@
   {
     "name": "Civil Warrior",
     "class": "Tech",
-    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -591,7 +545,6 @@
   {
     "name": "Colossus",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -605,7 +558,6 @@
   {
     "name": "Corvus Glaive",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Unknown",
     "affiliations": [
@@ -618,7 +570,6 @@
   {
     "name": "Cosmic Ghost Rider",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -629,7 +580,6 @@
   {
     "name": "Count Nefaria",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -640,7 +590,6 @@
   {
     "name": "Crossbones",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Mercenary",
     "affiliations": [
@@ -654,7 +603,6 @@
   {
     "name": "Cull Obsidian",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Unknown",
     "affiliations": [],
@@ -665,7 +613,6 @@
   {
     "name": "Cyclops (Blue Team)",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -678,7 +625,6 @@
   {
     "name": "Cyclops (New Xavier School)",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -691,7 +637,6 @@
   {
     "name": "Dani Moonstar",
     "class": "Mutant",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -705,7 +650,6 @@
   {
     "name": "Daredevil (Classic)",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -718,7 +662,6 @@
   {
     "name": "Daredevil (Hell's Kitchen)",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -731,7 +674,6 @@
   {
     "name": "Dark Phoenix",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -742,7 +684,6 @@
   {
     "name": "Darkhawk",
     "class": "Tech",
-    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -753,7 +694,6 @@
   {
     "name": "Dazzler",
     "class": "Mutant",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -766,7 +706,6 @@
   {
     "name": "Deadpool",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [
@@ -780,7 +719,6 @@
   {
     "name": "Deadpool (X-Force)",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [
@@ -793,7 +731,6 @@
   {
     "name": "Diablo",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -804,7 +741,6 @@
   {
     "name": "Doctor Doom",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -817,7 +753,6 @@
   {
     "name": "Doctor Octopus",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -831,7 +766,6 @@
   {
     "name": "Doctor Strange",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -845,7 +779,6 @@
   {
     "name": "Doctor Voodoo",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -858,7 +791,6 @@
   {
     "name": "Domino",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Mercenary",
     "affiliations": [
@@ -872,7 +804,6 @@
   {
     "name": "Doombot",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -883,7 +814,6 @@
   {
     "name": "Dormammu",
     "class": "Mystic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -894,7 +824,6 @@
   {
     "name": "Dracula",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -905,7 +834,6 @@
   {
     "name": "Dragon Man",
     "class": "Mystic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [],
@@ -916,7 +844,6 @@
   {
     "name": "Drax",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -929,7 +856,6 @@
   {
     "name": "Dust",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -943,7 +869,6 @@
   {
     "name": "Ebony Maw",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Unknown",
     "affiliations": [],
@@ -954,7 +879,6 @@
   {
     "name": "Electro",
     "class": "Science",
-    "gender": "Male",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [
@@ -968,7 +892,6 @@
   {
     "name": "Elektra",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -982,7 +905,6 @@
   {
     "name": "Elsa Bloodstone",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -993,7 +915,6 @@
   {
     "name": "Emma Frost",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1007,7 +928,6 @@
   {
     "name": "Enchantress",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [
@@ -1020,7 +940,6 @@
   {
     "name": "Falcon",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1033,7 +952,6 @@
   {
     "name": "Falcon (Joaqu\u00edn Torres)",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -1044,7 +962,6 @@
   {
     "name": "Franken-Castle",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -1055,7 +972,6 @@
   {
     "name": "Galan",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "L",
     "alignment": "Unknown",
     "affiliations": [],
@@ -1066,7 +982,6 @@
   {
     "name": "Gambit",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1079,7 +994,6 @@
   {
     "name": "Gamora",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1092,7 +1006,6 @@
   {
     "name": "Gentle",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -1105,7 +1018,6 @@
   {
     "name": "Ghost",
     "class": "Tech",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [
@@ -1118,7 +1030,6 @@
   {
     "name": "Ghost Rider",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1133,7 +1044,6 @@
   {
     "name": "Gladiator",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -1144,7 +1054,6 @@
   {
     "name": "Goldpool",
     "class": "Mutant",
-    "gender": "Other",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -1155,7 +1064,6 @@
   {
     "name": "Gorr",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -1166,7 +1074,6 @@
   {
     "name": "Grandmaster",
     "class": "Unknown",
-    "gender": "Male",
     "size": "M",
     "alignment": "Unknown",
     "affiliations": [],
@@ -1177,7 +1084,6 @@
   {
     "name": "Green Goblin",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -1191,7 +1097,6 @@
   {
     "name": "Groot",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
@@ -1204,7 +1109,6 @@
   {
     "name": "Guardian",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1217,7 +1121,6 @@
   {
     "name": "Guillotine",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -1228,7 +1131,6 @@
   {
     "name": "Guillotine (Deathless)",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -1239,7 +1141,6 @@
   {
     "name": "Guillotine 2099",
     "class": "Tech",
-    "gender": "Other",
     "size": "S",
     "alignment": "Unknown",
     "affiliations": [],
@@ -1250,7 +1151,6 @@
   {
     "name": "Gwenpool",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -1261,7 +1161,6 @@
   {
     "name": "Havok",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1274,7 +1173,6 @@
   {
     "name": "Hawkeye",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1289,7 +1187,6 @@
   {
     "name": "Heimdall",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -1300,7 +1197,6 @@
   {
     "name": "Hela",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -1311,7 +1207,6 @@
   {
     "name": "Hercules",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -1322,7 +1217,6 @@
   {
     "name": "High Evolutionary",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -1333,7 +1227,6 @@
   {
     "name": "Hit-Monkey",
     "class": "Skill",
-    "gender": "Other",
     "size": "S",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -1344,7 +1237,6 @@
   {
     "name": "Howard the Duck",
     "class": "Tech",
-    "gender": "Other",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -1357,7 +1249,6 @@
   {
     "name": "Hulk",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
@@ -1372,7 +1263,6 @@
   {
     "name": "Hulk (Immortal)",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [],
@@ -1383,7 +1273,6 @@
   {
     "name": "Hulk (Ragnarok)",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
@@ -1396,7 +1285,6 @@
   {
     "name": "Hulkbuster",
     "class": "Tech",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
@@ -1410,7 +1298,6 @@
   {
     "name": "Hulkling",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -1425,7 +1312,6 @@
   {
     "name": "Human Torch",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1438,7 +1324,6 @@
   {
     "name": "Hyperion",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -1453,7 +1338,6 @@
   {
     "name": "Iceman",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1466,7 +1350,6 @@
   {
     "name": "Ikaris",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -1477,7 +1360,6 @@
   {
     "name": "Imperiosa",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -1488,7 +1370,6 @@
   {
     "name": "Invisible Woman",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1501,7 +1382,6 @@
   {
     "name": "Iron Fist",
     "class": "Mystic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1514,7 +1394,6 @@
   {
     "name": "Iron Fist (Immortal)",
     "class": "Mystic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1528,7 +1407,6 @@
   {
     "name": "Iron Man",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1542,7 +1420,6 @@
   {
     "name": "Iron Man (Infamous)",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1555,7 +1432,6 @@
   {
     "name": "Iron Man (Infinity War)",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1569,7 +1445,6 @@
   {
     "name": "Iron Patriot",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -1585,7 +1460,6 @@
   {
     "name": "Ironheart",
     "class": "Tech",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1599,7 +1473,6 @@
   {
     "name": "Isophyne",
     "class": "Mystic",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -1610,7 +1483,6 @@
   {
     "name": "Jabari Panther",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -1621,7 +1493,6 @@
   {
     "name": "Jack O'Lantern",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -1632,7 +1503,6 @@
   {
     "name": "Jean Grey",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1646,7 +1516,6 @@
   {
     "name": "Jessica Jones",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1659,7 +1528,6 @@
   {
     "name": "Joe Fixit",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -1670,7 +1538,6 @@
   {
     "name": "Jubilee",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1683,7 +1550,6 @@
   {
     "name": "Juggernaut",
     "class": "Mystic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -1697,7 +1563,6 @@
   {
     "name": "Kang the Conqueror",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -1710,7 +1575,6 @@
   {
     "name": "Karnak",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -1721,7 +1585,6 @@
   {
     "name": "Karolina Dean",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -1732,7 +1595,6 @@
   {
     "name": "Kate Bishop",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1746,7 +1608,6 @@
   {
     "name": "Killmonger",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -1757,7 +1618,6 @@
   {
     "name": "Kindred",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -1768,7 +1628,6 @@
   {
     "name": "King Groot",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -1779,7 +1638,6 @@
   {
     "name": "King Groot (Deathless)",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -1790,7 +1648,6 @@
   {
     "name": "Kingpin",
     "class": "Skill",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -1803,7 +1660,6 @@
   {
     "name": "Kitty Pryde",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -1816,7 +1672,6 @@
   {
     "name": "Knull",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -1829,7 +1684,6 @@
   {
     "name": "Korg",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -1840,7 +1694,6 @@
   {
     "name": "Kraven",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -1854,7 +1707,6 @@
   {
     "name": "Kushala",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -1865,7 +1717,6 @@
   {
     "name": "Lady Deathstrike",
     "class": "Tech",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [
@@ -1878,7 +1729,6 @@
   {
     "name": "Lizard",
     "class": "Science",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -1891,7 +1741,6 @@
   {
     "name": "Loki",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -1906,7 +1755,6 @@
   {
     "name": "Longshot",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -1919,7 +1767,6 @@
   {
     "name": "Luke Cage",
     "class": "Science",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -1935,7 +1782,6 @@
   {
     "name": "Lumatrix",
     "class": "Skill",
-    "gender": "Female",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -1946,7 +1792,6 @@
   {
     "name": "M'Baku",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -1957,7 +1802,6 @@
   {
     "name": "M.O.D.O.K.",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -1970,7 +1814,6 @@
   {
     "name": "Madelyne Pryor",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -1981,7 +1824,6 @@
   {
     "name": "Maestro (Cosmic)",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -1992,7 +1834,6 @@
   {
     "name": "Magik",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2006,7 +1847,6 @@
   {
     "name": "Magneto",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2022,7 +1862,6 @@
   {
     "name": "Magneto (House of X)",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2036,7 +1875,6 @@
   {
     "name": "Man-Thing",
     "class": "Mystic",
-    "gender": "Other",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -2049,7 +1887,6 @@
   {
     "name": "Mangog",
     "class": "Mystic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -2060,7 +1897,6 @@
   {
     "name": "Mantis",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2074,7 +1910,6 @@
   {
     "name": "Masacre",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -2085,7 +1920,6 @@
   {
     "name": "Medusa",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -2096,7 +1930,6 @@
   {
     "name": "Mephisto",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -2107,7 +1940,6 @@
   {
     "name": "Mister Fantastic",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2121,7 +1953,6 @@
   {
     "name": "Mister Negative",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -2132,7 +1963,6 @@
   {
     "name": "Mister Sinister",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -2143,7 +1973,6 @@
   {
     "name": "Misty Knight",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Mercenary",
     "affiliations": [
@@ -2156,7 +1985,6 @@
   {
     "name": "Mojo",
     "class": "Mystic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -2167,7 +1995,6 @@
   {
     "name": "Mole Man",
     "class": "Skill",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -2178,7 +2005,6 @@
   {
     "name": "Moon Knight",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [
@@ -2191,7 +2017,6 @@
   {
     "name": "Moondragon",
     "class": "Skill",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2204,7 +2029,6 @@
   {
     "name": "Morbius",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -2215,7 +2039,6 @@
   {
     "name": "Mordo",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -2226,7 +2049,6 @@
   {
     "name": "Morningstar",
     "class": "Mystic",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -2237,7 +2059,6 @@
   {
     "name": "Mr. Knight",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -2248,7 +2069,6 @@
   {
     "name": "Ms. Marvel",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2261,7 +2081,6 @@
   {
     "name": "Ms. Marvel (Kamala Khan)",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2274,7 +2093,6 @@
   {
     "name": "Mysterio",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2288,7 +2106,6 @@
   {
     "name": "Namor",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2305,7 +2122,6 @@
   {
     "name": "Nebula",
     "class": "Tech",
-    "gender": "Female",
     "size": "S",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -2316,7 +2132,6 @@
   {
     "name": "Negasonic Teenage Warhead",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2329,7 +2144,6 @@
   {
     "name": "Nick Fury",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2342,7 +2156,6 @@
   {
     "name": "Nico Minoru",
     "class": "Mystic",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -2353,7 +2166,6 @@
   {
     "name": "Night Thrasher",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -2364,7 +2176,6 @@
   {
     "name": "Nightcrawler",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2377,7 +2188,6 @@
   {
     "name": "Nimrod",
     "class": "Tech",
-    "gender": "Other",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -2388,7 +2198,6 @@
   {
     "name": "Northstar",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2402,7 +2211,6 @@
   {
     "name": "Nova",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -2413,7 +2221,6 @@
   {
     "name": "Odin",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -2424,7 +2231,6 @@
   {
     "name": "Okoye",
     "class": "Skill",
-    "gender": "Female",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -2435,7 +2241,6 @@
   {
     "name": "Old Man Logan",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2448,7 +2253,6 @@
   {
     "name": "Omega Red",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -2461,7 +2265,6 @@
   {
     "name": "Omega Sentinel",
     "class": "Tech",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [],
@@ -2472,7 +2275,6 @@
   {
     "name": "Onslaught",
     "class": "Mutant",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -2483,7 +2285,6 @@
   {
     "name": "Patriot",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2497,7 +2298,6 @@
   {
     "name": "Peni Parker",
     "class": "Tech",
-    "gender": "Female",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
@@ -2511,7 +2311,6 @@
   {
     "name": "Phoenix",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2524,7 +2323,6 @@
   {
     "name": "Photon",
     "class": "Science",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2539,7 +2337,6 @@
   {
     "name": "Pixie",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2552,7 +2349,6 @@
   {
     "name": "Platinumpool",
     "class": "Mutant",
-    "gender": "Other",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -2563,7 +2359,6 @@
   {
     "name": "Professor X",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2577,7 +2372,6 @@
   {
     "name": "Prowler",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -2588,7 +2382,6 @@
   {
     "name": "Proxima Midnight",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Unknown",
     "affiliations": [
@@ -2601,7 +2394,6 @@
   {
     "name": "Psycho-Man",
     "class": "Tech",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -2612,7 +2404,6 @@
   {
     "name": "Psylocke",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2626,7 +2417,6 @@
   {
     "name": "Punisher",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2640,7 +2430,6 @@
   {
     "name": "Punisher 2099",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2654,7 +2443,6 @@
   {
     "name": "Purgatory",
     "class": "Mystic",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -2665,7 +2453,6 @@
   {
     "name": "Quake",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2678,7 +2465,6 @@
   {
     "name": "Quicksilver",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2691,7 +2477,6 @@
   {
     "name": "Red Goblin",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2704,7 +2489,6 @@
   {
     "name": "Red Guardian",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2717,7 +2501,6 @@
   {
     "name": "Red Hulk",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -2730,7 +2513,6 @@
   {
     "name": "Red Skull",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2744,7 +2526,6 @@
   {
     "name": "Rhino",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -2758,7 +2539,6 @@
   {
     "name": "Rintrah",
     "class": "Mystic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -2769,7 +2549,6 @@
   {
     "name": "Rocket Raccoon",
     "class": "Tech",
-    "gender": "Other",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2782,7 +2561,6 @@
   {
     "name": "Rogue",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2796,7 +2574,6 @@
   {
     "name": "Ronan",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -2809,7 +2586,6 @@
   {
     "name": "Ronin",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -2822,7 +2598,6 @@
   {
     "name": "Sabretooth",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Mercenary",
     "affiliations": [
@@ -2835,7 +2610,6 @@
   {
     "name": "Sandman",
     "class": "Science",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -2848,7 +2622,6 @@
   {
     "name": "Sasquatch",
     "class": "Mystic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [
@@ -2861,7 +2634,6 @@
   {
     "name": "Sauron",
     "class": "Mutant",
-    "gender": "Other",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2874,7 +2646,6 @@
   {
     "name": "Scarlet Witch",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2887,7 +2658,6 @@
   {
     "name": "Scarlet Witch (Classic)",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -2901,7 +2671,6 @@
   {
     "name": "Scorpion",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2914,7 +2683,6 @@
   {
     "name": "Scream",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -2927,7 +2695,6 @@
   {
     "name": "Sentinel",
     "class": "Tech",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -2938,7 +2705,6 @@
   {
     "name": "Sentry",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -2949,7 +2715,6 @@
   {
     "name": "Sersi",
     "class": "Cosmic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -2960,7 +2725,6 @@
   {
     "name": "Shang-Chi",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -2971,7 +2735,6 @@
   {
     "name": "Shathra",
     "class": "Mystic",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -2982,7 +2745,6 @@
   {
     "name": "She-Hulk",
     "class": "Science",
-    "gender": "Female",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -2996,7 +2758,6 @@
   {
     "name": "She-Hulk (Deathless)",
     "class": "Science",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -3007,7 +2768,6 @@
   {
     "name": "Shocker",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3020,7 +2780,6 @@
   {
     "name": "Shuri",
     "class": "Tech",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -3031,7 +2790,6 @@
   {
     "name": "Silk",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3045,7 +2803,6 @@
   {
     "name": "Silver Centurion",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3058,7 +2815,6 @@
   {
     "name": "Silver Sable",
     "class": "Skill",
-    "gender": "Male",
     "size": "S",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -3069,7 +2825,6 @@
   {
     "name": "Silver Samurai",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -3080,7 +2835,6 @@
   {
     "name": "Silver Surfer",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3093,7 +2847,6 @@
   {
     "name": "Solvarch",
     "class": "Tech",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -3104,7 +2857,6 @@
   {
     "name": "Sorcerer Supreme",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -3115,7 +2867,6 @@
   {
     "name": "Spider-Gwen",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3129,7 +2880,6 @@
   {
     "name": "Spider-Ham",
     "class": "Science",
-    "gender": "Other",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3143,7 +2893,6 @@
   {
     "name": "Spider-Man (Classic)",
     "class": "Science",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3159,7 +2908,6 @@
   {
     "name": "Spider-Man (Miles Morales)",
     "class": "Science",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3176,7 +2924,6 @@
   {
     "name": "Spider-Man (Pavitr Prabhakar)",
     "class": "Mystic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3190,7 +2937,6 @@
   {
     "name": "Spider-Man (Stark Enhanced)",
     "class": "Tech",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3205,7 +2951,6 @@
   {
     "name": "Spider-Man (Stealth Suit)",
     "class": "Skill",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3219,7 +2964,6 @@
   {
     "name": "Spider-Man (Supreme)",
     "class": "Mystic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3233,7 +2977,6 @@
   {
     "name": "Spider-Man (Symbiote)",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3248,7 +2991,6 @@
   {
     "name": "Spider-Man 2099",
     "class": "Science",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3262,7 +3004,6 @@
   {
     "name": "Spider-Punk",
     "class": "Science",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3276,7 +3017,6 @@
   {
     "name": "Spider-Slayer (J. Jonah Jameson)",
     "class": "Tech",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -3287,7 +3027,6 @@
   {
     "name": "Spider-Woman (Jessica Drew)",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3303,7 +3042,6 @@
   {
     "name": "Spiral",
     "class": "Mystic",
-    "gender": "Female",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -3314,7 +3052,6 @@
   {
     "name": "Spot",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -3325,7 +3062,6 @@
   {
     "name": "Squirrel Girl",
     "class": "Skill",
-    "gender": "Female",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3339,7 +3075,6 @@
   {
     "name": "Star-Lord",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3352,7 +3087,6 @@
   {
     "name": "Star-Lord (Stellar-Forged)",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3365,7 +3099,6 @@
   {
     "name": "Storm",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3379,7 +3112,6 @@
   {
     "name": "Storm (Pyramid X)",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Villain",
     "affiliations": [
@@ -3392,7 +3124,6 @@
   {
     "name": "Stryfe",
     "class": "Mutant",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -3403,7 +3134,6 @@
   {
     "name": "Summoned Symbioid",
     "class": "Combined",
-    "gender": "Male",
     "size": "M",
     "alignment": "Unknown",
     "affiliations": [
@@ -3416,7 +3146,6 @@
   {
     "name": "Summoned Symbiote",
     "class": "Combined",
-    "gender": "Male",
     "size": "L",
     "alignment": "Unknown",
     "affiliations": [
@@ -3429,7 +3158,6 @@
   {
     "name": "Sunspot",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3445,7 +3173,6 @@
   {
     "name": "Super-Skrull",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -3458,7 +3185,6 @@
   {
     "name": "Superior Iron Man",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3472,7 +3198,6 @@
   {
     "name": "Symbiote Supreme",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Unknown",
     "affiliations": [
@@ -3485,7 +3210,6 @@
   {
     "name": "Taskmaster",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [
@@ -3500,7 +3224,6 @@
   {
     "name": "Terrax",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -3513,7 +3236,6 @@
   {
     "name": "Thanos",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -3526,7 +3248,6 @@
   {
     "name": "Thanos (Deathless)",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [],
@@ -3537,7 +3258,6 @@
   {
     "name": "The Champion",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Unknown",
     "affiliations": [],
@@ -3548,7 +3268,6 @@
   {
     "name": "The Destroyer",
     "class": "Mystic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Unknown",
     "affiliations": [],
@@ -3559,7 +3278,6 @@
   {
     "name": "The Hood",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3572,7 +3290,6 @@
   {
     "name": "The Leader",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3585,7 +3302,6 @@
   {
     "name": "The Maker",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3599,7 +3315,6 @@
   {
     "name": "The Overseer",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Unknown",
     "affiliations": [],
@@ -3610,7 +3325,6 @@
   {
     "name": "The Serpent",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -3621,7 +3335,6 @@
   {
     "name": "Thing",
     "class": "Science",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [],
@@ -3632,7 +3345,6 @@
   {
     "name": "Thor",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -3645,7 +3357,6 @@
   {
     "name": "Thor (Jane Foster)",
     "class": "Mystic",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3659,7 +3370,6 @@
   {
     "name": "Thor (Ragnarok)",
     "class": "Skill",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [
@@ -3672,7 +3382,6 @@
   {
     "name": "Tigra",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -3683,7 +3392,6 @@
   {
     "name": "Titania",
     "class": "Science",
-    "gender": "Female",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [],
@@ -3694,7 +3402,6 @@
   {
     "name": "Toad",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3707,7 +3414,6 @@
   {
     "name": "Ultron",
     "class": "Tech",
-    "gender": "Other",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -3720,7 +3426,6 @@
   {
     "name": "Ultron (Classic)",
     "class": "Tech",
-    "gender": "Other",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -3731,7 +3436,6 @@
   {
     "name": "Unstoppable Colossus",
     "class": "Mystic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Villain",
     "affiliations": [
@@ -3744,7 +3448,6 @@
   {
     "name": "Valkyrie",
     "class": "Skill",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3757,7 +3460,6 @@
   {
     "name": "Venom",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -3770,7 +3472,6 @@
   {
     "name": "Venom the Duck",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -3783,7 +3484,6 @@
   {
     "name": "Venompool",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "XL",
     "alignment": "Villain",
     "affiliations": [
@@ -3796,7 +3496,6 @@
   {
     "name": "Vision",
     "class": "Tech",
-    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3809,7 +3508,6 @@
   {
     "name": "Vision (Aarkus)",
     "class": "Cosmic",
-    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -3820,7 +3518,6 @@
   {
     "name": "Vision (Age of Ultron)",
     "class": "Tech",
-    "gender": "Other",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3834,7 +3531,6 @@
   {
     "name": "Vision (Deathless)",
     "class": "Tech",
-    "gender": "Other",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -3845,7 +3541,6 @@
   {
     "name": "Viv Vision",
     "class": "Tech",
-    "gender": "Male",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3858,7 +3553,6 @@
   {
     "name": "Void",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -3869,7 +3563,6 @@
   {
     "name": "Vox",
     "class": "Cosmic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3882,7 +3575,6 @@
   {
     "name": "Vulture",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [
@@ -3895,7 +3587,6 @@
   {
     "name": "War Machine",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3908,7 +3599,6 @@
   {
     "name": "Warlock",
     "class": "Tech",
-    "gender": "Other",
     "size": "XL",
     "alignment": "Hero",
     "affiliations": [],
@@ -3919,7 +3609,6 @@
   {
     "name": "Wasp",
     "class": "Science",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [],
@@ -3930,7 +3619,6 @@
   {
     "name": "Werewolf By Night",
     "class": "Mystic",
-    "gender": "Male",
     "size": "L",
     "alignment": "Hero",
     "affiliations": [],
@@ -3941,7 +3629,6 @@
   {
     "name": "White Tiger",
     "class": "Mystic",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -3956,7 +3643,6 @@
   {
     "name": "Wiccan",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -3971,7 +3657,6 @@
   {
     "name": "Winter Soldier",
     "class": "Skill",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [
@@ -3984,7 +3669,6 @@
   {
     "name": "Wolverine",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [
@@ -4000,7 +3684,6 @@
   {
     "name": "Wolverine (Weapon X)",
     "class": "Mutant",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -4011,7 +3694,6 @@
   {
     "name": "Wolverine (X-23)",
     "class": "Mutant",
-    "gender": "Female",
     "size": "S",
     "alignment": "Hero",
     "affiliations": [
@@ -4025,7 +3707,6 @@
   {
     "name": "Wong",
     "class": "Mystic",
-    "gender": "Male",
     "size": "M",
     "alignment": "Hero",
     "affiliations": [],
@@ -4036,7 +3717,6 @@
   {
     "name": "Yelena Belova",
     "class": "Skill",
-    "gender": "Female",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],
@@ -4047,7 +3727,6 @@
   {
     "name": "Yellowjacket",
     "class": "Science",
-    "gender": "Male",
     "size": "M",
     "alignment": "Villain",
     "affiliations": [],
@@ -4058,7 +3737,6 @@
   {
     "name": "Yondu",
     "class": "Tech",
-    "gender": "Male",
     "size": "M",
     "alignment": "Mercenary",
     "affiliations": [],

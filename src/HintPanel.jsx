@@ -1,10 +1,9 @@
 import { useMemo } from 'react'
 
-const ATTR_PRIORITY = ['class', 'gender', 'release_year', 'size', 'affiliation', 'alignment', 'fighting_style']
+const ATTR_PRIORITY = ['class', 'release_year', 'size', 'affiliation', 'alignment', 'fighting_style']
 
 const ATTR_LABELS = {
   class: 'Class',
-  gender: 'Gender',
   release_year: 'Release Year',
   size: 'Size',
   alignment: 'Alignment',
