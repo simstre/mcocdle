@@ -114,6 +114,7 @@ FEMALE_CHAMPIONS = {
     "America Chavez", "Angela", "Black Cat", "Black Widow",
     "Black Widow (Claire Voyant)", "Black Widow (Deadly Origin)",
     "Captain Marvel", "Captain Marvel (Classic)", "Cassandra Nova", "Cassie Lang",
+    "Chee'ilth",
     "Dani Moonstar", "Dark Phoenix", "Dazzler", "Domino", "Dust",
     "Elektra", "Elsa Bloodstone", "Enchantress", "Emma Frost",
     "Gamora", "Ghost", "Guillotine", "Guillotine (Deathless)",
