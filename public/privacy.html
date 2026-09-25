@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy &amp; Contact - MCOCdle</title>
+  <meta name="description" content="How MCOCdle handles your data, including leaderboard names, and how to get in touch." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #080818;
+      --bg-glass: rgba(10, 10, 30, 0.75);
+      --border-glow: rgba(160, 100, 255, 0.25);
+      --text-primary: #f0f0f5;
+      --text-secondary: #9090b0;
+      --marvel-red: #e62429;
+      --marvel-gold: #f0c040;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 32px 16px 60px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 3px;
+      color: var(--marvel-red);
+      margin: 16px 0 4px;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      color: var(--marvel-gold);
+      margin: 28px 0 8px;
+    }
+
+    p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 12px; }
+    p strong { color: var(--text-primary); }
+    a { color: var(--marvel-gold); }
+    .back { font-size: 0.9rem; }
+    .date { font-size: 0.8rem; }
+
+    .card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border-glow);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .card p { margin: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="/">&larr; Back to the game</a>
+    <div class="badge">MCOCdle</div>
+
+    <h2>Privacy</h2>
+    <p class="date">Last updated: 24 September 2026</p>
+
+    <p>MCOCdle is a free fan-made guessing game for Marvel Contest of Champions. There are no
+    accounts or sign-ups, and we never ask for your email address or any other contact detail.</p>
+
+    <p><strong>What stays on your device.</strong> Your guesses, progress, display name and a
+    random player ID are saved in your browser's local storage. Clearing this site's data deletes
+    them.</p>
+
+    <p><strong>What the leaderboard stores.</strong> When you solve the daily puzzle, the display
+    name you chose, your guess count, the time you solved it and your random player ID are sent to
+    our server so you can appear on that day's leaderboard. This record is public to other players
+    and is deleted automatically after 48 hours. Pick a nickname rather than your real name if you
+    prefer.</p>
+
+    <p><strong>Who receives data.</strong> The site is hosted by <strong>Vercel</strong>, which
+    processes requests (including IP addresses) to deliver pages and stores the leaderboard. Fonts
+    are loaded from <strong>Google Fonts</strong>, which receives your IP address when your browser
+    fetches them. There are no analytics, ads, cookies or tracking, and nothing is sold.</p>
+
+    <p>MCOCdle is an independent fan project and is not affiliated with Kabam or Marvel.</p>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Questions, feedback, or a request to remove a leaderboard entry:
+      <a href="mailto:velvetloop.admin@gmail.com">velvetloop.admin@gmail.com</a></p>
+    </div>
+  </main>
+</body>
+</html>

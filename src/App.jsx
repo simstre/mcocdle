@@ -436,6 +436,10 @@ export default function App() {
           onClose={() => setShowWin(false)}
         />
       )}
+
+      <footer className="site-footer">
+        <a href="/privacy.html">Privacy &amp; Contact</a>
+      </footer>
     </div>
   )
 }

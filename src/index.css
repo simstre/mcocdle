@@ -54,6 +54,21 @@ html, body, #root {
   pointer-events: none;
 }
 
+.site-footer {
+  margin-top: auto;
+  padding-top: 40px;
+  font-size: 0.75rem;
+}
+
+.site-footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--text-secondary);
+}
+
 .bg-overlay {
   position: fixed;
   inset: 0;
