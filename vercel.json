@@ -1,8 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/api/daily", "destination": "/api/daily.js" },
-    { "source": "/api/solve", "destination": "/api/solve.js" },
-    { "source": "/dev", "destination": "/index.html" },
-    { "source": "/help", "destination": "/index.html" }
+  "redirects": [
+    { "source": "/privacy(.html)?", "destination": "https://mcoc.app/privacy", "permanent": true },
+    { "source": "/(help|dev)", "destination": "https://mcoc.app/mcocdle/$1", "permanent": true },
+    { "source": "/(.*)", "destination": "https://mcoc.app/mcocdle", "permanent": true }
   ]
 }

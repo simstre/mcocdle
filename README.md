@@ -1,3 +1,7 @@
+> **Moved:** MCOCdle now lives at [mcoc.app/mcocdle](https://mcoc.app/mcocdle) and its code in the
+> [mcoc-tierlist](https://github.com/simstre/mcoc-tierlist) repo under `mcocdle/`. This repo is archived;
+> its Vercel deployment only redirects there.
+
 # MCOCdle
 
 A daily guessing game for Marvel Contest of Champions. Guess the mystery champion each day based on attribute clues — class, gender, size, alignment, affiliation, fighting style, and release year.
@@ -13,4 +17,4 @@ A daily guessing game for Marvel Contest of Champions. Guess the mystery champio
 
 ## Play
 
-[mcocdle.vercel.app](https://mcocdle.vercel.app)
+[mcoc.app/mcocdle](https://mcoc.app/mcocdle)
